@@ -2,6 +2,7 @@
     "intro": {
         "title": {
             "Name": "Hi, my name is",
+            "Name-aria-description": "Name of the developer",
             "Subtitle": "Software developer"
         },
         "image": {
