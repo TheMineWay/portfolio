@@ -4,12 +4,13 @@ import SectionTitle from "./decoration/section-title";
 import PresentationAboutMeCard from "./about-me/presentation-about-me-card";
 import { useTranslation } from "react-i18next";
 import { Translation } from "@i18n/translation.enum";
+import PresentationTech from "./tech/presentation-tech";
 
 export default function Presentation() {
   const { t } = useTranslation([Translation.PRESENTATION]);
 
   return (
-    <Parallax pages={5}>
+    <Parallax pages={8}>
       <ParallaxLayer offset={0}>
         <PresentationIntro />
       </ParallaxLayer>
@@ -35,7 +36,22 @@ export default function Presentation() {
           emojis={["sports_bar"]}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={4}>
+
+      <ParallaxLayer sticky={{ start: 4, end: 6 }}>
+        <SectionTitle title={t("tech.Title")} />
+      </ParallaxLayer>
+
+      <ParallaxLayer sticky={{ start: 4, end: 6 }}>
+        <PresentationTech
+          tech={t("tech.techs.web.Title")}
+          image={{
+            src: "",
+            alt: "Web",
+          }}
+        />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={7}>
         <PresentationIntro />
       </ParallaxLayer>
     </Parallax>

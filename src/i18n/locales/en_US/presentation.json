@@ -28,5 +28,13 @@
                 "Description": "A friendly person who loves meeting new people. Never going to say no to an afterwork!"
             }
         }
+    },
+    "tech": {
+        "Title": "What I do",
+        "techs": {
+            "web": {
+                "Title": "Web"
+            }
+        }
     }
 }
