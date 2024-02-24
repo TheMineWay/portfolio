@@ -17,6 +17,12 @@
         "cards": {
             "learner": {
                 "Title": "Learner"
+            },
+            "sports": {
+                "Title": "Sportsman"
+            },
+            "social": {
+                "Title": "Social"
             }
         }
     }
