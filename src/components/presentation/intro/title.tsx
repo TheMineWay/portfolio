@@ -16,7 +16,7 @@ export default function Title() {
           Joel Campos
         </h1>
         <h2
-          className="text-3xl sm:text-4xl"
+          className="text-2xl sm:text-4xl"
           aria-description={t("intro.title.Subtitle")}
         >
           {"<" + t("intro.title.Subtitle") + "/>"}
