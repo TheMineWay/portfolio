@@ -1,7 +1,8 @@
 {
     "intro": {
         "title": {
-            "Name": "Hi, my name is"
+            "Name": "Hi, my name is",
+            "Subtitle": "Software developer"
         },
         "image": {
             "Alt": "Image of Joel Campos"
