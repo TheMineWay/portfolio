@@ -7,8 +7,8 @@ export default function Title() {
 
   return (
     <div className={styles.title} role="heading">
-      <p>{t("title.Name")}</p>
-      <h1>Joel Campos</h1>
+      <p className="text-md">{t("intro.title.Name")}</p>
+      <h1 className="text-5xl sm:text-7xl">Joel Campos</h1>
     </div>
   );
 }
