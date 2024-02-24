@@ -33,7 +33,8 @@
         "Title": "What I do",
         "techs": {
             "web": {
-                "Title": "Web"
+                "Title": "Web",
+                "Description": "I am an experienced web developer. I worked with different libraries and languages on professional and personal projects."
             }
         }
     }

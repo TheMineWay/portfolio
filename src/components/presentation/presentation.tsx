@@ -44,11 +44,19 @@ export default function Presentation() {
       <ParallaxLayer sticky={{ start: 4, end: 6 }}>
         <PresentationTech
           tech={t("tech.techs.web.Title")}
-          image={{
-            src: "",
-            alt: "Web",
-          }}
+          description={t("tech.techs.web.Description")}
+          image={<span className="material-symbols-outlined">public</span>}
         />
+      </ParallaxLayer>
+      <ParallaxLayer sticky={{ start: 4, end: 5 }}>
+        <div className="flex justify-end items-center h-full">
+          <p>REACT</p>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer sticky={{ start: 5, end: 6 }}>
+        <div className="flex justify-end items-center h-full">
+          <p>VUE</p>
+        </div>
       </ParallaxLayer>
 
       <ParallaxLayer offset={7}>
