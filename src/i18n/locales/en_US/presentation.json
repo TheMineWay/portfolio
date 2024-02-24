@@ -13,6 +13,11 @@
         }
     },
     "about-me": {
-        "Title": "A little bit about me"
+        "Title": "A little bit about me",
+        "cards": {
+            "learner": {
+                "Title": "Learner"
+            }
+        }
     }
 }
