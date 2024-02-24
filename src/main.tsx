@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Providers from "./providers/providers";
+import Providers from "@providers/providers";
 import "./index.pcss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
