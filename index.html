@@ -7,18 +7,29 @@
     <meta name="description" content="Joel Campos portfolio"/>
     <meta name="tags" content="portfolio;developer;"/>
     <title>Joel Campos</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-953L3JDDYZ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'G-953L3JDDYZ');
-    </script>
-
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Firebase libraries -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyAOb2prx8MPVpiEnb2ahO-5vGBIu4NaRA4",
+        authDomain: "portfolio-b9af3.firebaseapp.com",
+        projectId: "portfolio-b9af3",
+        storageBucket: "portfolio-b9af3.appspot.com",
+        messagingSenderId: "838588231680",
+        appId: "1:838588231680:web:3b7d649f8f4933a10ca8e5",
+        measurementId: "G-0JGY1L68XJ"
+      };
+
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
