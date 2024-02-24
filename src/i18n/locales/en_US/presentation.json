@@ -1,4 +1,7 @@
 {
+    "actions": {
+        "Scroll": "Scroll down"
+    },
     "intro": {
         "title": {
             "Name": "Hi, my name is",
