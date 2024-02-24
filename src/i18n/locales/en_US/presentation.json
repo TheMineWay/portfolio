@@ -16,13 +16,16 @@
         "Title": "A little bit about me",
         "cards": {
             "learner": {
-                "Title": "Learner"
+                "Title": "A passionate learner",
+                "Description": "Always expecting to face new challenges and learn new things."
             },
             "sports": {
-                "Title": "Sportsman"
+                "Title": "Sportsman",
+                "Description": "Nothing is better than practicing sports before the day starts."
             },
             "social": {
-                "Title": "Social"
+                "Title": "Social",
+                "Description": "A friendly person who loves meeting new people. Never going to say no to an afterwork!"
             }
         }
     }

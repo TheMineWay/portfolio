@@ -1,42 +1,37 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import PresentationIntro from "./intro/presentation-intro";
 import PresentationAboutMe from "./about-me/presentation-about-me";
-import { useScreen } from "@hooks/screen/use-screen";
 import PresentationAboutMeCard from "./about-me/presentation-about-me-card";
 
 export default function Presentation() {
-  const { isMobile } = useScreen();
-
   return (
-    <Parallax pages={8}>
+    <Parallax pages={5}>
       <ParallaxLayer offset={0}>
         <PresentationIntro />
       </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 1, end: 6 }}>
+      <ParallaxLayer sticky={{ start: 1, end: 3 }}>
         <PresentationAboutMe />
       </ParallaxLayer>
-      <ParallaxLayer
-        sticky={{ start: 1, end: isMobile ? 2 : 6 }}
-        className="flex items-center h-full"
-        horizontal
-      >
-        <PresentationAboutMeCard baseKey="about-me.cards.learner" />
+
+      <ParallaxLayer offset={1}>
+        <PresentationAboutMeCard
+          baseKey="about-me.cards.learner"
+          emojis={["school"]}
+        />
       </ParallaxLayer>
-      <ParallaxLayer
-        sticky={{ start: 3, end: isMobile ? 4 : 6 }}
-        className="flex items-center h-full"
-        horizontal
-      >
-        <PresentationAboutMeCard baseKey="about-me.cards.sports" />
+      <ParallaxLayer offset={2}>
+        <PresentationAboutMeCard
+          baseKey="about-me.cards.sports"
+          emojis={["sprint"]}
+        />
       </ParallaxLayer>
-      <ParallaxLayer
-        sticky={{ start: 5, end: 6 }}
-        className="flex items-center h-full"
-        horizontal
-      >
-        <PresentationAboutMeCard baseKey="about-me.cards.social" />
+      <ParallaxLayer offset={3}>
+        <PresentationAboutMeCard
+          baseKey="about-me.cards.social"
+          emojis={["sports_bar"]}
+        />
       </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 7 }}>
+      <ParallaxLayer offset={4}>
         <PresentationIntro />
       </ParallaxLayer>
     </Parallax>
