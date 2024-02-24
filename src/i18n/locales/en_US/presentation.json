@@ -11,5 +11,8 @@
         "image": {
             "Alt": "Image of Joel Campos"
         }
+    },
+    "about-me": {
+        "Title": "A little bit about me"
     }
 }

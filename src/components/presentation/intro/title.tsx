@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import styles from "./title.module.pcss";
 import { Translation } from "@i18n/translation.enum";
+import CodeTag from "@components/ui/text/code-tag";
 
 export default function Title() {
   const { t } = useTranslation([Translation.PRESENTATION]);
@@ -19,7 +20,7 @@ export default function Title() {
           className="text-2xl sm:text-4xl"
           aria-description={t("intro.title.Subtitle")}
         >
-          {"<" + t("intro.title.Subtitle") + "/>"}
+          <CodeTag text={t("intro.title.Subtitle")} />
         </h2>
       </div>
     </div>
