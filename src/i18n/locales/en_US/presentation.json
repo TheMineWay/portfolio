@@ -24,6 +24,24 @@
         "quotes": {
             "1": {
                 "Text": "I love afterworks!"
+            },
+            "2": {
+                "Text": "When is the next bootcamp starting?"
+            },
+            "3": {
+                "Text": "Time to join a game JAM!"
+            },
+            "4": {
+                "Text": "A new JS framework! Willing to try it out"
+            },
+            "5": {
+                "Text": "Can't wait for the next hackaton"
+            },
+            "6": {
+                "Text": "I had a new project idea!"
+            },
+            "7": {
+                "Text": "Maybe it's time to code & coffee"
             }
         }
     },
