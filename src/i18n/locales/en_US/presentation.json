@@ -23,25 +23,46 @@
         "Title": "A little bit about me",
         "quotes": {
             "aw": {
-                "Text": "I love afterworks!"
+                "Text": "I love afterworks!",
+                "icon": {
+                    "Alt": "Beer"
+                }
             },
             "bootcamp": {
-                "Text": "When is the next bootcamp starting?"
+                "Text": "When is the next bootcamp starting?",
+                "icon": {
+                    "Alt": "Books"
+                }
             },
             "jam": {
-                "Text": "Time to join a game JAM!"
+                "Text": "Time to join a game JAM!",
+                "icon": {
+                    "Alt": "Pacman"
+                }
             },
             "js": {
-                "Text": "A new JS framework! Willing to try it out"
+                "Text": "A new JS framework! Willing to try it out",
+                "icon": {
+                    "Alt": "JavaScript logo"
+                }
             },
             "ht": {
-                "Text": "Can't wait for the next hackaton"
+                "Text": "Can't wait for the next hackaton",
+                "icon": {
+                    "Alt": "Developer symbol"
+                }
             },
             "idea": {
-                "Text": "I had a new project idea!"
+                "Text": "I had a new project idea!",
+                "icon": {
+                    "Alt": "Lightbulb"
+                }
             },
             "coffee": {
-                "Text": "Maybe it's time to code & coffee"
+                "Text": "Maybe it's time to code & coffee",
+                "icon": {
+                    "Alt": "Portable coffee"
+                }
             }
         }
     },

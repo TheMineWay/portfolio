@@ -7,7 +7,6 @@ type Props = {
   quote: string;
   icon: {
     src: string;
-    alt: string;
   };
   offset: {
     x: number;
@@ -19,7 +18,7 @@ type Props = {
 
 export default function AboutMeQuote({
   quote,
-  icon: { src: iconSrc, alt: iconAlt },
+  icon: { src: iconSrc },
   offset: { x: xOffset, y: yOffset, right: isRight },
   index,
 }: Props) {
@@ -45,7 +44,7 @@ export default function AboutMeQuote({
         <div className={styles.content}>
           <p>{t(`about-me.quotes.${quote}.Text`)}</p>
         </div>
-        <img src={iconSrc} alt={iconAlt} />
+        <img src={iconSrc} alt={t(`about-me.quotes.${quote}.icon.Alt`)} />
       </div>
     </div>
   );

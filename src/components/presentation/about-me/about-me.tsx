@@ -13,7 +13,6 @@ export default function AboutMe() {
     quote: string;
     icon: {
       src: string;
-      alt: string;
     };
     offset: {
       x: number;
@@ -24,7 +23,6 @@ export default function AboutMe() {
       quote: "aw",
       icon: {
         src: beer,
-        alt: "Beer",
       },
       offset: {
         x: 30,
@@ -34,7 +32,6 @@ export default function AboutMe() {
       quote: "bootcamp",
       icon: {
         src: book,
-        alt: "Book",
       },
       offset: {
         x: 35,
@@ -45,7 +42,6 @@ export default function AboutMe() {
       quote: "ht",
       icon: {
         src: code,
-        alt: "Code",
       },
       offset: {
         x: 5,
@@ -55,7 +51,6 @@ export default function AboutMe() {
       quote: "jam",
       icon: {
         src: game,
-        alt: "Game",
       },
       offset: {
         x: 15,
@@ -66,7 +61,6 @@ export default function AboutMe() {
       quote: "js",
       icon: {
         src: js,
-        alt: "JavaScript",
       },
       offset: {
         x: 40,
@@ -77,7 +71,6 @@ export default function AboutMe() {
       quote: "idea",
       icon: {
         src: idea,
-        alt: "Idea",
       },
       offset: {
         x: 60,
@@ -88,7 +81,6 @@ export default function AboutMe() {
       quote: "coffee",
       icon: {
         src: coffee,
-        alt: "Coffee",
       },
       offset: {
         x: 25,
