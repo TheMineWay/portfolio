@@ -4,6 +4,7 @@ import SectionTitle from "./decoration/section-title";
 import { useTranslation } from "react-i18next";
 import { Translation } from "@i18n/translation.enum";
 import AboutMe from "./about-me/about-me";
+import WhatIDo from "./what-i-do/what-i-do";
 
 export default function Presentation() {
   const { t } = useTranslation([Translation.PRESENTATION]);
@@ -23,7 +24,7 @@ export default function Presentation() {
       </ParallaxLayer>
 
       <ParallaxLayer offset={2}>
-        <SectionTitle title={t("i-do.Title")} />
+        <WhatIDo />
       </ParallaxLayer>
 
       <ParallaxLayer offset={3}>
