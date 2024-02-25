@@ -1,46 +1,32 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import PresentationIntro from "./intro/presentation-intro";
 import SectionTitle from "./decoration/section-title";
-import PresentationAboutMeCard from "./about-me/presentation-about-me-card";
 import { useTranslation } from "react-i18next";
 import { Translation } from "@i18n/translation.enum";
+import AboutMe from "./about-me/about-me";
 
 export default function Presentation() {
   const { t } = useTranslation([Translation.PRESENTATION]);
 
   return (
-    <Parallax pages={7}>
+    <Parallax pages={4}>
       <ParallaxLayer offset={0}>
         <PresentationIntro />
       </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 1, end: 2.25 }}>
+
+      <ParallaxLayer offset={1}>
         <SectionTitle title={t("about-me.Title")} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={1}>
-        <PresentationAboutMeCard
-          baseKey="about-me.cards.learner"
-          emojis={["school"]}
-        />
-      </ParallaxLayer>
-      <ParallaxLayer offset={1.5}>
-        <PresentationAboutMeCard
-          baseKey="about-me.cards.sports"
-          emojis={["sprint"]}
-        />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2}>
-        <PresentationAboutMeCard
-          baseKey="about-me.cards.social"
-          emojis={["sports_bar"]}
-        />
+      <ParallaxLayer offset={1} speed={1.1}>
+        <AboutMe />
       </ParallaxLayer>
 
-      <ParallaxLayer sticky={{ start: 3, end: 5 }}>
+      <ParallaxLayer offset={2}>
         <SectionTitle title={t("i-do.Title")} />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6}>
+      <ParallaxLayer offset={3}>
         <PresentationIntro />
       </ParallaxLayer>
     </Parallax>

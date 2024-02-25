@@ -21,18 +21,9 @@
     },
     "about-me": {
         "Title": "A little bit about me",
-        "cards": {
-            "learner": {
-                "Title": "A passionate learner",
-                "Description": "Always expecting to face new challenges and learn new things."
-            },
-            "sports": {
-                "Title": "Sportsman",
-                "Description": "Nothing is better than practicing sports before the day starts."
-            },
-            "social": {
-                "Title": "Social",
-                "Description": "A friendly person who loves meeting new people. Never going to say no to an afterwork!"
+        "quotes": {
+            "1": {
+                "Text": "I love afterworks!"
             }
         }
     },
