@@ -22,25 +22,25 @@
     "about-me": {
         "Title": "A little bit about me",
         "quotes": {
-            "1": {
+            "aw": {
                 "Text": "I love afterworks!"
             },
-            "2": {
+            "bootcamp": {
                 "Text": "When is the next bootcamp starting?"
             },
-            "3": {
+            "jam": {
                 "Text": "Time to join a game JAM!"
             },
-            "4": {
+            "js": {
                 "Text": "A new JS framework! Willing to try it out"
             },
-            "5": {
+            "ht": {
                 "Text": "Can't wait for the next hackaton"
             },
-            "6": {
+            "idea": {
                 "Text": "I had a new project idea!"
             },
-            "7": {
+            "coffee": {
                 "Text": "Maybe it's time to code & coffee"
             }
         }
