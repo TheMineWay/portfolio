@@ -11,7 +11,7 @@ export default function PresentationIntro() {
   const { t } = useTranslation([Translation.PRESENTATION]);
 
   return (
-    <div className="grid content-between gap-12 h-full">
+    <div className="grid content-between gap-12 h-full px-4">
       <span></span>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-12 lg:gap-24">
         <Title />
