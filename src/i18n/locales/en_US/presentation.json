@@ -34,7 +34,17 @@
         "techs": {
             "web": {
                 "Title": "Web",
-                "Description": "I am an experienced web developer. I worked with different libraries and languages on professional and personal projects."
+                "Description": "I am an experienced web developer. I worked with different libraries and languages on professional and personal projects.",
+                "techs": {
+                    "reactive": {
+                        "Title": "Reactive web apps",
+                        "Description": "I masterized in ReactJS development (using Typescript + Vite) as I developed dozens of projects using it. Also I am used to work with Svelte and Vue."
+                    },
+                    "commons": {
+                        "Title": "Web commons",
+                        "Description": "As an experienced web developer I excel when using the common web languages."
+                    }
+                }
             }
         }
     }
