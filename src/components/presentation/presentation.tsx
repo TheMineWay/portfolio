@@ -4,8 +4,6 @@ import SectionTitle from "./decoration/section-title";
 import PresentationAboutMeCard from "./about-me/presentation-about-me-card";
 import { useTranslation } from "react-i18next";
 import { Translation } from "@i18n/translation.enum";
-import PresentationTechTitle from "./tech/presentation-tech-title";
-import PresentationTech from "./tech/presentation-tech";
 
 export default function Presentation() {
   const { t } = useTranslation([Translation.PRESENTATION]);
@@ -39,29 +37,7 @@ export default function Presentation() {
       </ParallaxLayer>
 
       <ParallaxLayer sticky={{ start: 3, end: 5 }}>
-        <SectionTitle title={t("tech.Title")} />
-      </ParallaxLayer>
-
-      <ParallaxLayer sticky={{ start: 3, end: 5 }}>
-        <PresentationTechTitle
-          tech={t("tech.techs.web.Title")}
-          description={t("tech.techs.web.Description")}
-          image={<span className="material-symbols-outlined">public</span>}
-        />
-      </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 3, end: 4 }}>
-        <PresentationTech
-          tech={t("tech.techs.web.techs.reactive.Title")}
-          description={t("tech.techs.web.techs.reactive.Description")}
-          tags={["React", "Svelte", "Vue"]}
-        />
-      </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 4.5, end: 5 }}>
-        <PresentationTech
-          tech={t("tech.techs.web.techs.commons.Title")}
-          description={t("tech.techs.web.techs.commons.Description")}
-          tags={["JavaScript/TypeScript", "HTML", "CSS/PostCSS"]}
-        />
+        <SectionTitle title={t("i-do.Title")} />
       </ParallaxLayer>
 
       <ParallaxLayer offset={6}>

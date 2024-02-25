@@ -4,6 +4,8 @@ import { Translation } from "@i18n/translation.enum";
 import styles from "./presentation-intro.module.pcss";
 
 import meImage from "@assets/me/me.jpg";
+import linkedin from "@assets/social/linkedin.png";
+import github from "@assets/social/github.png";
 
 export default function PresentationIntro() {
   const { t } = useTranslation([Translation.PRESENTATION]);
@@ -15,8 +17,23 @@ export default function PresentationIntro() {
         <Title />
         <img alt={t("intro.image.Alt")} src={meImage} className={styles.me} />
       </div>
-      <div className="flex justify-center">
-        <p className={`pb-4 ${styles.scroll}`}>{t("actions.Scroll")}</p>
+      <div
+        className={`px-4 pb-4 justify-self-end flex justify-center gap-4 ${styles.social}`}
+      >
+        <a
+          href="https://github.com/TheMineWay"
+          target="_blank"
+          aria-description={t("intro.social.github.Aria-description")}
+        >
+          <img src={github} alt={t("intro.social.github.Alt")} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/joelcamposoliva/"
+          target="_blank"
+          aria-description={t("intro.social.linkedin.Aria-description")}
+        >
+          <img src={linkedin} alt={t("intro.social.linkedin.Alt")} />
+        </a>
       </div>
     </div>
   );

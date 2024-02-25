@@ -1,7 +1,4 @@
 {
-    "actions": {
-        "Scroll": "Scroll down"
-    },
     "intro": {
         "title": {
             "Name": "Hi, my name is",
@@ -10,6 +7,16 @@
         },
         "image": {
             "Alt": "Image of Joel Campos"
+        },
+        "social": {
+            "linkedin": {
+                "Alt": "Linkedin icon",
+                "Aria-description": "Linkedin profile"
+            },
+            "github": {
+                "Alt": "Github icon",
+                "Aria-description": "Github profile"
+            }
         }
     },
     "about-me": {
@@ -29,23 +36,7 @@
             }
         }
     },
-    "tech": {
-        "Title": "What I do",
-        "techs": {
-            "web": {
-                "Title": "Web",
-                "Description": "I am an experienced web developer. I worked with different libraries and languages on professional and personal projects.",
-                "techs": {
-                    "reactive": {
-                        "Title": "Reactive web apps",
-                        "Description": "I masterized in ReactJS development (using Typescript + Vite) as I developed dozens of projects using it. Also I am used to work with Svelte and Vue."
-                    },
-                    "commons": {
-                        "Title": "Web commons",
-                        "Description": "As an experienced web developer I excel when using the common web languages."
-                    }
-                }
-            }
-        }
+    "i-do": {
+        "Title": "What I do"
     }
 }
