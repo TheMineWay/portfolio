@@ -1,7 +1,4 @@
 {
-    "actions": {
-        "Scroll": "Scroll down"
-    },
     "intro": {
         "title": {
             "Name": "Hi, my name is",
@@ -10,42 +7,66 @@
         },
         "image": {
             "Alt": "Image of Joel Campos"
+        },
+        "social": {
+            "linkedin": {
+                "Alt": "Linkedin icon",
+                "Aria-description": "Linkedin profile"
+            },
+            "github": {
+                "Alt": "Github icon",
+                "Aria-description": "Github profile"
+            }
         }
     },
     "about-me": {
         "Title": "A little bit about me",
-        "cards": {
-            "learner": {
-                "Title": "A passionate learner",
-                "Description": "Always expecting to face new challenges and learn new things."
+        "quotes": {
+            "aw": {
+                "Text": "I love afterworks!",
+                "icon": {
+                    "Alt": "Beer"
+                }
             },
-            "sports": {
-                "Title": "Sportsman",
-                "Description": "Nothing is better than practicing sports before the day starts."
+            "bootcamp": {
+                "Text": "When is the next bootcamp starting?",
+                "icon": {
+                    "Alt": "Books"
+                }
             },
-            "social": {
-                "Title": "Social",
-                "Description": "A friendly person who loves meeting new people. Never going to say no to an afterwork!"
-            }
-        }
-    },
-    "tech": {
-        "Title": "What I do",
-        "techs": {
-            "web": {
-                "Title": "Web",
-                "Description": "I am an experienced web developer. I worked with different libraries and languages on professional and personal projects.",
-                "techs": {
-                    "reactive": {
-                        "Title": "Reactive web apps",
-                        "Description": "I masterized in ReactJS development (using Typescript + Vite) as I developed dozens of projects using it. Also I am used to work with Svelte and Vue."
-                    },
-                    "commons": {
-                        "Title": "Web commons",
-                        "Description": "As an experienced web developer I excel when using the common web languages."
-                    }
+            "jam": {
+                "Text": "Time to join a game JAM!",
+                "icon": {
+                    "Alt": "Pacman"
+                }
+            },
+            "js": {
+                "Text": "A new JS framework! Willing to try it out",
+                "icon": {
+                    "Alt": "JavaScript logo"
+                }
+            },
+            "ht": {
+                "Text": "Can't wait for the next hackaton",
+                "icon": {
+                    "Alt": "Developer symbol"
+                }
+            },
+            "idea": {
+                "Text": "I had a new project idea!",
+                "icon": {
+                    "Alt": "Lightbulb"
+                }
+            },
+            "coffee": {
+                "Text": "Maybe it's time to code & coffee",
+                "icon": {
+                    "Alt": "Portable coffee"
                 }
             }
         }
+    },
+    "i-do": {
+        "Title": "What I do"
     }
 }

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import styles from "./title.module.pcss";
 import { Translation } from "@i18n/translation.enum";
 import CodeTag from "@components/ui/text/code-tag";
+import styles from "./title.module.pcss";
 
 export default function Title() {
   const { t } = useTranslation([Translation.PRESENTATION]);
