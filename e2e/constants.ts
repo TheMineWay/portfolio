@@ -14,3 +14,7 @@ export type ColorScheme = (typeof COLOR_SCHEMES)[number];
 /** Build a full URL for a given locale and path. */
 export const url = (path: string, locale: TestLocale = DEFAULT_LOCALE) =>
   `${BASE_URL}/${locale}${path}`;
+
+/** All page routes to test. Add new routes here as pages are created. */
+export const PAGES = ['/'] as const;
+export type TestPage = (typeof PAGES)[number];

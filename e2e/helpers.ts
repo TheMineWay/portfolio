@@ -1,5 +1,6 @@
 import { test, Page } from '@playwright/test';
-import { url, LOCALES, COLOR_SCHEMES, type TestLocale, type ColorScheme } from './constants';
+import { url, LOCALES, COLOR_SCHEMES, PAGES, type TestLocale, type ColorScheme, type TestPage } from './constants';
+
 
 /** Navigate to a locale-prefixed path. */
 export async function gotoLocale(page: Page, path: string, locale?: TestLocale) {
@@ -33,4 +34,12 @@ export function forEachCase(name: string, fn: CaseTestCallback) {
       }
     }
   });
+}
+
+type PageTestCallback = (args: { path: string }) => Promise<void>;
+
+export function forEachPage(fn: PageTestCallback) {
+  for (const path of PAGES) {
+    fn({ path });
+  }
 }
