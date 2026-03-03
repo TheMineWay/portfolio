@@ -1,6 +1,15 @@
 {
+  "author": {
+    "name": "Joel Campos",
+    "url": "https://es.linkedin.com/in/joelcamposoliva"
+  },
+  "repository": {
+    "url": "https://github.com/TheMineWay/portfolio",
+    "type": "git"
+  },
   "name": "portfolio",
-  "version": "0.1.0",
+  "description": "My portfolio",
+  "version": "1.0.0-alpha",
   "private": true,
   "scripts": {
     "dev": "next dev",
