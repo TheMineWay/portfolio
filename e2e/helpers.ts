@@ -1,5 +1,5 @@
 import { test, Page } from '@playwright/test';
-import { url, LOCALES, COLOR_SCHEMES, PAGES, type TestLocale, type ColorScheme, type TestPage } from './constants';
+import { url, LOCALES, COLOR_SCHEMES, PAGES, type TestLocale, type ColorScheme } from './constants';
 
 
 /** Navigate to a locale-prefixed path. */
