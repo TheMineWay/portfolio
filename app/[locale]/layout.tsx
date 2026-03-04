@@ -39,7 +39,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <main>{children}</main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
