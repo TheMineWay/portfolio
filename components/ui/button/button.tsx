@@ -31,9 +31,7 @@ const buttonVariants = cva(
   },
 );
 
-type CustomProps = VariantProps<typeof buttonVariants> & {
-    asChild?: boolean;
-};
+type CustomProps = VariantProps<typeof buttonVariants>;
 
 /* Component */
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & CustomProps;
