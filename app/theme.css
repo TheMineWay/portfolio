@@ -28,7 +28,7 @@
 
   /* --- Secondary --- */
   --secondary: oklch(0.95 0.018 277);
-  --secondary-foreground: oklch(0.585 0.233 277);
+  --secondary-foreground: oklch(0.38 0.18 277);
 
   /* --- Muted --- */
   --muted: #ececf0;
