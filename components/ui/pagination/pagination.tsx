@@ -2,6 +2,7 @@ import type React from "react";
 import clsx from "clsx";
 import { ChevronLeft, ChevronRight, MoreHorizontal } from "lucide-react";
 import { cva, type VariantProps } from "class-variance-authority";
+import Link, { type LinkProps } from "next/link";
 
 const paginationLinkVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
@@ -44,9 +45,9 @@ export type PaginationItemProps = React.HTMLAttributes<HTMLLIElement>;
 
 export const PaginationItem: React.FC<PaginationItemProps> = (props) => <li {...props} />;
 
-export type PaginationLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> &
+export type PaginationLinkProps = LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement> &
   VariantProps<typeof paginationLinkVariants> & {
-    isActive?: boolean;
+    isActive?: boolean; 
   };
 
 export const PaginationLink: React.FC<PaginationLinkProps> = ({
@@ -57,7 +58,7 @@ export const PaginationLink: React.FC<PaginationLinkProps> = ({
   children,
   ...props
 }) => (
-  <a
+  <Link
     aria-current={isActive ? "page" : undefined}
     data-active={isActive}
     className={paginationLinkVariants({
@@ -66,7 +67,7 @@ export const PaginationLink: React.FC<PaginationLinkProps> = ({
       className,
     })}
     {...props}
-  >{children}</a>
+  >{children}</Link>
 );
 
 export type PaginationPreviousProps = Omit<PaginationLinkProps, "size">;

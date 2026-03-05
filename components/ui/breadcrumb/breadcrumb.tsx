@@ -1,6 +1,7 @@
 import type React from "react";
 import clsx from "clsx";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
+import Link, { type LinkProps } from "next/link";
 
 export type BreadcrumbProps = React.HTMLAttributes<HTMLElement>;
 
@@ -26,10 +27,10 @@ export const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({ className, ...pr
   <li className={clsx("inline-flex items-center gap-1.5", className)} {...props} />
 );
 
-export type BreadcrumbLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
+export type BreadcrumbLinkProps = LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const BreadcrumbLink: React.FC<BreadcrumbLinkProps> = ({ className, children, ...props }) => (
-  <a className={clsx("hover:text-foreground transition-colors", className)} {...props}>{children}</a>
+  <Link className={clsx("hover:text-foreground transition-colors", className)} {...props}>{children}</Link>
 );
 
 export type BreadcrumbPageProps = React.HTMLAttributes<HTMLSpanElement>;
