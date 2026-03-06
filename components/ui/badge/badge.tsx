@@ -14,9 +14,15 @@ const badgeVariants = cva(
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
       },
+      size: {
+          md: "h-5 px-2 text-xs",
+          lg: "h-6 px-3 text-sm",
+          xl: "h-7 px-4 text-sm",
+      }
     },
     defaultVariants: {
       variant: "primary",
+      size: "md",
     },
   },
 );
@@ -25,6 +31,6 @@ type CustomProps = VariantProps<typeof badgeVariants>;
 
 export type BadgeProps = React.HTMLAttributes<HTMLDivElement> & CustomProps;
 
-export const Badge: React.FC<BadgeProps> = ({ children, className, variant, ...props }) => {
-    return <div {...props} className={badgeVariants({ variant, className })}>{children}</div>;
+export const Badge: React.FC<BadgeProps> = ({ children, className, variant, size, ...props }) => {
+    return <div {...props} className={badgeVariants({ variant, size, className })}>{children}</div>;
 };

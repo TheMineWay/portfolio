@@ -7,7 +7,7 @@ const SECTION_CLASSNAME = "flex items-center justify-center";
 export default function Page() {
   return SECTIONS.map(({ key, component, className }) => (
         <section key={key} className={clsx(SECTION_CLASSNAME, className)}>
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-20'>
+          <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-20'>
             {component}
           </div>
         </section>

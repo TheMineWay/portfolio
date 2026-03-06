@@ -1,4 +1,24 @@
 {
+  "about-me": {
+    "Title": "About me",
+    "Subtitle": "Passionate developer with 5+ years of experience building web applications",
+    "Paragraph1": "I'm a full-stack developer based in Barcelona, specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.",
+    "Paragraph2": "With a strong foundation in both front-end and back-end development, I bring ideas to life through code. I'm always learning new technologies and best practices to deliver the best solutions.",
+    "features": {
+      "clean-code": {
+        "Title": "Clean code",
+        "Description": "Writing maintainable, scalable, and efficient code following best practices."
+      },
+      "performance": {
+        "Title": "Performance",
+        "Description": "Building fast, optimized applications that deliver excellent user experiences."
+      },
+      "problem-solving": {
+        "Title": "Problem solving",
+        "Description": "Breaking down complex problems into simple, effective solutions through thoughtful design and engineering."
+      }
+    }
+  },
   "about-me-hero": {
     "Title": "Hi, I'm",
     "Subtitle": "Senior Full-Stack Developer",
