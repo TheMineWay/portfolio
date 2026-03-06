@@ -9,7 +9,7 @@ import { ActionIcon } from "@/components/ui/button/action-icon";
 import { SOCIAL } from "@/constants/social.constants";
 import { Linkedin } from "@/components/icons/linkedin";
 
-export const AboutMeHero: React.FC = async () => {
+export const Hero: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
 
     return (
