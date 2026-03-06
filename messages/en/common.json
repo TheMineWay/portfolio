@@ -1,0 +1,7 @@
+{
+    "components": {
+        "avatar": {
+            "Alt": "Avatar image of {name}"
+        }
+    }
+}

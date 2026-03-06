@@ -1,3 +1,4 @@
 export enum TranslationNamespace {
-  HOME = 'home',
+  ABOUT = 'about',
+  COMMON = 'common',
 }

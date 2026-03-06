@@ -1,8 +1,9 @@
-import { TranslationNamespace } from '@/i18n/namespaces';
-import { getTranslations } from 'next-intl/server';
+import { AboutMeHero } from '@/components/about/about-me-hero';
 
 export default async function Page() {
-  const t = await getTranslations(TranslationNamespace.HOME);
-
-  return <h1>{t('title')}</h1>;
+  return <section className="min-h-screen flex items-center justify-center pt-16">
+    <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+      <AboutMeHero/>
+    </div>
+  </section>;
 }
