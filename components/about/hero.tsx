@@ -1,4 +1,3 @@
-import type React from "react";
 import { Avatar } from "@/components/commpon/avatar/avatar";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
