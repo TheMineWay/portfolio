@@ -6,6 +6,7 @@
     },
     "expressions": {
         "Present": "Present",
-        "Current": "Current"
+        "Current": "Current",
+        "Logo-of": "Logo of {name}"
     }
 }

@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card/card";
 import { Badge } from "@/components/ui/badge/badge";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
+import Image from "next/image";
 
 type Props = {
     experience: WorkExperience;
@@ -13,9 +14,9 @@ type Props = {
 
 export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: { company, fromDate, toDate, location } }) => {
     const commonT = await getTranslations(TranslationNamespace.COMMON);
-    
+
     const isCurrent = toDate === null;
-    const { name: companyName } = COMPANIES[company];
+    const { name: companyName, logo } = COMPANIES[company];
 
     return (
 
@@ -31,17 +32,23 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-3 left-4 right-4">
                     <div className="flex items-start justify-between">
-                        <div>
-                            <h3 className="text-white mb-1">{companyName}</h3>
-                            <div className="flex items-center gap-3 text-white/80 text-xs">
-                                <span className="flex items-center gap-1">
-                                    <MapPin className="h-3 w-3" />
-                                    {location}
-                                </span>
-                                <span className="flex items-center gap-1">
-                                    <Calendar className="h-3 w-3" />
-                                    {formatPeriod(fromDate, toDate)}
-                                </span>
+                        <div className="flex gap-2 items-center">
+                            {/* Logo */}
+                            <Image alt={commonT('expressions.Logo-of', { name: companyName })} {...logo} className="w-12 h-12"/>
+
+                            {/* Details */}
+                            <div>
+                                <h3 className="text-white mb-1">{companyName}</h3>
+                                <div className="flex items-center gap-3 text-white/80 text-xs">
+                                    <span className="flex items-center gap-1">
+                                        <MapPin className="h-3 w-3" />
+                                        {location}
+                                    </span>
+                                    <span className="flex items-center gap-1">
+                                        <Calendar className="h-3 w-3" />
+                                        {formatPeriod(fromDate, toDate)}
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         {isCurrent && (
