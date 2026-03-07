@@ -1,0 +1,7 @@
+/**
+ * Extension of the default Tailwind CSS styles for the app.
+ */
+
+.bg-section {
+    background-color: var(--section-background);
+}

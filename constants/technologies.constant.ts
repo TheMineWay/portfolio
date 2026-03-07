@@ -1,0 +1,1 @@
+export const TOP_TECHNOLOGIES = ['React', 'TypeScript', 'Node.js', 'NestJS', 'Next.js', '.NET', 'PostgreSQL'];
