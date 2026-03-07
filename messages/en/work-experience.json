@@ -29,10 +29,12 @@
   },
   "companies": {
     "primer-impacto": {
-        "Description": ""
+        "Description": "",
+        "Banner-alt": "Grandland offices, where Primer Impacto is located"
     },
     "decathlon": {
-        "Description": ""
+        "Description": "",
+        "Banner-alt": "Decathlon store"
     }
   },
   "summary": {

@@ -17,7 +17,7 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
 
     const isCurrent = toDate === null;
-    const { name: companyName, logo } = COMPANIES[company];
+    const { name: companyName, logo, banner } = COMPANIES[company];
 
     return (
 
@@ -25,11 +25,13 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
             className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
         >
             <div className="relative h-40 overflow-hidden">
-                {/* <Image
-                    src={exp.image}
-                    alt={exp.company}
+                <Image
+                    src={banner.src}
+                    height={banner.height}
+                    width={banner.width}
+                    alt={t(`companies.${company}.Banner-alt`)}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                /> */}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-3 left-4 right-4">
                     <div className="flex items-start justify-between">
