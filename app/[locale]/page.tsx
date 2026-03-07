@@ -5,13 +5,15 @@ import clsx from 'clsx';
 const SECTION_CLASSNAME = "flex items-center justify-center";
 
 export default function Page() {
-  return SECTIONS.map(({ key, component, className }) => (
-        <section id={key} key={key} className={clsx(SECTION_CLASSNAME, className)}>
-          <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-20'>
-            {component}
-          </div>
-        </section>
-      ));
+  return SECTIONS.map(({ key, component, className, sectionBg = false }) => (
+    <section id={key} key={key} className={clsx(SECTION_CLASSNAME, className, {
+      'bg-section': sectionBg,
+    })}>
+      <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-20'>
+        {component}
+      </div>
+    </section>
+  ));
 };
 
 type Section = {
@@ -24,12 +26,12 @@ type Section = {
 const SECTIONS: Section[] = [
   {
     key: 'hero',
-    component: <Hero/>,
+    component: <Hero />,
     className: 'min-h-screen',
   },
   {
     key: 'about',
-    component: <AboutMe/>,
-    className: 'bg-section'
+    component: <AboutMe />,
+    sectionBg: true,
   }
 ];
