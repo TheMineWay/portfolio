@@ -22,7 +22,7 @@ export const WorkExperienceSummary: React.FC = async () => {
         </div>
 
         {/* Experiences */}
-        <div className="grid lg:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6 [&>*:last-child:nth-child(odd)]:lg:col-span-2 [&>*:last-child:nth-child(odd)]:lg:max-w-[calc(50%-12px)] [&>*:last-child:nth-child(odd)]:lg:mx-auto [&>*:last-child:nth-child(odd)]:lg:w-full">
             {experiences.map(experience => (
                 <WorkExperienceSummaryCard experience={experience} key={experience.key}/>
             ))}
