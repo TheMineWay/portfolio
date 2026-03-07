@@ -1,5 +1,5 @@
-import { AboutMe } from '@/components/about/about-me';
-import { Hero } from '@/components/about/hero';
+import { AboutMe } from '@/features/about/about-me';
+import { Hero } from '@/features/about/hero';
 import clsx from 'clsx';
 
 const SECTION_CLASSNAME = "flex items-center justify-center";

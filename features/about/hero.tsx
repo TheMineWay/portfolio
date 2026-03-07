@@ -1,4 +1,4 @@
-import { Avatar } from "@/components/commpon/avatar/avatar";
+import { Avatar } from "@/components/common/avatar/avatar";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import pk from "@/package.json";
