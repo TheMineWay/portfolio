@@ -3,5 +3,9 @@
         "avatar": {
             "Alt": "Avatar image of {name}"
         }
+    },
+    "expressions": {
+        "Present": "Present",
+        "Current": "Current"
     }
 }

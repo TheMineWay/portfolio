@@ -2,53 +2,14 @@
   "Title": "Work Experience",
   "Subtitle": "My professional journey and the amazing companies I've worked with",
   "experiences": {
-    "tech-innovations": {
-      "Company": "Tech Innovations Inc.",
-      "Position": "Senior Full-Stack Developer",
-      "Period": "2022 - Present",
-      "Location": "San Francisco, CA",
-      "Description": "Leading development of cloud-based SaaS platform serving 50K+ users. Architected microservices infrastructure and mentored junior developers.",
-      "achievements": {
-        "api-optimization": "Reduced API response time by 60% through optimization",
-        "team-leadership": "Led team of 5 developers on major product releases",
-        "cicd-pipeline": "Implemented CI/CD pipeline reducing deployment time by 80%"
-      }
+    
+  },
+  "companies": {
+    "primer-impacto": {
+        "Description": ""
     },
-    "digital-solutions": {
-      "Company": "Digital Solutions Agency",
-      "Position": "Full-Stack Developer",
-      "Period": "2020 - 2022",
-      "Location": "Remote",
-      "Description": "Built custom web applications for diverse clients including e-commerce, healthcare, and fintech sectors.",
-      "achievements": {
-        "client-projects": "Delivered 15+ client projects with 100% satisfaction rate",
-        "performance": "Improved site performance by 45% average across projects",
-        "best-practices": "Established best practices for code review and testing"
-      }
-    },
-    "startup-labs": {
-      "Company": "Startup Labs",
-      "Position": "Frontend Developer",
-      "Period": "2019 - 2020",
-      "Location": "New York, NY",
-      "Description": "Developed responsive web applications and collaborated with designers to create intuitive user experiences.",
-      "achievements": {
-        "component-library": "Built reusable component library used across 10+ projects",
-        "user-engagement": "Increased user engagement by 35% through UX improvements",
-        "mentorship": "Mentored 3 junior developers and interns"
-      }
-    },
-    "freelancehub": {
-      "Company": "FreelanceHub",
-      "Position": "Web Developer",
-      "Period": "2018 - 2019",
-      "Location": "Remote",
-      "Description": "Provided web development services to small businesses and startups, specializing in landing pages and business websites.",
-      "achievements": {
-        "projects-completed": "Completed 20+ projects for various clients",
-        "client-satisfaction": "Maintained 4.9/5 client satisfaction rating",
-        "wordpress-themes": "Developed custom WordPress themes and plugins"
-      }
+    "decathlon": {
+        "Description": ""
     }
   }
 }
