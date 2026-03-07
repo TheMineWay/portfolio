@@ -2,8 +2,8 @@
   "about-me": {
     "Title": "About me",
     "Subtitle": "Passionate developer with 5+ years of experience building web applications",
-    "Paragraph1": "I'm a full-stack developer based in Barcelona, specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.",
-    "Paragraph2": "With a strong foundation in both front-end and back-end development, I bring ideas to life through code. I'm always learning new technologies and best practices to deliver the best solutions.",
+    "About-me": "I'm a full-stack developer based in Barcelona, specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.",
+    "About-my-work": "With a strong foundation in both front-end and back-end development, I bring ideas to life through code. I'm always learning new technologies and best practices to deliver the best solutions.",
     "features": {
       "clean-code": {
         "Title": "Clean code",

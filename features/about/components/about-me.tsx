@@ -25,10 +25,10 @@ export const AboutMe: React.FC = async () => {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div>
                     <p className="text-lg mb-4">
-                        {t('about-me.Paragraph1')}
+                        {t('about-me.About-me')}
                     </p>
                     <p className="text-muted-foreground mb-6">
-                        {t('about-me.Paragraph2')}
+                        {t('about-me.About-my-work')}
                     </p>
                     <div className="flex flex-wrap gap-2">
                         {TOP_TECHNOLOGIES.map((tech) => (
