@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import '../globals.css';
 import pk from '../../package.json';
+import { MY_DETAILS } from '@/constants/my-details';
+import '../globals.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: pk.author.name,
+  title: MY_DETAILS.name,
   description: pk.description,
 };
 
