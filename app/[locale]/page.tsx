@@ -11,7 +11,12 @@ export default async function Page() {
   const myJsonLdData = await getMyJsonLd();
 
   return <>
-    <JsonLd data={myJsonLdData}/>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@graph": [
+        myJsonLdData,
+      ]
+    }}/>
     {SECTIONS.map(({ key, component, className, sectionBg = false }) => (
       <section id={key} key={key} className={clsx(SECTION_CLASSNAME, className, {
         'bg-section': sectionBg,
