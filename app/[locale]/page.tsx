@@ -1,5 +1,6 @@
 import { AboutMe } from '@/features/about/about-me';
 import { Hero } from '@/features/about/hero';
+import { WorkExperienceSummary } from '@/features/work-experience/work-experience-summary';
 import clsx from 'clsx';
 
 const SECTION_CLASSNAME = "flex items-center justify-center";
@@ -33,5 +34,10 @@ const SECTIONS: Section[] = [
     key: 'about',
     component: <AboutMe />,
     sectionBg: true,
-  }
+  },
+  {
+    key: 'work-experience',
+    component: <WorkExperienceSummary />,
+    sectionBg: true,
+  },
 ];
