@@ -1,5 +1,5 @@
 type Props = {
-    data: Object;
+    data: object;
 }
 
 export const JsonLd: React.FC<Props> = ({ data }) => {
