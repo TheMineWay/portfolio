@@ -2,7 +2,30 @@
   "Title": "Work Experience",
   "Subtitle": "My professional journey and the amazing companies I've worked with",
   "experiences": {
-    
+    "primer-impacto-1": {
+      "Description": "Developing and maintaining the internal company operational website. Also managing data integrations with customers, ensuring reliability and performance.",
+      "achievements": {
+        "0": "Developed and maintained several data integrations with important customers",
+        "1": "Helped build a brand new Saas for a big pharmaceutic client",
+        "2": "Analyzed and reported critical security issues"
+      }
+    },
+    "decathlon": {
+      "Description": "Developing the Spanish e-commerce and contributing to the international Decathlon UI component library. While all this, I also helped leading the code quality and testing strategy for the frontend team.",
+      "achievements": {
+        "0": "Brought the e-commerce new features with a focus on performance and reliability",
+        "1": "Collaborated with the french team to develop the international UI library",
+        "2": "Co-leaded the code quality and testing strategy for the e-commerce"
+      }
+    },
+    "primer-impacto-2": {
+      "Description": "While developing the internal operational website, I also focused on bringing my expertise on developer experience enhancements, such as testing, better workflows, and improving the overall code quality.",
+      "achievements": {
+        "0": "Brought senior mentorship about code quality, performance and testing",
+        "1": "Optimized the operational website to give the best user experience",
+        "2": "Improved the daily workflow to improve developer experience"
+      }
+    }
   },
   "companies": {
     "primer-impacto": {
@@ -10,6 +33,11 @@
     },
     "decathlon": {
         "Description": ""
+    }
+  },
+  "summary": {
+    "info": {
+      "Key-achievements": "Key Achievements"
     }
   }
 }

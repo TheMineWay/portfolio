@@ -1,12 +1,12 @@
 import type React from "react";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
-import { WORK_EXPERIENCES } from "../constants/work-experience.constants";
 import { WorkExperienceSummaryCard } from "./work-experience-summary-card";
+import { getWorkExperiencesDetails } from "../constants/work-experience.constants";
 
-const experiences = WORK_EXPERIENCES.toSorted((a, b) => a.fromDate.getTime() - b.fromDate.getTime()).reverse();
 
 export const WorkExperienceSummary: React.FC = async () => {
+    const experiences = (await getWorkExperiencesDetails()).toSorted((a, b) => a.fromDate.getTime() - b.fromDate.getTime()).reverse();
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
 
     const [titleTextHighlight, ...titleTextParts] = t('Title').split(' ').toReversed();
