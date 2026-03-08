@@ -4,6 +4,7 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { SectionTitle } from "@/components/common/title/section-title";
 import React from "react";
 import { Cloud, Code2, Container, Database, GitBranch, Globe, Layout, Palette, Server, Wrench, Zap } from "lucide-react";
+import { Badge } from "@/components/ui/badge/badge";
 
 export const MySkills: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
@@ -71,12 +72,13 @@ export const MySkills: React.FC = async () => {
                 'Python',
                 'Playwright'
               ].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-4 py-2 rounded-full border hover:shadow-md transition-all duration-200 cursor-default"
+                <Badge
+                    variant="outline"
+                    size="xxl"
+                    key={skill}
                 >
                   {skill}
-                </span>
+                </Badge>
               ))}
             </div>
           </div>
