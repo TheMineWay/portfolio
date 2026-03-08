@@ -5,18 +5,15 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { Card, CardContent } from "@/components/ui/card/card";
 import { Code2, Puzzle, Zap } from "lucide-react";
 import { TOP_TECHNOLOGIES } from "@/constants/technologies.constant";
+import { SectionTitle } from "@/components/common/title/section-title";
 
 export const AboutMe: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
 
-    const [titleTextHighlight, ...titleTextParts] = t('about-me.Title').split(' ').toReversed();
-
     return (
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">
-                    {titleTextParts.toReversed().join(' ')} <span className="text-primary capitalize">{titleTextHighlight}</span>
-                </h2>
+                <SectionTitle title={t('about-me.Title')} />
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                     {t('about-me.Subtitle')}
                 </p>

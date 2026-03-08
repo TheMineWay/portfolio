@@ -31,5 +31,26 @@
         "Label": "LinkedIn"
       }
     }
+  },
+  "skills": {
+    "Title": "My Skills",
+    "Subtitle": "Technologies and tools I use to bring ideas to life",
+    "groups": {
+      "frontend": {
+        "Title": "Frontend"
+      },
+      "backend": {
+        "Title": "Backend"
+      },
+      "tools-and-devops": {
+        "Title": "Tools & DevOps"
+      },
+      "cloud": {
+        "Title": "Cloud"
+      }
+    },
+    "secondary-skills": {
+      "Title": "Also experienced with"
+    }
   }
 }

@@ -3,19 +3,16 @@ import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { WorkExperienceSummaryCard } from "./work-experience-summary-card";
 import { getWorkExperiencesDetails } from "../constants/work-experience.constants";
+import { SectionTitle } from "@/components/common/title/section-title";
 
 
 export const WorkExperienceSummary: React.FC = async () => {
     const experiences = (await getWorkExperiencesDetails()).toSorted((a, b) => a.fromDate.getTime() - b.fromDate.getTime()).reverse();
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
 
-    const [titleTextHighlight, ...titleTextParts] = t('Title').split(' ').toReversed();
-
     return <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4">
-                {titleTextParts.toReversed().join(' ')} <span className="text-primary capitalize">{titleTextHighlight}</span>
-            </h2>
+            <SectionTitle title={t('Title')} />
             <p className="text-muted-foreground max-w-2xl mx-auto">
                 {t('Subtitle')}
             </p>
