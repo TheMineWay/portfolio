@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card/card";
+ import { Card, CardContent } from "@/components/ui/card/card";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { SectionTitle } from "@/components/common/title/section-title";
@@ -15,6 +15,8 @@ export const MySkills: React.FC = async () => {
               {t('skills.Subtitle')}
             </p>
         </div>
+
+        {/* Main skills */}
         <div className="grid md:grid-cols-2 gap-6">
             {Object.entries(GROUPED_TECHNOLOGIES).map(([group, { icon: CategoryIcon, technologies, color }]) => (
                 <Card key={group} className="overflow-hidden hover:shadow-lg transition-all duration-300 group">
@@ -55,6 +57,29 @@ export const MySkills: React.FC = async () => {
                 </Card>
             ))}
         </div>
+
+        {/* Additional Skills */}
+          <div className="mt-12 text-center">
+            <h3 className="text-xl mb-6 opacity-80">{t('skills.secondary-skills.Title')}</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                'Vitest',
+                'Jest',
+                'Flutter',
+                'Kotlin MP',
+                'Unity',
+                'Python',
+                'Playwright'
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 rounded-full border hover:shadow-md transition-all duration-200 cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
     </div>;
 }
 

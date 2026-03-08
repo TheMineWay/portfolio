@@ -48,6 +48,9 @@
       "cloud": {
         "Title": "Cloud"
       }
+    },
+    "secondary-skills": {
+      "Title": "Also experienced with"
     }
   }
 }
