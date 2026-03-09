@@ -16,7 +16,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     const { name, mainRole } = COMPANIES[company];
     
     return {
-        title: t(`company-page.meta.Title`, { companyName: name, name: MY_DETAILS.name }),
+        title: t(`company-page.meta.Title`, { companyName: name, name: MY_DETAILS.fullName }),
         description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
     };
 };

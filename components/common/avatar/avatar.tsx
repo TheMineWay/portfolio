@@ -10,5 +10,5 @@ export type AvatarProps = Omit<ImageProps, 'src' | 'alt' | 'width' | 'height'>;
 export const Avatar: React.FC<AvatarProps> = async (props) => {
     const t = await getTranslations(TranslationNamespace.COMMON);
 
-    return <Image src={avatarImg.src} alt={t('components.avatar.Alt', { name: MY_DETAILS.name })} width={avatarImg.width} height={avatarImg.height} {...props}/>
+    return <Image src={avatarImg.src} alt={t('components.avatar.Alt', { name: MY_DETAILS.fullName })} width={avatarImg.width} height={avatarImg.height} {...props}/>
 }

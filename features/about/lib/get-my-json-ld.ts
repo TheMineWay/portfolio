@@ -11,7 +11,7 @@ export const getMyJsonLd = async () => {
     return {
         "@type": "Person",
         "@id": `${SITE_URL}/#person`,
-        "name": MY_DETAILS.name,
+        "name": MY_DETAILS.fullName,
         "url": SITE_URL,
         "image": MY_DETAILS.avatar.src,
         "jobTitle": MY_DETAILS.jobTitle,

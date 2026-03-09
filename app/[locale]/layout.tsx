@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: MY_DETAILS.name,
+  title: MY_DETAILS.fullName,
   description: pk.description,
 };
 
