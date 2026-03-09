@@ -7,6 +7,10 @@ export type TestLocale = (typeof LOCALES)[number];
 
 export const DEFAULT_LOCALE: TestLocale = 'en';
 
+/** Existing companies */
+export const COMPANIES = ['primer-impacto', 'decathlon'] as const;
+export type Company = (typeof COMPANIES)[number];
+
 /** Color scheme variants. Extend this when scheme-specific logic is needed. */
 export const COLOR_SCHEMES = ['light', 'dark'] as const;
 export type ColorScheme = (typeof COLOR_SCHEMES)[number];
@@ -16,5 +20,6 @@ export const url = (path: string, locale: TestLocale = DEFAULT_LOCALE) =>
   `${BASE_URL}/${locale}${path}`;
 
 /** All page routes to test. Add new routes here as pages are created. */
-export const PAGES = ['/'] as const;
+const EXPERIENCES_PAGES = COMPANIES.map((company) => `/experiences/${company}`);
+export const PAGES = ['/', ...EXPERIENCES_PAGES] as const;
 export type TestPage = (typeof PAGES)[number];
