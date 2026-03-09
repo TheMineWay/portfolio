@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import pk from '../../package.json';
 import { MY_DETAILS } from '@/constants/my-details';
 import '../globals.css';
+import { Navbar } from '@/components/common/layout/navbar';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>
+          <Navbar/>
           <main>{children}</main>
         </NextIntlClientProvider>
       </body>
