@@ -42,7 +42,7 @@
   },
   "company-page": {
     "meta": {
-      "Title": "{companyName} | {name}`s experience",
+      "Title": "{companyName} | {name}'s experience",
       "Description": "My experience working for {companyName} as a {role}."
     }
   }
