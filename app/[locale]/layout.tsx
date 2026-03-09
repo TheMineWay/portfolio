@@ -6,6 +6,9 @@ import { routing } from '@/i18n/routing';
 import pk from '../../package.json';
 import { MY_DETAILS } from '@/constants/my-details';
 import '../globals.css';
+import { Header } from '@/components/common/layout/header';
+import { Footer } from '@/components/common/layout/footer';
+import { Locale } from '@/i18n/locale';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,6 +24,14 @@ export const metadata: Metadata = {
   title: MY_DETAILS.name,
   description: pk.description,
 };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.values(Locale).map((locale) => ({
+    locale,
+  }))
+}
 
 type Props = Readonly<{
   children: React.ReactNode;
@@ -41,7 +52,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>
+          <Header/>
           <main>{children}</main>
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

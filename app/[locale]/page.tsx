@@ -4,16 +4,11 @@ import { Hero } from '@/features/about/components/hero';
 import { MySkills } from '@/features/about/components/my-skills';
 import { getMyJsonLd } from '@/features/about/lib/get-my-json-ld';
 import { WorkExperienceSummary } from '@/features/work-experience/components/work-experience-summary';
-import { Locale } from '@/i18n/locale';
 import clsx from 'clsx';
 
-const SECTION_CLASSNAME = "flex items-center justify-center";
+export const dynamic = 'force-static';
 
-export function generateStaticParams() {
-  return Object.values(Locale).map((locale) => ({
-    locale,
-  }))
-}
+const SECTION_CLASSNAME = "flex items-center justify-center";
 
 export default async function Page() {
   const myJsonLdData = await getMyJsonLd();

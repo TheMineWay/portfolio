@@ -10,6 +10,7 @@ import { MY_DETAILS } from "@/constants/my-details";
 
 export const Hero: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
+    const commonT = await getTranslations(TranslationNamespace.COMMON);
 
     return (
         <div className="max-w-4xl mx-auto text-center">
@@ -31,7 +32,7 @@ export const Hero: React.FC = async () => {
                 {
                     SOCIAL_LINKS.map(({ key, icon, href }) => (
                         <Link href={href} key={key} target="_blank">
-                            <ActionIcon aria-label={t(`about-me-hero.links.${key}.Label`)}>
+                            <ActionIcon aria-label={commonT("expressions.Link-to", { name: key.charAt(0).toUpperCase() + key.slice(1) })}>
                                 {icon}
                             </ActionIcon>
                         </Link>
