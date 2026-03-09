@@ -11,7 +11,7 @@ export const ThemeToggle: React.FC = () => {
     const { toggle } = useTheme();
 
     return (
-        <Button aria-label={t('components.theme-toggle.Label')} variant='ghost' size='icon' onClick={toggle}>
+        <Button data-testid="theme-toggle" aria-label={t('components.theme-toggle.Label')} variant='ghost' size='icon' onClick={toggle}>
             <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"/>
             <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"/>
         </Button>
