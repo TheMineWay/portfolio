@@ -1,6 +1,7 @@
 import { Github } from "@/components/icons/github";
 import { Linkedin } from "@/components/icons/linkedin";
 import { Button } from "@/components/ui/button/button";
+import { MY_DETAILS } from "@/constants/my-details";
 import { SOCIAL } from "@/constants/social.constants";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { formatDate } from "date-fns";
@@ -16,12 +17,12 @@ export const Footer: React.FC = async () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div className="text-center md:text-left">
-                        {/* MAIN FOOTER SPACE */}
-                    </div>
+                    {/* MAIN FOOTER SPACE */}
+                    {/* <div className="text-center md:text-left">
+                    </div> */}
 
+                    {/* SOCIAL LINKS */}
                     <div className="flex items-center gap-4">
-                        {/* SOCIAL LINKS */}
                        {SOCIAL_LINKS.map(({ name, link, icon }) => (
                          <Link href={link} target="_blank" key={name}>
                             <Button variant="ghost" size="icon" aria-label={t("expressions.Link-to", { name })}>
@@ -32,8 +33,9 @@ export const Footer: React.FC = async () => {
                     </div>
                 </div>
 
+                {/* COPYRIGHT */}
                 <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-                    <p>{CURRENT_YEAR}</p>
+                    <p>{CURRENT_YEAR} - {MY_DETAILS.name}</p>
                 </div>
             </div>
         </div>
@@ -59,4 +61,4 @@ const SOCIAL_LINKS = [
         link: SOCIAL.linkedin,
         icon: <Linkedin className="fill-foreground" />
     }
-];
+] satisfies SocialLink[];
