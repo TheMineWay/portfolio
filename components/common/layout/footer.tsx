@@ -18,8 +18,18 @@ export const Footer: React.FC = async () => {
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     {/* MAIN FOOTER SPACE */}
-                    {/* <div className="text-center md:text-left">
-                    </div> */}
+                    <div className="text-center md:text-left">
+                        <p className="text-sm text-muted-foreground">
+                            {t("components.footer.Line")}
+                        </p>
+                        <Link 
+                            href="/ethics"
+                            className="text-xs mt-2 inline-block hover:opacity-70 transition-opacity"
+                            style={{ color: 'var(--brand-primary)' }}
+                        >
+                            {t("components.footer.links.ethics.Label")} →
+                        </Link>
+                    </div>
 
                     {/* SOCIAL LINKS */}
                     <div className="flex items-center gap-4">
