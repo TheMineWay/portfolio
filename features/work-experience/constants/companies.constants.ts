@@ -47,6 +47,7 @@ export type CompanyMetadata = {
     logo: StaticImageData;
     banner: StaticImageData;
     mainRole: string;
+    keywords: string[];
     jsonLd: OrganizationJsonLd;
 };
 
@@ -56,6 +57,7 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         logo: primerImpactoLogo,
         banner: primerImpactoBanner,
         mainRole: 'Senior Full-Stack DevOps',
+        keywords: ['primer-impacto', 'retail'],
         jsonLd: {
             name: 'PRIMER IMPACTO, S.L.',
             alternateName: 'Primer Impacto',
@@ -93,6 +95,7 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         logo: decathlonLogo,
         banner: decathlonBanner,
         mainRole: 'Frontend Developer',
+        keywords: ['decathlon', 'sports retail'],
         jsonLd: {
             name: 'DECATHLON ESPAÑA, S.A.U.',
             alternateName: 'Decathlon',

@@ -13,11 +13,12 @@ export const dynamic = 'force-static';
 export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
     const { company } = await params;
-    const { name, mainRole } = COMPANIES[company];
+    const { name, mainRole, keywords } = COMPANIES[company];
     
     return {
         title: t(`company-page.meta.Title`, { companyName: name, name: MY_DETAILS.name }),
         description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
+        keywords: [name, ...keywords],
     };
 };
 
