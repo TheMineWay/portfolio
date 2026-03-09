@@ -40,12 +40,12 @@ const LINKS = [
     },
     {
         type: 'anchor',
-        link: 'skills',
-        labelKey: "skills"
+        link: 'work-experience',
+        labelKey: "work-experience"
     },
     {
         type: 'anchor',
-        link: 'work-experience',
-        labelKey: "work-experience"
+        link: 'skills',
+        labelKey: "skills"
     }
 ] satisfies Item[];
