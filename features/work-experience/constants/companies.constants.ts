@@ -15,6 +15,7 @@ export enum Company {
 }
 
 export type OrganizationJsonLd = {
+    "@id": string;
     name: string;
     alternateName: string;
     url: string;
@@ -56,8 +57,9 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         jsonLd: {
             name: 'PRIMER IMPACTO, S.L.',
             alternateName: 'Primer Impacto',
-            url: 'https://primer-impacto.com/cat/',
-            logo: 'https://primer-impacto.com/cat/wp-content/uploads/2020/11/logo-primer-impacto.svg',
+            "@id": "https://primer-impacto.com/#organization",
+            url: 'https://primer-impacto.com',
+            logo: 'https://primer-impacto.com/wp-content/uploads/2023/09/cropped-ISOTIPO-192x192.png',
             email: 'info@primer-impacto.com',
             telephone: '+34 934607775',
             taxID: 'B63947493',
@@ -91,7 +93,8 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         jsonLd: {
             name: 'DECATHLON ESPAÑA, S.A.U.',
             alternateName: 'Decathlon',
-            url: 'https://www.decathlon.es/',
+            "@id": "https://www.decathlon.es/#organization",
+            url: 'https://www.decathlon.es',
             logo: 'https://contents.mediadecathlon.com/s1047283/k$6b1b8a5c8f2f86c3d2a0d50f14b7f4f5/decathlon-logo.jpg',
             email: 'servicio.usuario@decathlon.com',
             telephone: '+34 916233122',
