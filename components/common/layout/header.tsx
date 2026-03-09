@@ -11,10 +11,11 @@ export const Header: React.FC = () => {
                     <span className="text-primary">Joel </span>
                     <span>Campos</span>
                 </Link>
-
-                <Navbar/>
-
-                <ThemeToggle/>
+                <Navbar>
+                    <ThemeToggle/>
+                </Navbar>
+                
+                <ThemeToggle className="md:hidden"/>
             </div>
         </div>
     </header>;
