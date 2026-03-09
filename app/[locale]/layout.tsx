@@ -6,7 +6,7 @@ import { routing } from '@/i18n/routing';
 import pk from '../../package.json';
 import { MY_DETAILS } from '@/constants/my-details';
 import '../globals.css';
-import { Navbar } from '@/components/common/layout/navbar';
+import { Header } from '@/components/common/layout/header';
 import { Footer } from '@/components/common/layout/footer';
 import { Locale } from '@/i18n/locale';
 
@@ -52,7 +52,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>
-          <Navbar/>
+          <Header/>
           <main>{children}</main>
           <Footer/>
         </NextIntlClientProvider>

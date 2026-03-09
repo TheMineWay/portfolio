@@ -5,6 +5,19 @@
         },
         "theme-toggle": {
             "Label": "Toggle theme"
+        },
+        "navbar": {
+            "links": {
+                "about": {
+                    "Label": "About"
+                },
+                "work-experience": {
+                    "Label": "Work experience"
+                },
+                "skills": {
+                    "Label": "Skills"
+                }
+            }
         }
     },
     "expressions": {
