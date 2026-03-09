@@ -7,6 +7,8 @@ import pk from '../../package.json';
 import { MY_DETAILS } from '@/constants/my-details';
 import '../globals.css';
 import { Navbar } from '@/components/common/layout/navbar';
+import { Footer } from '@/components/common/layout/footer';
+import { Locale } from '@/i18n/locale';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -22,6 +24,14 @@ export const metadata: Metadata = {
   title: MY_DETAILS.name,
   description: pk.description,
 };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return Object.values(Locale).map((locale) => ({
+    locale,
+  }))
+}
 
 type Props = Readonly<{
   children: React.ReactNode;
@@ -44,6 +54,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <Navbar/>
           <main>{children}</main>
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>
