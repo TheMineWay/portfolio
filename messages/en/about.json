@@ -22,15 +22,7 @@
   "about-me-hero": {
     "Title": "Hi, I'm",
     "Subtitle": "Senior Full-Stack Developer",
-    "Extra": "I craft beautiful, functional web experiences with modern technologies. Specializing in React, Node.js, and creating seamless user interfaces.",
-    "links": {
-      "github": {
-        "Label": "Github"
-      },
-      "linkedin": {
-        "Label": "LinkedIn"
-      }
-    }
+    "Extra": "I craft beautiful, functional web experiences with modern technologies. Specializing in React, Node.js, and creating seamless user interfaces."
   },
   "skills": {
     "Title": "My Skills",
