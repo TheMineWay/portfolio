@@ -2,6 +2,9 @@
     "components": {
         "avatar": {
             "Alt": "Avatar image of {name}"
+        },
+        "theme-toggle": {
+            "Label": "Toggle theme"
         }
     },
     "expressions": {
