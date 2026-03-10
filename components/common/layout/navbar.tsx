@@ -4,14 +4,9 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import React from "react";
 
-type Props = {
-    children: React.ReactNode;
-}
-
-export const Navbar: React.FC<Props> = ({ children }) => {
+export const Navbar: React.FC = () => {
     return <nav className="hidden md:flex items-center gap-4">
         {LINKS.map((item) => <RenderItem key={item.labelKey} item={item}/>)}
-        {children}
     </nav>
 };
 
