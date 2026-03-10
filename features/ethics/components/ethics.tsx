@@ -26,7 +26,7 @@ export const Ethics: React.FC = async () => {
                     </div>
 
                     {/* Quote */}
-                    <Card className="mb-16 bg-section">
+                    <Card className="mb-16">
                         <CardContent className="p-8">
                             <blockquote className="text-center">
                                 <p className="text-xl md:text-2xl italic mb-4 text-primary">
