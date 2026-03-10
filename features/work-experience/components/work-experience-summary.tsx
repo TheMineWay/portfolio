@@ -4,7 +4,7 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { WorkExperienceSummaryCard } from "./work-experience-summary-card";
 import { getWorkExperiencesDetails } from "../constants/work-experience.constants";
 import { SectionTitle } from "@/components/common/title/section-title";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 
 export const WorkExperienceSummary: React.FC = async () => {
