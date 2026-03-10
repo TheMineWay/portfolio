@@ -8,7 +8,6 @@ import { Callout, CalloutDescription } from "@/components/ui/callout/callout";
 import { SectionTitle } from "@/components/common/title/section-title";
 import { buttonVariants } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
-import { BackHomeLink } from "@/features/work-experience/components/company-page/back-home-link";
 
 export const Ethics: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ETHICS);
