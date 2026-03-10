@@ -1,9 +1,8 @@
 import { Avatar } from "@/components/common/avatar/avatar";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
-import Link from "next/link";
 import { Github } from "@/components/icons/github";
-import { ActionIcon } from "@/components/ui/button/action-icon";
+import { ActionIconLink } from "@/components/ui/button/action-icon";
 import { SOCIAL } from "@/constants/social.constants";
 import { Linkedin } from "@/components/icons/linkedin";
 import { MY_DETAILS } from "@/constants/my-details";
@@ -23,7 +22,7 @@ export const Hero: React.FC = async () => {
             </div>
 
             {/* Texts */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">{t('about-me-hero.Title')} <span className="text-primary">{MY_DETAILS.name}</span></h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">{t('about-me-hero.Title')} <span className="text-primary">{MY_DETAILS.fullName}</span></h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground mb-8">{t('about-me-hero.Subtitle')}</h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-12">{t('about-me-hero.Extra')}</p>
 
@@ -31,11 +30,9 @@ export const Hero: React.FC = async () => {
             <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
                 {
                     SOCIAL_LINKS.map(({ key, icon, href }) => (
-                        <Link href={href} key={key} target="_blank">
-                            <ActionIcon aria-label={commonT("expressions.Link-to", { name: key.charAt(0).toUpperCase() + key.slice(1) })}>
-                                {icon}
-                            </ActionIcon>
-                        </Link>
+                        <ActionIconLink href={href} key={key} target="_blank" aria-label={commonT("expressions.Link-to", { name: key.charAt(0).toUpperCase() + key.slice(1) })}>
+                            {icon}
+                        </ActionIconLink>
                     ))
                 }
             </div>

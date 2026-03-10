@@ -1,12 +1,11 @@
 import { Github } from "@/components/icons/github";
 import { Linkedin } from "@/components/icons/linkedin";
-import { Button } from "@/components/ui/button/button";
+import { ButtonLink } from "@/components/ui/button/button";
 import { MY_DETAILS } from "@/constants/my-details";
 import { SOCIAL } from "@/constants/social.constants";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { formatDate } from "date-fns";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 
 const CURRENT_YEAR = formatDate(new Date(), "yyyy");
 
@@ -22,30 +21,28 @@ export const Footer: React.FC = async () => {
                         <p className="text-sm text-muted-foreground">
                             {t("components.footer.Line")}
                         </p>
-                        <Link 
+                        <ButtonLink
                             href="/ethics"
-                            className="text-xs mt-2 inline-block hover:opacity-70 transition-opacity"
-                            style={{ color: 'var(--brand-primary)' }}
+                            variant="link"
+                            className="mt-2 text-xs"
                         >
                             {t("components.footer.links.ethics.Label")} →
-                        </Link>
+                        </ButtonLink>
                     </div>
 
                     {/* SOCIAL LINKS */}
                     <div className="flex items-center gap-4">
                        {SOCIAL_LINKS.map(({ name, link, icon }) => (
-                         <Link href={link} target="_blank" key={name}>
-                            <Button variant="ghost" size="icon" aria-label={t("expressions.Link-to", { name })}>
-                                {icon}
-                            </Button>
-                        </Link>
+                         <ButtonLink href={link} target="_blank" key={name} variant="ghost" size="icon" aria-label={t("expressions.Link-to", { name })}>
+                            {icon}
+                         </ButtonLink>
                        ))}
                     </div>
                 </div>
 
                 {/* COPYRIGHT */}
                 <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-                    <p>{CURRENT_YEAR} - {MY_DETAILS.name}</p>
+                    <p>{CURRENT_YEAR} - {MY_DETAILS.fullName}</p>
                 </div>
             </div>
         </div>

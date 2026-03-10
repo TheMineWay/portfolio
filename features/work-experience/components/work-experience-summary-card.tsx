@@ -20,9 +20,8 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
     const { name: companyName, logo, banner } = COMPANIES[company];
 
     return (
-
         <Card
-            className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
+            className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 group"
         >
             <div className="relative h-40 overflow-hidden">
                 <Image

@@ -4,6 +4,7 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { WorkExperienceSummaryCard } from "./work-experience-summary-card";
 import { getWorkExperiencesDetails } from "../constants/work-experience.constants";
 import { SectionTitle } from "@/components/common/title/section-title";
+import { Link } from "@/i18n/navigation";
 
 
 export const WorkExperienceSummary: React.FC = async () => {
@@ -21,7 +22,9 @@ export const WorkExperienceSummary: React.FC = async () => {
         {/* Experiences */}
         <div className="grid lg:grid-cols-2 gap-6 [&>*:last-child:nth-child(odd)]:lg:col-span-2 [&>*:last-child:nth-child(odd)]:lg:max-w-[calc(50%-12px)] [&>*:last-child:nth-child(odd)]:lg:mx-auto [&>*:last-child:nth-child(odd)]:lg:w-full">
             {experiences.map(experience => (
-                <WorkExperienceSummaryCard experience={experience} key={experience.key}/>
+                <Link key={experience.key} href={`/experiences/${experience.company}`}>
+                    <WorkExperienceSummaryCard experience={experience}/>
+                </Link>
             ))}
         </div>
     </div>;

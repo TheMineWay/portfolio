@@ -1,5 +1,6 @@
+import { Company } from "@/features/work-experience/constants/companies.constants";
 import { Locale } from "@/i18n/locale";
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 const LOCALES = Object.values(Locale);
 
@@ -11,9 +12,14 @@ const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
     const prefix = `/${locale}/`;
 
     return [
-        {
-            url: `${prefix}`,
-            lastModified: new Date(),
-        },
-    ];
+        `${prefix}`,
+        ...buildExperiences().map((url) => `${prefix}${url}`),
+    ].map((url) => ({
+        url,
+        lastModified: new Date(),
+    }));
 }
+
+const buildExperiences = (): string[] => {
+    return Object.values(Company).map((company) => `experiences/${company}/`);
+};
