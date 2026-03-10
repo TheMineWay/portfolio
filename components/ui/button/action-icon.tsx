@@ -1,6 +1,7 @@
 import type React from "react";
 import clsx from "clsx";
 import { cva, type VariantProps } from "class-variance-authority";
+import Link from "next/link";
 
 const actionIconVariants = cva("rounded-full border hover:border-foreground transition-colors", {
     variants: {
@@ -26,4 +27,13 @@ export const ActionIcon: React.FC<ActionIconProps> = ({ children, className: cla
     const className = clsx(actionIconVariants({ size }), classNameProp);
 
     return <button {...props} className={className}>{children}</button>
+};
+export type ActionIconLinkProps = React.ComponentProps<typeof Link> & VariantProps<typeof actionIconVariants> & {
+    "aria-label": string;
+};
+
+export const ActionIconLink: React.FC<ActionIconLinkProps> = ({ children, className: classNameProp, size, ...props }) => {
+    const className = clsx(actionIconVariants({ size }), classNameProp);
+
+    return <Link {...props} className={className}>{children}</Link>;
 };

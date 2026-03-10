@@ -22,7 +22,7 @@ export const BackHomeLink: React.FC<Props> = async ({ variant }) => {
     }
 
     return (
-        <ButtonLink href="/" variant="link" className="mb-8 pl-0">
+        <ButtonLink href="/" variant="link" className="mb-8">
             <ArrowLeft />
             {t('company-page.actions.Back')}
         </ButtonLink>

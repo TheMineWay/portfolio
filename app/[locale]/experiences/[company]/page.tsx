@@ -146,7 +146,6 @@ export default async function Page({ params }: Readonly<PageProps>) {
 
                     {/* Back Button Bottom */}
                     <BackHomeLink variant="cta" />
-
                 </div>
             </div>
         </main>
