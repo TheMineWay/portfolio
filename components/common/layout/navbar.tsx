@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 export const Navbar: React.FC = () => {
-    return <nav className="hidden md:flex items-center gap-8">
+    return <nav className="hidden md:flex items-center gap-4">
         {LINKS.map((item) => <RenderItem key={item.labelKey} item={item}/>)}
     </nav>
 };
@@ -40,12 +40,12 @@ const LINKS = [
     },
     {
         type: 'anchor',
-        link: 'skills',
-        labelKey: "skills"
+        link: 'work-experience',
+        labelKey: "work-experience"
     },
     {
         type: 'anchor',
-        link: 'work-experience',
-        labelKey: "work-experience"
+        link: 'skills',
+        labelKey: "skills"
     }
 ] satisfies Item[];
