@@ -25,8 +25,6 @@ export const metadata: Metadata = {
   description: pk.description,
 };
 
-export const dynamicParams = false;
-
 export function generateStaticParams() {
   return Object.values(Locale).map((locale) => ({
     locale,
