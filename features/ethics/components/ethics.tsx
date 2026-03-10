@@ -8,6 +8,7 @@ import { Callout, CalloutDescription } from "@/components/ui/callout/callout";
 import { SectionTitle } from "@/components/common/title/section-title";
 import { buttonVariants } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
+import { BackHomeLink } from "@/features/work-experience/components/company-page/back-home-link";
 
 export const Ethics: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ETHICS);
@@ -17,16 +18,9 @@ export const Ethics: React.FC = async () => {
         <div className="pt-24 pb-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto">
-
-                    {/* Back link */}
-                    <Link href="/" className={buttonVariants({ variant: 'link', size: 'sm' }) + ' mb-8'}>
-                        <ArrowLeft className="h-4 w-4" />
-                        {commonT('expressions.Back-home')}
-                    </Link>
-
                     {/* Header */}
                     <div className="text-center mb-16">
-                        <SectionTitle title={t('hero.Title')} />
+                        <SectionTitle level={1} title={t('hero.Title')} />
                         <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                             {t('hero.Subtitle')}
                         </p>
@@ -59,7 +53,7 @@ export const Ethics: React.FC = async () => {
                                             <h2 className="text-2xl md:text-3xl mb-2">
                                                 {t(`principles.${key}.Title`)}
                                             </h2>
-                                            <p className="text-sm opacity-80 text-[var(--brand-accent)]">
+                                            <p className="text-sm text-muted-foreground">
                                                 {t(`principles.${key}.Subtitle`)}
                                             </p>
                                         </div>
@@ -85,7 +79,7 @@ export const Ethics: React.FC = async () => {
 
                                     <Callout>
                                         <CalloutDescription>
-                                            <strong className="opacity-80">{t('why-it-matters')}</strong>
+                                            <strong>{t('why-it-matters')}</strong>
                                             {t(`principles.${key}.Impact`)}
                                         </CalloutDescription>
                                     </Callout>
@@ -93,27 +87,6 @@ export const Ethics: React.FC = async () => {
                             </Card>
                         ))}
                     </div>
-
-                    {/* Closing Statement */}
-                    <Card className="mt-16 bg-section">
-                        <CardContent className="p-8 text-center">
-                            <h2 className="text-2xl mb-4">{t('closing.Title')}</h2>
-                            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                                {t('closing.Description')}
-                            </p>
-                            <div className="mt-6">
-                                <p className="text-sm opacity-70">
-                                    {t('closing.Contact')}{' '}
-                                    <Link
-                                        href="/#contact"
-                                        className={buttonVariants({ variant: 'link', size: 'sm' })}
-                                    >
-                                        {t('closing.Contact-link')}
-                                    </Link>
-                                </p>
-                            </div>
-                        </CardContent>
-                    </Card>
 
                     {/* Back to Portfolio Button */}
                     <div className="mt-12 text-center">

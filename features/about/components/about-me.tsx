@@ -13,7 +13,7 @@ export const AboutMe: React.FC = async () => {
     return (
         <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-                <SectionTitle title={t('about-me.Title')} />
+                <SectionTitle level={2} title={t('about-me.Title')} />
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                     {t('about-me.Subtitle')}
                 </p>

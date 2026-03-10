@@ -13,7 +13,7 @@ export const WorkExperienceSummary: React.FC = async () => {
 
     return <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-            <SectionTitle title={t('Title')} />
+            <SectionTitle title={t('Title')} level={2}/>
             <p className="text-muted-foreground max-w-2xl mx-auto">
                 {t('Subtitle')}
             </p>
