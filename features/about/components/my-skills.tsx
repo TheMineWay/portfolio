@@ -11,7 +11,7 @@ export const MySkills: React.FC = async () => {
 
     return <div>
         <div className="text-center mb-16">
-            <SectionTitle title={t('skills.Title')} />
+            <SectionTitle level={2} title={t('skills.Title')} />
             <p className="text-muted-foreground max-w-2xl mx-auto">
               {t('skills.Subtitle')}
             </p>

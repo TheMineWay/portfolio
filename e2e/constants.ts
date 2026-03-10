@@ -21,5 +21,7 @@ export const url = (path: string, locale: TestLocale = DEFAULT_LOCALE) =>
 
 /** All page routes to test. Add new routes here as pages are created. */
 const EXPERIENCES_PAGES = COMPANIES.map((company) => `/experiences/${company}`);
-export const PAGES = ['/', ...EXPERIENCES_PAGES] as const;
+const OTHER_PAGES = ['/ethics'];
+
+export const PAGES = ['/', ...EXPERIENCES_PAGES, ...OTHER_PAGES] as const;
 export type TestPage = (typeof PAGES)[number];
