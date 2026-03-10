@@ -143,5 +143,9 @@
     "Description": "These aren't just aspirational ideals—they're commitments I work to uphold in every project. I won't always get it perfect, but I pledge to keep learning, listening, and striving to build technology that makes the world a little bit better.",
     "Contact": "Questions, feedback, or want to discuss tech ethics?",
     "Contact-link": "Let's talk"
+  },
+  "meta": {
+    "Title": "Technology Ethics | {name}",
+    "Description": "Discover the ethical principles guiding my development: accessibility, privacy, open source, sustainability, ethical AI, security, and transparency."
   }
 }
