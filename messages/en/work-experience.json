@@ -29,17 +29,21 @@
   },
   "companies": {
     "primer-impacto": {
-        "Description": "Specialists in point of sale optimization and comprehensive point of sale management.",
         "Banner-alt": "Grandland offices, where Primer Impacto is located"
     },
     "decathlon": {
-        "Description": "",
         "Banner-alt": "Decathlon store"
     }
   },
   "summary": {
     "info": {
       "Key-achievements": "Key Achievements"
+    }
+  },
+  "company-page": {
+    "meta": {
+      "Title": "{companyName} | {name}'s experience",
+      "Description": "My experience working for {companyName} as a {role}."
     }
   }
 }
