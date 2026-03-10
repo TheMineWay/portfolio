@@ -1,9 +1,7 @@
-import type { Locale } from "@/i18n/locale";
+import { EthicsPage } from "@/features/ethics/components/ethics-page";
 
 export const dynamic = 'force-static';
 
-type Props = { params: Promise<{ locale: Locale }>};
-
-export default async function Page({}: Props) {
-    return <></>;
+export default async function Page() {
+    return <EthicsPage />;
 }

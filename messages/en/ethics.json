@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "Title": "My Technology Ethics",
+    "Subtitle": "Technology is never neutral—every line of code embodies values and priorities. Here are the principles that guide how I build, the decisions I make, and the kind of tech future I want to help create."
+  },
+  "quote": {
+    "Text": "\"With great power comes great responsibility.\"",
+    "Description": "As developers, we shape how billions of people interact with information, each other, and the world. That power demands thoughtful, ethical practice."
+  },
+  "principles": {
+    "accessibility": {
+      "Title": "Accessibility for All",
+      "Subtitle": "Building inclusive digital experiences",
+      "Description": "I believe technology should be accessible to everyone, regardless of ability. Web accessibility isn't just a feature—it's a fundamental human right. Every person deserves to access information, services, and opportunities online.",
+      "values": {
+        "0": "Semantic HTML and ARIA labels are non-negotiable in my code",
+        "1": "Keyboard navigation and screen reader compatibility are tested from day one",
+        "2": "Color contrast and text sizing follow WCAG 2.1 AA standards minimum",
+        "3": "I advocate for accessibility in design discussions and code reviews",
+        "4": "Accessibility audits are part of my development workflow, not an afterthought"
+      },
+      "Impact": "When we build for accessibility, we build better products for everyone. Features like captions benefit not just deaf users, but also people in noisy environments or learning a new language."
+    },
+    "privacy": {
+      "Title": "Privacy as a Default",
+      "Subtitle": "Respecting user data and consent",
+      "Description": "Privacy is not a privilege—it's a right. In an era of surveillance capitalism, I'm committed to building applications that respect user privacy and minimize data collection to only what's truly necessary.",
+      "values": {
+        "0": "Collect only essential data, delete what's no longer needed",
+        "1": "Clear, honest privacy policies written in plain language",
+        "2": "Opt-in by default, never dark patterns or deceptive consent flows",
+        "3": "End-to-end encryption for sensitive user data",
+        "4": "Regular security audits and vulnerability assessments",
+        "5": "Transparent about third-party integrations and data sharing"
+      },
+      "Impact": "Users should control their own data. I design systems where privacy-conscious choices are easy and default, not buried in settings or requiring technical knowledge."
+    },
+    "open-source": {
+      "Title": "Open Source Contribution",
+      "Subtitle": "Giving back to the community",
+      "Description": "Open source software has been instrumental in my career and countless innovations. I believe in contributing back to the ecosystem that has given me so much, and making knowledge freely accessible.",
+      "values": {
+        "0": "Contribute to open source projects I use and benefit from",
+        "1": "Share code, tools, and solutions that could help other developers",
+        "2": "Document thoroughly so others can learn and build upon my work",
+        "3": "Mentor newcomers to open source and help them make their first contributions",
+        "4": "Advocate for open standards and interoperability",
+        "5": "Choose open source solutions when viable for projects"
+      },
+      "Impact": "Open source democratizes technology. Every contribution, no matter how small, helps build a more collaborative and innovative tech ecosystem."
+    },
+    "sustainability": {
+      "Title": "Sustainable Development",
+      "Subtitle": "Building for environmental responsibility",
+      "Description": "Technology has an environmental footprint. From energy-intensive data centers to e-waste, our choices as developers matter. I strive to write efficient code and make sustainable architecture decisions.",
+      "values": {
+        "0": "Optimize code and assets to reduce server load and energy consumption",
+        "1": "Choose green hosting providers powered by renewable energy when possible",
+        "2": "Minimize unnecessary API calls and database queries",
+        "3": "Implement efficient caching strategies to reduce redundant processing",
+        "4": "Consider the lifecycle and longevity of the software I build",
+        "5": "Advocate for sustainable practices in technical discussions"
+      },
+      "Impact": "A 1-second improvement in load time doesn't just enhance user experience—it also reduces energy consumption across millions of devices and servers."
+    },
+    "ethical-ai": {
+      "Title": "Ethical AI & Automation",
+      "Subtitle": "Technology that serves humanity",
+      "Description": "As AI becomes more prevalent, we must ensure it's built with fairness, transparency, and human welfare in mind. Automation should augment human capability, not exploit or replace it irresponsibly.",
+      "values": {
+        "0": "Question bias in training data and algorithmic decision-making",
+        "1": "Ensure AI systems are explainable and auditable",
+        "2": "Design automation that empowers workers, not just reduces costs",
+        "3": "Consider the societal impact of technologies I build",
+        "4": "Advocate against deceptive AI implementations",
+        "5": "Prioritize human oversight in critical decision-making systems"
+      },
+      "Impact": "The question isn't just 'Can we build it?' but 'Should we build it?' and 'Who benefits or is harmed by this technology?'"
+    },
+    "security": {
+      "Title": "Security First",
+      "Subtitle": "Protecting users and their trust",
+      "Description": "Security vulnerabilities don't just expose data—they break trust. I believe in building secure systems from the ground up, following best practices, and staying updated on emerging threats.",
+      "values": {
+        "0": "Input validation and sanitization to prevent injection attacks",
+        "1": "Secure authentication with proper hashing and token management",
+        "2": "Regular dependency updates and vulnerability scanning",
+        "3": "Principle of least privilege in access control",
+        "4": "Security considerations in every code review",
+        "5": "Transparent disclosure and quick response to security issues"
+      },
+      "Impact": "One security breach can destroy years of trust. Proactive security practices protect not just data, but people's livelihoods and peace of mind."
+    },
+    "transparency": {
+      "Title": "Transparent Technology",
+      "Subtitle": "Honesty in what we build",
+      "Description": "Users deserve to understand how the technology they use works, what data it collects, and how decisions are made. Transparency builds trust and empowers informed choices.",
+      "values": {
+        "0": "Clear communication about how systems work and what they do",
+        "1": "No hidden tracking or unexpected data collection",
+        "2": "Honest about limitations and potential biases in systems",
+        "3": "Open about mistakes and how they're being addressed",
+        "4": "Readable terms of service and privacy policies",
+        "5": "User-friendly controls to view, export, and delete personal data"
+      },
+      "Impact": "When users understand technology, they can make better decisions about using it and hold companies accountable for how it's built."
+    },
+    "inclusive-tech": {
+      "Title": "Inclusive & Diverse Tech",
+      "Subtitle": "Technology that represents everyone",
+      "Description": "The best technology is built by diverse teams for diverse users. I'm committed to fostering inclusive environments and building products that work for people of all backgrounds.",
+      "values": {
+        "0": "Support and amplify underrepresented voices in tech",
+        "1": "Design for global audiences with localization and cultural sensitivity",
+        "2": "Challenge homogeneous thinking in product and technical decisions",
+        "3": "Create welcoming onboarding experiences for junior developers",
+        "4": "Advocate for diverse hiring and inclusive workplace policies",
+        "5": "Consider how features might affect different communities differently"
+      },
+      "Impact": "Diverse teams build better products. When we include different perspectives, we catch blind spots and create technology that truly serves everyone."
+    },
+    "continuous-learning": {
+      "Title": "Continuous Learning & Humility",
+      "Subtitle": "Always evolving my ethical framework",
+      "Description": "Technology ethics isn't static—new challenges emerge constantly. I commit to continuous learning, listening to affected communities, and evolving my practices as I learn more.",
+      "values": {
+        "0": "Stay informed about ethical debates and emerging issues in tech",
+        "1": "Listen to and learn from people affected by technology decisions",
+        "2": "Admit when I'm wrong and adjust course",
+        "3": "Seek out diverse perspectives that challenge my assumptions",
+        "4": "Share learnings and mistakes to help others avoid them",
+        "5": "Recognize that ethics require ongoing reflection, not one-time decisions"
+      },
+      "Impact": "The most ethical stance is recognizing I don't have all the answers. Humility and willingness to learn ensure I keep growing as a developer and human."
+    }
+  },
+  "practice": {
+    "Title": "How I Practice This"
+  },
+  "why-it-matters": "Why it matters: ",
+  "closing": {
+    "Title": "Living These Values",
+    "Description": "These aren't just aspirational ideals—they're commitments I work to uphold in every project. I won't always get it perfect, but I pledge to keep learning, listening, and striving to build technology that makes the world a little bit better.",
+    "Contact": "Questions, feedback, or want to discuss tech ethics?",
+    "Contact-link": "Let's talk"
+  }
+}
