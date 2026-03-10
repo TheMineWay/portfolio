@@ -1,5 +1,5 @@
 import { ThemeToggle } from "@/features/common/theme/components/theme-toggle";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Navbar } from "./navbar";
 
 export const Header: React.FC = () => {

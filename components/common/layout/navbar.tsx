@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button/button";
+import { ButtonLink } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 import React from "react";
 
 export const Navbar: React.FC = () => {
@@ -18,9 +17,9 @@ const RenderItem: React.FC<RenderItemProps> = async ({ item }) => {
     const t = await getTranslations(TranslationNamespace.COMMON);
 
     return (
-        <Link href={item.type === 'anchor' ? `#${item.link}` : item.link}>
-            <Button variant="ghost" size="sm">{t(`components.navbar.links.${item.labelKey}.Label`)}</Button>
-        </Link>
+        <ButtonLink href={item.type === 'anchor' ? `#${item.link}` : item.link} variant="ghost" size="sm">
+            {t(`components.navbar.links.${item.labelKey}.Label`)}
+        </ButtonLink>
     );
 }
 

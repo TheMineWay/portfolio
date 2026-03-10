@@ -29,10 +29,42 @@
   },
   "companies": {
     "primer-impacto": {
-        "Banner-alt": "Grandland offices, where Primer Impacto is located"
+      "Banner-alt": "Grandland offices, where Primer Impacto is located",
+      "Overview": "Primer Impacto is a retail marketing and digital solutions company based in Barcelona. They provide innovative retail experiences and data-driven marketing services for leading brands across Spain, helping companies optimize their digital presence and customer engagement.",
+      "responsibilities": {
+        "0": "Developed and maintained the internal operational web platform used daily by all business areas",
+        "1": "Designed and implemented data integrations with external clients, ensuring reliability and performance",
+        "2": "Managed CI/CD pipelines and cloud infrastructure to ensure continuous delivery",
+        "3": "Collaborated with cross-functional teams to deliver impactful new features",
+        "4": "Analyzed and reported security vulnerabilities, ensuring platform compliance"
+      },
+      "skills": {
+        "Category": "Full-Stack & DevOps",
+        "0": "Frontend: Angular, TypeScript, React",
+        "1": "Backend: Node.js, NestJS, PHP",
+        "2": "Databases: MySQL, PostgreSQL, MongoDB",
+        "3": "DevOps: Docker, GitHub Actions, AWS",
+        "4": "Testing: Jest, Cypress"
+      }
     },
     "decathlon": {
-        "Banner-alt": "Decathlon store"
+      "Banner-alt": "Decathlon store",
+      "Overview": "Decathlon is one of the world's largest sports goods retailers, operating in over 60 countries. Their Spanish e-commerce team delivers high-performance digital shopping experiences while contributing to the international UI component library shared across markets.",
+      "responsibilities": {
+        "0": "Developed and shipped new features for the Spanish e-commerce product pages and checkout flows",
+        "1": "Contributed to the international Decathlon UI component library alongside the French team",
+        "2": "Co-led code quality initiatives and defined the frontend testing strategy",
+        "3": "Monitored and improved Core Web Vitals performance metrics",
+        "4": "Reviewed pull requests and mentored junior developers"
+      },
+      "skills": {
+        "Category": "Frontend Development",
+        "0": "Frameworks: React, Next.js, TypeScript",
+        "1": "UI Library: Storybook, Design Tokens, CSS Modules",
+        "2": "Testing: Vitest, Playwright, Testing Library",
+        "3": "Performance: Core Web Vitals, Lighthouse, Web Perf",
+        "4": "Tooling: Webpack, Vite, ESLint, Git"
+      }
     }
   },
   "summary": {
@@ -44,6 +76,18 @@
     "meta": {
       "Title": "{companyName} | {name}'s experience",
       "Description": "My experience working for {companyName} as a {role}."
+    },
+    "actions": {
+      "Back": "Back to Portfolio"
+    },
+    "hero": {
+      "Current-position": "Current Position"
+    },
+    "sections": {
+      "Overview": "Overview",
+      "Responsibilities": "Key Responsibilities",
+      "Experiences": "Experiences at {companyName}",
+      "Skills": "Technical Skills"
     }
   }
 }

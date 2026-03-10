@@ -27,7 +27,7 @@ export const WORK_EXPERIENCES = [
         toDate: new Date('2023-11-30'),
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: []
+        technologies: ['Angular', 'TypeScript', 'Node.js', 'PHP', 'MySQL', 'Docker']
     },
     {
         key: 'decathlon',
@@ -37,7 +37,7 @@ export const WORK_EXPERIENCES = [
         toDate: new Date('2025-04-09'),
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: []
+        technologies: ['React', 'Next.js', 'TypeScript', 'Playwright', 'Vitest']
     },
     {
         key: 'primer-impacto-2',
@@ -47,7 +47,7 @@ export const WORK_EXPERIENCES = [
         toDate: null,
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: []
+        technologies: ['React', 'TypeScript', 'Node.js', 'NestJS', 'PostgreSQL', 'AWS', 'Docker']
     }
 ] satisfies WorkExperiencesDefinition[];
 
@@ -63,4 +63,9 @@ export const getWorkExperiencesDetails = async (): Promise<WorkExperience[]> => 
             achievements,
         };
     }));
+}
+
+export const getWorkExperiencesByCompany = async (company: Company): Promise<WorkExperience[]> => {
+    const all = await getWorkExperiencesDetails();
+    return all.filter((exp) => exp.company === company);
 }
