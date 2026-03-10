@@ -9,7 +9,7 @@ import { SectionTitle } from "@/components/common/title/section-title";
 import { buttonVariants } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
 
-export const EthicsPage: React.FC = async () => {
+export const Ethics: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ETHICS);
     const commonT = await getTranslations(TranslationNamespace.COMMON);
 

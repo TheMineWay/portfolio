@@ -1,7 +1,7 @@
-import { EthicsPage } from "@/features/ethics/components/ethics-page";
+import { Ethics } from "@/features/ethics/components/ethics";
 
 export const dynamic = 'force-static';
 
 export default async function Page() {
-    return <EthicsPage />;
+    return <Ethics />;
 }
