@@ -18,6 +18,14 @@
                     "Label": "Skills"
                 }
             }
+        },
+        "footer": {
+            "Line": "Building digital experiences that matter",
+            "links": {
+                "ethics": {
+                    "Label": "Read my ethics"
+                }
+            }
         }
     },
     "expressions": {
