@@ -1,7 +1,6 @@
 import { ButtonLink } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { getTranslations } from "next-intl/server";
-import React from "react";
 
 export const Navbar: React.FC = () => {
     return <nav className="hidden md:flex items-center gap-4">
