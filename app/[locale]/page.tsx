@@ -63,6 +63,5 @@ const SECTIONS: Section[] = [
   {
     key: 'courses',
     component: <Courses />,
-    sectionBg: true,
   },
 ];

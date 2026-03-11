@@ -13,6 +13,7 @@ type CourseCardProps = {
 
 export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
     const t = await getTranslations(TranslationNamespace.COURSES);
+    const commonT = await getTranslations(TranslationNamespace.COMMON);
 
     const description = t.has(`courses.${course.key}.Description`)
         ? t(`courses.${course.key}.Description`)
@@ -25,10 +26,10 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
                     <div className="flex items-center gap-3 mb-3">
                         <Image
                             src={course.logo}
-                            alt={course.platform}
+                            alt={commonT(`expressions.Logo-of`, { name: course.platform })}
                             width={course.logo.width}
                             height={course.logo.height}
-                            className="w-10 h-10 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                            className="w-10 h-10 object-contain md:grayscale group-hover:grayscale-0 transition-all duration-300"
                             />
                         <div className="flex-1 min-w-0">
                             <h3 className="mb-0.5 leading-tight">
@@ -37,10 +38,6 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
                             <p className="text-sm opacity-70">{course.platform}</p>
                         </div>
                     </div>
-
-                    <Badge variant="outline" size="md" className="w-fit mb-3">
-                        {course.field}
-                    </Badge>
 
                     {description && (
                         <p className="text-sm text-muted-foreground mb-3 leading-relaxed flex-1">
@@ -60,21 +57,19 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
                         </div>
                     )}
 
-                    <div className="flex items-center justify-between text-xs opacity-70 mt-auto pt-2">
-                        <span className="flex items-center gap-1">
+                    <div className="flex items-center justify-between text-xs mt-auto pt-2">
+                        <span className="flex items-center gap-1 opacity-70">
                             <Calendar className="h-3.5 w-3.5" />
                             {course.period}
                         </span>
                         <div className="flex items-center gap-2">
-                            {course.honorRoll && (
-                                <Badge variant="primary" size="md">
-                                    {t('HonorRoll')}
-                                </Badge>
-                            )}
                             {course.grade && (
-                                <span className="flex items-center gap-1">
+                                <span className="flex items-center gap-1 opacity-70">
                                     <Star className="h-3.5 w-3.5" style={{ color: 'var(--brand-accent)' }} />
                                     {course.grade}
+                                    {course.honorRoll && (
+                                        <span>{commonT(`expressions.Honor-roll-simplified`)}</span>
+                                    )}
                                 </span>
                             )}
                         </div>
