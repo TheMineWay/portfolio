@@ -1,6 +1,13 @@
+import type { StaticImageData } from 'next/image';
+
+import ironhackLogo from '@/assets/academy/ironhack/logo.png';
+import pueLogo from '@/assets/academy/pue/logo.png';
+import ccbLogo from '@/assets/academy/ccb/logo.png';
+
 export type Course = {
     key: string;
     platform: string;
+    logo: StaticImageData;
     field: string;
     fromDate: Date;
     toDate: Date;
@@ -13,6 +20,7 @@ export const COURSES: Course[] = [
     {
         key: 'pue-lpic1',
         platform: 'PUE',
+        logo: pueLogo,
         field: 'Linux',
         fromDate: new Date('2025-02-01'),
         toDate: new Date('2025-03-31'),
@@ -21,6 +29,7 @@ export const COURSES: Course[] = [
     {
         key: 'ironhack-data-science',
         platform: 'Ironhack',
+        logo: ironhackLogo,
         field: 'Data',
         fromDate: new Date('2024-03-01'),
         toDate: new Date('2024-08-31'),
@@ -29,6 +38,7 @@ export const COURSES: Course[] = [
     {
         key: 'pue-scrum',
         platform: 'PUE',
+        logo: pueLogo,
         field: 'Project Management',
         fromDate: new Date('2023-05-01'),
         toDate: new Date('2023-06-30'),
@@ -37,6 +47,7 @@ export const COURSES: Course[] = [
     {
         key: 'ironhack-java-backend',
         platform: 'Ironhack',
+        logo: ironhackLogo,
         field: 'Software',
         fromDate: new Date('2022-06-01'),
         toDate: new Date('2022-09-30'),
@@ -45,6 +56,7 @@ export const COURSES: Course[] = [
     {
         key: 'ccb-asix',
         platform: 'Col·legi Cultural Badalona',
+        logo: ccbLogo,
         field: 'Networking & Cybersecurity',
         fromDate: new Date('2020-09-01'),
         toDate: new Date('2022-06-30'),
@@ -55,6 +67,7 @@ export const COURSES: Course[] = [
     {
         key: 'ccb-smx',
         platform: 'Col·legi Cultural Badalona',
+        logo: ccbLogo,
         field: 'Networking',
         fromDate: new Date('2018-11-01'),
         toDate: new Date('2020-06-30'),

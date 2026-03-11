@@ -1,5 +1,6 @@
 import type React from "react";
-import { GraduationCap, Calendar, Star } from "lucide-react";
+import Image from "next/image";
+import { Calendar, Star } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { Card, CardContent } from "@/components/ui/card/card";
@@ -22,15 +23,13 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
             <CardContent className="flex flex-col h-full justify-between">
                 <div className="flex flex-col">
                     <div className="flex items-center gap-3 mb-3">
-                        <div
-                            className="p-2 rounded flex-shrink-0"
-                            style={{
-                                backgroundColor: 'var(--brand-primary)',
-                                color: 'var(--brand-primary-foreground)',
-                            }}
-                        >
-                            <GraduationCap className="h-5 w-5" />
-                        </div>
+                        <Image
+                            src={course.logo}
+                            alt={course.platform}
+                            width={course.logo.width}
+                            height={course.logo.height}
+                            className="w-10 h-10 object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                            />
                         <div className="flex-1 min-w-0">
                             <h3 className="mb-0.5 leading-tight">
                                 {t(`courses.${course.key}.Title`)}
