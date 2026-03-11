@@ -11,6 +11,7 @@ export const useTheme = () => {
         if (!theme) return;
         const root = window.document.documentElement;
         root.classList.toggle("dark", theme === "dark");
+        root.classList.toggle("light", theme === "light");
         setInitialTheme(theme);
     }, [theme]);
 

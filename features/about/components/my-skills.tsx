@@ -2,7 +2,6 @@
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { SectionTitle } from "@/components/common/title/section-title";
-import React from "react";
 import { Cloud, Code2, Container, Database, GitBranch, Globe, Layout, Palette, Server, Wrench, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge/badge";
 

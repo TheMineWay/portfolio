@@ -40,11 +40,11 @@
       },
       "skills": {
         "Category": "Full-Stack & DevOps",
-        "0": "Frontend: Angular, TypeScript, React",
+        "0": "Frontend: TypeScript, React",
         "1": "Backend: Node.js, NestJS, PHP",
-        "2": "Databases: MySQL, PostgreSQL, MongoDB",
-        "3": "DevOps: Docker, GitHub Actions, AWS",
-        "4": "Testing: Jest, Cypress"
+        "2": "Databases: MySQL, Azure SQL, CosmosDB",
+        "3": "DevOps: Docker, GitHub Actions, Azure Pipelines",
+        "4": "Testing: Vitest, Jest"
       }
     },
     "decathlon": {
@@ -59,11 +59,11 @@
       },
       "skills": {
         "Category": "Frontend Development",
-        "0": "Frameworks: React, Next.js, TypeScript",
+        "0": "Frameworks: React, Next.js, Svelte, Vue",
         "1": "UI Library: Storybook, Design Tokens, CSS Modules",
-        "2": "Testing: Vitest, Playwright, Testing Library",
+        "2": "Testing: Jest, Playwright, Testing Library",
         "3": "Performance: Core Web Vitals, Lighthouse, Web Perf",
-        "4": "Tooling: Webpack, Vite, ESLint, Git"
+        "4": "Tooling: Vite, ESLint, Git"
       }
     }
   },

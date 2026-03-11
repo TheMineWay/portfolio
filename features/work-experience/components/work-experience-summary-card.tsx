@@ -63,53 +63,57 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
             </div>
 
             <CardContent className="p-5">
-                <div className="flex items-start gap-2 mb-3">
-                    <div
-                        className="p-1.5 rounded mt-0.5"
-                        style={{ backgroundColor: 'var(--brand-primary)', color: 'var(--brand-primary-foreground)' }}
-                    >
-                        <Briefcase className="h-3.5 w-3.5" />
-                    </div>
-                    <div className="flex-1">
-                        <h4
-                            className="mb-1"
-                            style={{ color: 'var(--brand-primary)' }}
-                        >
-                            {role}
-                        </h4>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                            {description}
-                        </p>
-                    </div>
-                </div>
+                <div className="grid content-between h-full">
+                    <div>
+                        <div className="flex items-start gap-2 mb-3">
+                            <div
+                                className="p-1.5 rounded mt-0.5"
+                                style={{ backgroundColor: 'var(--brand-primary)', color: 'var(--brand-primary-foreground)' }}
+                            >
+                                <Briefcase className="h-3.5 w-3.5" />
+                            </div>
+                            <div className="flex-1">
+                                <h4
+                                    className="mb-1"
+                                    style={{ color: 'var(--brand-primary)' }}
+                                >
+                                    {role}
+                                </h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                    {description}
+                                </p>
+                            </div>
+                        </div>
 
-                <div className="mb-4">
-                    <div className="flex items-center gap-1 mb-2">
-                        <TrendingUp className="h-3.5 w-3.5" style={{ color: 'var(--brand-accent)' }} />
-                        <span className="text-xs opacity-80">{t('summary.info.Key-achievements')}</span>
+                        <div className="mb-4">
+                            <div className="flex items-center gap-1 mb-2">
+                                <TrendingUp className="h-3.5 w-3.5" style={{ color: 'var(--brand-accent)' }} />
+                                <span className="text-xs opacity-80">{t('summary.info.Key-achievements')}</span>
+                            </div>
+                            <ul className="space-y-1.5">
+                                {achievements.map((achievement, achievementKey) => (
+                                    <li key={achievementKey} className="text-xs text-muted-foreground flex items-start">
+                                        <span
+                                            className="inline-block w-1 h-1 rounded-full mt-1.5 mr-2 flex-shrink-0"
+                                            style={{ backgroundColor: 'var(--brand-accent)' }}
+                                        />
+                                        {achievement}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                    <ul className="space-y-1.5">
-                        {achievements.map((achievement, achievementKey) => (
-                            <li key={achievementKey} className="text-xs text-muted-foreground flex items-start">
-                                <span
-                                    className="inline-block w-1 h-1 rounded-full mt-1.5 mr-2 flex-shrink-0"
-                                    style={{ backgroundColor: 'var(--brand-accent)' }}
-                                />
-                                {achievement}
-                            </li>
+
+                    <div className="flex flex-wrap gap-1.5">
+                        {technologies.map((tech) => (
+                            <span
+                                key={tech}
+                                className="text-xs px-2 py-0.5 rounded border"
+                            >
+                                {tech}
+                            </span>
                         ))}
-                    </ul>
-                </div>
-
-                <div className="flex flex-wrap gap-1.5">
-                    {technologies.map((tech) => (
-                        <span
-                            key={tech}
-                            className="text-xs px-2 py-0.5 rounded border"
-                        >
-                            {tech}
-                        </span>
-                    ))}
+                    </div>
                 </div>
             </CardContent>
         </Card>);

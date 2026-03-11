@@ -27,7 +27,7 @@ export const WORK_EXPERIENCES = [
         toDate: new Date('2023-11-30'),
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: ['Angular', 'TypeScript', 'Node.js', 'PHP', 'MySQL', 'Docker']
+        technologies: ['Azure', 'TypeScript', 'Node.js', 'PHP', 'MySQL', 'Docker']
     },
     {
         key: 'decathlon',
@@ -37,7 +37,7 @@ export const WORK_EXPERIENCES = [
         toDate: new Date('2025-04-09'),
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: ['React', 'Next.js', 'TypeScript', 'Playwright', 'Vitest']
+        technologies: ['Vue', 'Next.js', 'Svelte', 'Playwright', 'Jest']
     },
     {
         key: 'primer-impacto-2',
@@ -47,7 +47,7 @@ export const WORK_EXPERIENCES = [
         toDate: null,
         location: 'Barcelona',
         achievementsCount: 3,
-        technologies: ['React', 'TypeScript', 'Node.js', 'NestJS', 'PostgreSQL', 'AWS', 'Docker']
+        technologies: ['React', 'TypeScript', 'Node.js', 'NestJS', 'Azure', 'Docker']
     }
 ] satisfies WorkExperiencesDefinition[];
 
