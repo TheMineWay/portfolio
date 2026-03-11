@@ -8,7 +8,8 @@
       "Description": "Preparation equivalent to the official LPIC1 exam"
     },
     "ironhack-data-science": {
-      "Title": "Data Science"
+      "Title": "Data Science",
+      "Description": "Python, SQL, Machine Learning, Deep Learning, Data Visualization, and more."
     },
     "pue-scrum": {
       "Title": "SCRUM Master & Product Owner",

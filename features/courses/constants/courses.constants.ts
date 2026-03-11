@@ -48,7 +48,7 @@ export const COURSES: Course[] = [
         field: 'Networking & Cybersecurity',
         fromDate: new Date('2020-09-01'),
         toDate: new Date('2022-06-30'),
-        skills: [],
+        skills: ["Cisco", "Security", "Databases"],
         grade: '9.35',
         honorRoll: true,
     },
@@ -58,7 +58,7 @@ export const COURSES: Course[] = [
         field: 'Networking',
         fromDate: new Date('2018-11-01'),
         toDate: new Date('2020-06-30'),
-        skills: [],
+        skills: ["Windows", "Linux", "Cisco"],
         grade: '8.4',
     },
 ];
