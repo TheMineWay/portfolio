@@ -1,0 +1,30 @@
+{
+  "Title": "Education & Courses",
+  "HonorRoll": "Honor Roll",
+  "Subtitle": "Academic background and continuous learning through structured courses and specialized training",
+  "courses": {
+    "pue-lpic1": {
+      "Title": "LPIC1",
+      "Description": "Preparation equivalent to the official LPIC1 exam"
+    },
+    "ironhack-data-science": {
+      "Title": "Data Science"
+    },
+    "pue-scrum": {
+      "Title": "SCRUM Master & Product Owner",
+      "Description": "This course helped me to improve my current knowledge about the SCRUM framework."
+    },
+    "ironhack-java-backend": {
+      "Title": "Java Backend",
+      "Description": "Java Springboot (and JPA) & microservices"
+    },
+    "ccb-asix": {
+      "Title": "ASIX",
+      "Description": "Network Administrator with a professional profile of cybersecurity. I have got an honor roll."
+    },
+    "ccb-smx": {
+      "Title": "SMX",
+      "Description": "Sistemes Microinformàtics i Xarxes"
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { AboutMe } from '@/features/about/components/about-me';
 import { Hero } from '@/features/about/components/hero';
 import { MySkills } from '@/features/about/components/my-skills';
 import { getMyJsonLd } from '@/features/about/lib/get-my-json-ld';
+import { Courses } from '@/features/courses/components/courses';
 import { WorkExperienceSummary } from '@/features/work-experience/components/work-experience-summary';
 import clsx from 'clsx';
 
@@ -58,5 +59,10 @@ const SECTIONS: Section[] = [
   {
     key: 'skills',
     component: <MySkills/>,
-  }
+  },
+  {
+    key: 'courses',
+    component: <Courses />,
+    sectionBg: true,
+  },
 ];
