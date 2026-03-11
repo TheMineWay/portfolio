@@ -19,9 +19,9 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
 
     return (
         <Card topAccent hover>
-            <CardContent className="p-5 flex flex-col h-full justify-between">
+            <CardContent className="flex flex-col h-full justify-between">
                 <div className="flex flex-col">
-                    <div className="flex items-start gap-3 mb-3">
+                    <div className="flex items-center gap-3 mb-3">
                         <div
                             className="p-2 rounded flex-shrink-0"
                             style={{
