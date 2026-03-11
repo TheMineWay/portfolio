@@ -19,7 +19,7 @@ export const MySkills: React.FC = async () => {
         {/* Main skills */}
         <div className="grid md:grid-cols-2 gap-6">
             {Object.entries(GROUPED_TECHNOLOGIES).map(([group, { icon: CategoryIcon, technologies, color }]) => (
-                <Card key={group} className="overflow-hidden hover:shadow-lg transition-all duration-300 group">
+                <Card key={group} hover>
                     <CardContent className="p-6">
                         {/* Title */}
                         <div className="flex items-center gap-3 mb-6">

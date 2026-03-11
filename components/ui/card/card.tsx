@@ -3,11 +3,14 @@ import clsx from "clsx";
 
 export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
   topAccent?: boolean;
+  hover?: boolean;
 };
 
-export const Card: React.FC<CardProps> = ({ className, topAccent = false, children, ...props }) => (
+export const Card: React.FC<CardProps> = ({ className, topAccent = false, hover = false, children, ...props }) => (
   <div
-    className={clsx("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border overflow-hidden", className)}
+    className={clsx("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border overflow-hidden", {
+      'hover:shadow-xl transition-all duration-300 group': hover,
+    }, className)}
     {...props}
   >
     {topAccent && (

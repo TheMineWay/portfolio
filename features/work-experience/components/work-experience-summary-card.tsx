@@ -21,7 +21,8 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
 
     return (
         <Card
-            className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 group"
+            className="h-full"
+            hover
         >
             <div className="relative h-40 overflow-hidden">
                 <Image
