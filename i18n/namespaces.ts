@@ -3,5 +3,6 @@ export enum TranslationNamespace {
   COMMON = 'common',
   COURSES = 'courses',
   ETHICS = 'ethics',
+  PROJECTS = 'projects',
   WORK_EXPERIENCE = 'work-experience',
 }
