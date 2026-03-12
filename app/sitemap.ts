@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/constants/site-url";
 import { Company } from "@/features/work-experience/constants/companies.constants";
 import { Locale } from "@/i18n/locale";
 import type { MetadataRoute } from "next";
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 }
 
 const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
-    const prefix = `/${locale}/`;
+    const prefix = `${SITE_URL}/${locale}/`;
 
     return [
         `${prefix}`,
