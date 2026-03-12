@@ -3,7 +3,7 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { getTranslations } from "next-intl/server";
 
 export const Navbar: React.FC = () => {
-    return <nav className="hidden md:flex items-center gap-4">
+    return <nav className="hidden md:flex items-center gap-2 lg:gap-4">
         {LINKS.map((item) => <RenderItem key={item.labelKey} item={item}/>)}
     </nav>
 };
