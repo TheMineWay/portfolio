@@ -1,0 +1,38 @@
+{
+  "Title": "Mis Proyectos",
+  "Subtitle": "Algunos de mis trabajos recientes y proyectos personales",
+  "Featured": "Destacado",
+  "actions": {
+    "View-code": "Ver Código",
+    "Live-demo": "Demo en Vivo",
+    "Docs": "Documentación",
+    "View": "Ver"
+  },
+  "projects": {
+    "nestflux": {
+      "Title": "NestFlux",
+      "Description": "Una completa plantilla de monorepo en TypeScript que combina el poder de React y NestJS para acelerar el desarrollo de aplicaciones web modernas."
+    },
+    "balancia": {
+      "Title": "Balancia",
+      "Description": "Balancia es un sistema de gestión de economía personal diseñado para ayudarte a tomar el control de tus finanzas con facilidad, privacidad y confianza. Ya sea que quieras registrar tus gastos diarios o analizar tus hábitos de gasto, Balancia te proporciona las herramientas para tomar decisiones financieras más inteligentes."
+    },
+    "unity-essential-toolkit": {
+      "Title": "Unity Essential Toolkit",
+      "Description": "Paquetes de Unity interconectados que ayudan a los desarrolladores a crear juegos más rápido."
+    },
+    "mangas-api": {
+      "Title": "Mangas API",
+      "Description": "Una API de código abierto para leer contenido de manga fácilmente desde diferentes páginas de manga."
+    },
+    "alvbeats": {
+      "Title": "AlvBeats",
+      "Description": "Un sistema de visualización de letras de canciones basado en web."
+    },
+    "covid-19-certificate-manager": {
+      "Title": "Gestor de Certificados Covid-19",
+      "Description": "Una aplicación móvil basada en Flutter para gestionar certificados de vacunación contra la COVID-19."
+    }
+  }
+}
+

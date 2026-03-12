@@ -1,13 +1,23 @@
 import type React from "react";
 import clsx from "clsx";
 
-export type CardProps = React.HTMLAttributes<HTMLDivElement>;
+export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
+  topAccent?: boolean;
+  hover?: boolean;
+};
 
-export const Card: React.FC<CardProps> = ({ className, ...props }) => (
+export const Card: React.FC<CardProps> = ({ className, topAccent = false, hover = false, children, ...props }) => (
   <div
-    className={clsx("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border", className)}
+    className={clsx("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border overflow-hidden", {
+      'hover:shadow-xl transition-all duration-300 group': hover,
+    }, className)}
     {...props}
-  />
+  >
+    {topAccent && (
+      <div className="h-2 flex-none" style={{ backgroundColor: 'var(--brand-primary)' }} />
+    )}
+    {children}
+  </div>
 );
 
 export type CardHeaderProps = React.HTMLAttributes<HTMLDivElement>;

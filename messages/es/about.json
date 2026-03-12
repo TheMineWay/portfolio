@@ -1,1 +1,48 @@
-{}
+{
+  "about-me": {
+    "Title": "Sobre mí",
+    "Subtitle": "Desarrollador apasionado con más de 5 años de experiencia construyendo aplicaciones web",
+    "About-me": "Soy un desarrollador full-stack con base en Barcelona, especializado en construir experiencias digitales excepcionales. Actualmente enfocado en crear productos accesibles y centrados en las personas.",
+    "About-my-work": "Con una sólida base tanto en desarrollo front-end como back-end, doy vida a las ideas a través del código. Siempre estoy aprendiendo nuevas tecnologías y buenas prácticas para ofrecer las mejores soluciones.",
+    "features": {
+      "clean-code": {
+        "Title": "Código limpio",
+        "Description": "Escribiendo código mantenible, escalable y eficiente siguiendo buenas prácticas."
+      },
+      "performance": {
+        "Title": "Rendimiento",
+        "Description": "Construyendo aplicaciones rápidas y optimizadas que ofrecen excelentes experiencias de usuario."
+      },
+      "problem-solving": {
+        "Title": "Resolución de problemas",
+        "Description": "Descomponiendo problemas complejos en soluciones simples y efectivas a través de un diseño e ingeniería reflexivos."
+      }
+    }
+  },
+  "about-me-hero": {
+    "Title": "Hola, soy",
+    "Subtitle": "Desarrollador Full-Stack Senior",
+    "Extra": "Creo experiencias web hermosas y funcionales con tecnologías modernas. Especializado en React, Node.js y en la creación de interfaces de usuario fluidas."
+  },
+  "skills": {
+    "Title": "Mis habilidades",
+    "Subtitle": "Tecnologías y herramientas que uso para dar vida a las ideas",
+    "groups": {
+      "frontend": {
+        "Title": "Frontend"
+      },
+      "backend": {
+        "Title": "Backend"
+      },
+      "tools-and-devops": {
+        "Title": "Herramientas y DevOps"
+      },
+      "cloud": {
+        "Title": "Nube"
+      }
+    },
+    "secondary-skills": {
+      "Title": "También con experiencia en"
+    }
+  }
+}

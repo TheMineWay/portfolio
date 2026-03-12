@@ -1,0 +1,30 @@
+{
+  "Title": "Educación y Cursos",
+  "Subtitle": "Formación académica y aprendizaje continuo a través de cursos estructurados y formación especializada",
+  "courses": {
+    "pue-lpic1": {
+      "Title": "LPIC1",
+      "Description": "Preparación equivalente al examen oficial LPIC1"
+    },
+    "ironhack-data-science": {
+      "Title": "Ciencia de Datos",
+      "Description": "Python, SQL, Machine Learning, Deep Learning, Visualización de datos y más."
+    },
+    "pue-scrum": {
+      "Title": "SCRUM Master & PO",
+      "Description": "Este curso me ayudó a mejorar mis conocimientos actuales sobre el marco de trabajo SCRUM."
+    },
+    "ironhack-java-backend": {
+      "Title": "Java Backend",
+      "Description": "Java Springboot (y JPA) y microservicios"
+    },
+    "ccb-asix": {
+      "Title": "ASIX",
+      "Description": "Administración de Sistemas Informáticos en Red con perfil profesional de ciberseguridad. Obtuve matrícula de honor."
+    },
+    "ccb-smx": {
+      "Title": "SMX",
+      "Description": "Sistemes Microinformàtics i Xarxes"
+    }
+  }
+}

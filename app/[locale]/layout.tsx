@@ -9,6 +9,7 @@ import '../globals.css';
 import { Header } from '@/components/common/layout/header';
 import { Footer } from '@/components/common/layout/footer';
 import { Locale } from '@/i18n/locale';
+import { setRequestLocale } from 'next-intl/server';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -45,6 +46,8 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   return (
     <html lang={locale}>

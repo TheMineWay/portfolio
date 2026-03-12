@@ -1,1 +1,152 @@
-{}
+{
+  "hero": {
+    "Title": "Mi Ética Tecnológica",
+    "Subtitle": "La tecnología nunca es neutral: cada línea de código encarna valores y prioridades. Estos son los principios que guían cómo construyo, las decisiones que tomo y el futuro tecnológico que quiero ayudar a crear."
+  },
+  "quote": {
+    "Text": "\"Un gran poder conlleva una gran responsabilidad.\"",
+    "Description": "Como desarrolladores, damos forma a cómo miles de millones de personas interactúan con la información, entre sí y con el mundo. Ese poder exige una práctica reflexiva y ética."
+  },
+  "principles": {
+    "accessibility": {
+      "Title": "Accesibilidad para todos",
+      "Subtitle": "Construyendo experiencias digitales inclusivas",
+      "Description": "Creo que la tecnología debe ser accesible para todos, independientemente de sus capacidades. La accesibilidad web no es solo una función: es un derecho humano fundamental. Toda persona merece acceder a información, servicios y oportunidades en línea.",
+      "values": {
+        "0": "El HTML semántico y las etiquetas ARIA son innegociables en mi código",
+        "1": "La navegación por teclado y la compatibilidad con lectores de pantalla se prueban desde el primer día",
+        "2": "El contraste de color y el tamaño del texto siguen como mínimo los estándares WCAG 2.1 AA",
+        "3": "Defiendo la accesibilidad en las discusiones de diseño y revisiones de código",
+        "4": "Las auditorías de accesibilidad forman parte de mi flujo de trabajo, no son algo que se añade después"
+      },
+      "Impact": "Cuando construimos para la accesibilidad, construimos mejores productos para todos. Funciones como los subtítulos benefician no solo a los usuarios sordos, sino también a personas en entornos ruidosos o que aprenden un nuevo idioma."
+    },
+    "privacy": {
+      "Title": "Privacidad por defecto",
+      "Subtitle": "Respetando los datos y el consentimiento del usuario",
+      "Description": "La privacidad no es un privilegio, es un derecho. En una era de capitalismo de vigilancia, me comprometo a construir aplicaciones que respeten la privacidad del usuario y minimicen la recopilación de datos a lo estrictamente necesario.",
+      "values": {
+        "0": "Recopilar solo los datos esenciales y eliminar los que ya no sean necesarios",
+        "1": "Políticas de privacidad claras y honestas escritas en lenguaje sencillo",
+        "2": "Opt-in por defecto, sin patrones oscuros ni flujos de consentimiento engañosos",
+        "3": "Cifrado de extremo a extremo para los datos sensibles del usuario",
+        "4": "Auditorías de seguridad periódicas y evaluaciones de vulnerabilidades",
+        "5": "Transparencia sobre las integraciones de terceros y el intercambio de datos"
+      },
+      "Impact": "Los usuarios deben controlar sus propios datos. Diseño sistemas donde las elecciones que protegen la privacidad son fáciles y predeterminadas, no están enterradas en ajustes ni requieren conocimientos técnicos."
+    },
+    "open-source": {
+      "Title": "Contribución al código abierto",
+      "Subtitle": "Devolviendo a la comunidad",
+      "Description": "El software de código abierto ha sido fundamental en mi carrera y en innumerables innovaciones. Creo en contribuir al ecosistema que tanto me ha aportado y en hacer que el conocimiento sea libremente accesible.",
+      "values": {
+        "0": "Contribuir a proyectos de código abierto que uso y de los que me beneficio",
+        "1": "Compartir código, herramientas y soluciones que puedan ayudar a otros desarrolladores",
+        "2": "Documentar exhaustivamente para que otros puedan aprender y construir sobre mi trabajo",
+        "3": "Mentorizar a los recién llegados al código abierto y ayudarles con sus primeras contribuciones",
+        "4": "Defender los estándares abiertos y la interoperabilidad",
+        "5": "Elegir soluciones de código abierto cuando sean viables para los proyectos"
+      },
+      "Impact": "El código abierto democratiza la tecnología. Cada contribución, por pequeña que sea, ayuda a construir un ecosistema tecnológico más colaborativo e innovador."
+    },
+    "sustainability": {
+      "Title": "Desarrollo sostenible",
+      "Subtitle": "Construyendo con responsabilidad medioambiental",
+      "Description": "La tecnología tiene una huella medioambiental. Desde los centros de datos intensivos en energía hasta los residuos electrónicos, las decisiones que tomamos como desarrolladores importan. Me esfuerzo por escribir código eficiente y tomar decisiones de arquitectura sostenibles.",
+      "values": {
+        "0": "Optimizar código y recursos para reducir la carga del servidor y el consumo de energía",
+        "1": "Elegir proveedores de hosting ecológicos alimentados por energías renovables cuando sea posible",
+        "2": "Minimizar las llamadas innecesarias a la API y las consultas a la base de datos",
+        "3": "Implementar estrategias de caché eficientes para reducir el procesamiento redundante",
+        "4": "Considerar el ciclo de vida y la longevidad del software que construyo",
+        "5": "Defender prácticas sostenibles en las discusiones técnicas"
+      },
+      "Impact": "Una mejora de 1 segundo en el tiempo de carga no solo mejora la experiencia del usuario, también reduce el consumo de energía en millones de dispositivos y servidores."
+    },
+    "ethical-ai": {
+      "Title": "IA y automatización éticas",
+      "Subtitle": "Tecnología al servicio de la humanidad",
+      "Description": "A medida que la IA se vuelve más prevalente, debemos asegurarnos de que se construya con equidad, transparencia y bienestar humano. La automatización debe ampliar las capacidades humanas, no explotarlas ni reemplazarlas irresponsablemente.",
+      "values": {
+        "0": "Cuestionar el sesgo en los datos de entrenamiento y en la toma de decisiones algorítmica",
+        "1": "Garantizar que los sistemas de IA sean explicables y auditables",
+        "2": "Diseñar automatizaciones que empoderen a los trabajadores, no solo que reduzcan costes",
+        "3": "Considerar el impacto social de las tecnologías que construyo",
+        "4": "Oponerme a las implementaciones de IA engañosas",
+        "5": "Priorizar la supervisión humana en los sistemas de toma de decisiones críticas"
+      },
+      "Impact": "La pregunta no es solo '¿Podemos construirlo?' sino '¿Debemos construirlo?' y '¿Quién se beneficia o perjudica con esta tecnología?'"
+    },
+    "security": {
+      "Title": "Seguridad primero",
+      "Subtitle": "Protegiendo a los usuarios y su confianza",
+      "Description": "Las vulnerabilidades de seguridad no solo exponen datos: rompen la confianza. Creo en construir sistemas seguros desde el principio, siguiendo las mejores prácticas y manteniéndome actualizado sobre las amenazas emergentes.",
+      "values": {
+        "0": "Validación y saneamiento de entradas para prevenir ataques de inyección",
+        "1": "Autenticación segura con hashing adecuado y gestión de tokens",
+        "2": "Actualizaciones periódicas de dependencias y análisis de vulnerabilidades",
+        "3": "Principio de mínimo privilegio en el control de acceso",
+        "4": "Consideraciones de seguridad en cada revisión de código",
+        "5": "Divulgación transparente y respuesta rápida ante problemas de seguridad"
+      },
+      "Impact": "Una sola brecha de seguridad puede destruir años de confianza. Las prácticas de seguridad proactivas protegen no solo los datos, sino también los medios de vida y la tranquilidad de las personas."
+    },
+    "transparency": {
+      "Title": "Tecnología transparente",
+      "Subtitle": "Honestidad en lo que construimos",
+      "Description": "Los usuarios merecen entender cómo funciona la tecnología que usan, qué datos recopila y cómo se toman las decisiones. La transparencia genera confianza y permite elecciones informadas.",
+      "values": {
+        "0": "Comunicación clara sobre cómo funcionan los sistemas y qué hacen",
+        "1": "Sin rastreo oculto ni recopilación de datos inesperada",
+        "2": "Honesto sobre las limitaciones y los posibles sesgos de los sistemas",
+        "3": "Transparente sobre los errores y cómo se están abordando",
+        "4": "Términos de servicio y políticas de privacidad legibles",
+        "5": "Controles amigables para el usuario para ver, exportar y eliminar datos personales"
+      },
+      "Impact": "Cuando los usuarios entienden la tecnología, pueden tomar mejores decisiones sobre su uso y exigir responsabilidades a las empresas por cómo está construida."
+    },
+    "inclusive-tech": {
+      "Title": "Tecnología inclusiva y diversa",
+      "Subtitle": "Tecnología que representa a todos",
+      "Description": "La mejor tecnología es construida por equipos diversos para usuarios diversos. Me comprometo a fomentar entornos inclusivos y a construir productos que funcionen para personas de todos los orígenes.",
+      "values": {
+        "0": "Apoyar y amplificar las voces infrarrepresentadas en tecnología",
+        "1": "Diseñar para audiencias globales con localización y sensibilidad cultural",
+        "2": "Cuestionar el pensamiento homogéneo en las decisiones de producto y técnicas",
+        "3": "Crear experiencias de incorporación acogedoras para desarrolladores junior",
+        "4": "Defender la contratación diversa y las políticas de lugar de trabajo inclusivas",
+        "5": "Considerar cómo las funciones pueden afectar de manera diferente a distintas comunidades"
+      },
+      "Impact": "Los equipos diversos construyen mejores productos. Cuando incluimos diferentes perspectivas, detectamos puntos ciegos y creamos tecnología que verdaderamente sirve a todos."
+    },
+    "continuous-learning": {
+      "Title": "Aprendizaje continuo y humildad",
+      "Subtitle": "Evolucionando siempre mi marco ético",
+      "Description": "La ética tecnológica no es estática: constantemente surgen nuevos desafíos. Me comprometo al aprendizaje continuo, a escuchar a las comunidades afectadas y a evolucionar mis prácticas a medida que aprendo más.",
+      "values": {
+        "0": "Mantenerme informado sobre debates éticos y problemas emergentes en tecnología",
+        "1": "Escuchar y aprender de las personas afectadas por las decisiones tecnológicas",
+        "2": "Reconocer cuando me equivoco y rectificar el rumbo",
+        "3": "Buscar perspectivas diversas que desafíen mis suposiciones",
+        "4": "Compartir aprendizajes y errores para ayudar a otros a evitarlos",
+        "5": "Reconocer que la ética requiere reflexión continua, no decisiones puntuales"
+      },
+      "Impact": "La postura más ética es reconocer que no tengo todas las respuestas. La humildad y la voluntad de aprender me aseguran que sigo creciendo como desarrollador y como persona."
+    }
+  },
+  "practice": {
+    "Title": "Cómo lo pongo en práctica"
+  },
+  "why-it-matters": "Por qué importa: ",
+  "closing": {
+    "Title": "Viviendo estos valores",
+    "Description": "Estos no son solo ideales aspiracionales: son compromisos que me esfuerzo por cumplir en cada proyecto. No siempre lo haré a la perfección, pero me comprometo a seguir aprendiendo, escuchando y esforzándome por construir tecnología que haga el mundo un poco mejor.",
+    "Contact": "¿Preguntas, comentarios o quieres hablar sobre ética tecnológica?",
+    "Contact-link": "Hablemos"
+  },
+  "meta": {
+    "Title": "Ética Tecnológica | {name}",
+    "Description": "Descubre los principios éticos que guían mi desarrollo: accesibilidad, privacidad, código abierto, sostenibilidad, IA ética, seguridad y transparencia."
+  }
+}
+

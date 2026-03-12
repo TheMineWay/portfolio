@@ -10,7 +10,7 @@ import { Locale } from "@/i18n/locale";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { Award, Briefcase, Target } from "lucide-react";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type PageProps = { params: Promise<{ company: Company, locale: Locale }>};
 
@@ -35,7 +35,8 @@ export function generateStaticParams() {
 }
 
 export default async function Page({ params }: Readonly<PageProps>) {
-    const { company } = await params;
+    const { company, locale } = await params;
+    setRequestLocale(locale);
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
 
     const companyData = COMPANIES[company];

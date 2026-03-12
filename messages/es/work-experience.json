@@ -1,1 +1,94 @@
-{}
+{
+  "Title": "Experiencia Laboral",
+  "Subtitle": "Mi trayectoria profesional y las increíbles empresas con las que he trabajado",
+  "experiences": {
+    "primer-impacto-1": {
+      "Description": "Desarrollo y mantenimiento del sitio web operativo interno de la empresa. También gestión de integraciones de datos con clientes, garantizando fiabilidad y rendimiento.",
+      "achievements": {
+        "0": "Desarrollé y mantuve varias integraciones de datos con clientes importantes",
+        "1": "Ayudé a construir un nuevo SaaS para un gran cliente farmacéutico",
+        "2": "Analicé e informé sobre problemas críticos de seguridad"
+      }
+    },
+    "decathlon": {
+      "Description": "Desarrollo del e-commerce español y contribución a la biblioteca de componentes UI internacional de Decathlon. Al mismo tiempo, ayudé a liderar la estrategia de calidad de código y pruebas para el equipo frontend.",
+      "achievements": {
+        "0": "Incorporé nuevas funcionalidades al e-commerce con foco en rendimiento y fiabilidad",
+        "1": "Colaboré con el equipo francés para desarrollar la biblioteca UI internacional",
+        "2": "Co-lideré la estrategia de calidad de código y pruebas para el e-commerce"
+      }
+    },
+    "primer-impacto-2": {
+      "Description": "Mientras desarrollaba el sitio web operativo interno, también me centré en aportar mi experiencia en mejoras de la experiencia de desarrollo, como pruebas, mejores flujos de trabajo y la mejora de la calidad general del código.",
+      "achievements": {
+        "0": "Aporté mentoría senior sobre calidad de código, rendimiento y pruebas",
+        "1": "Optimicé el sitio web operativo para ofrecer la mejor experiencia de usuario",
+        "2": "Mejoré el flujo de trabajo diario para mejorar la experiencia del desarrollador"
+      }
+    }
+  },
+  "companies": {
+    "primer-impacto": {
+      "Banner-alt": "Oficinas de Grandland, donde está ubicado Primer Impacto",
+      "Overview": "Primer Impacto es una empresa de marketing retail y soluciones digitales con sede en Barcelona. Proporcionan experiencias retail innovadoras y servicios de marketing basados en datos para marcas líderes en España, ayudando a las empresas a optimizar su presencia digital y la captación de clientes.",
+      "responsibilities": {
+        "0": "Desarrollé y mantuve la plataforma web operativa interna utilizada diariamente por todas las áreas de negocio",
+        "1": "Diseñé e implementé integraciones de datos con clientes externos, garantizando fiabilidad y rendimiento",
+        "2": "Gestioné pipelines CI/CD e infraestructura en la nube para garantizar la entrega continua",
+        "3": "Colaboré con equipos multifuncionales para entregar nuevas funcionalidades de impacto",
+        "4": "Analicé e informé sobre vulnerabilidades de seguridad, garantizando el cumplimiento de la plataforma"
+      },
+      "skills": {
+        "Category": "Full-Stack y DevOps",
+        "0": "Frontend: TypeScript, React",
+        "1": "Backend: Node.js, NestJS, PHP",
+        "2": "Bases de datos: MySQL, Azure SQL, CosmosDB",
+        "3": "DevOps: Docker, GitHub Actions, Azure Pipelines",
+        "4": "Testing: Vitest, Jest"
+      }
+    },
+    "decathlon": {
+      "Banner-alt": "Tienda Decathlon",
+      "Overview": "Decathlon es uno de los mayores minoristas de artículos deportivos del mundo, con presencia en más de 60 países. Su equipo de e-commerce español ofrece experiencias de compra digital de alto rendimiento y contribuye a la biblioteca de componentes UI internacional compartida entre mercados.",
+      "responsibilities": {
+        "0": "Desarrollé y lancé nuevas funcionalidades para las páginas de producto y los flujos de pago del e-commerce español",
+        "1": "Contribuí a la biblioteca de componentes UI internacional de Decathlon junto al equipo francés",
+        "2": "Co-lideré iniciativas de calidad de código y definí la estrategia de pruebas para el frontend",
+        "3": "Monitoricé y mejoré las métricas de rendimiento de Core Web Vitals",
+        "4": "Revisé pull requests y mentorité a desarrolladores junior"
+      },
+      "skills": {
+        "Category": "Desarrollo Frontend",
+        "0": "Frameworks: React, Next.js, Svelte, Vue",
+        "1": "Biblioteca UI: Storybook, Design Tokens, CSS Modules",
+        "2": "Testing: Jest, Playwright, Testing Library",
+        "3": "Rendimiento: Core Web Vitals, Lighthouse, Web Perf",
+        "4": "Herramientas: Vite, ESLint, Git"
+      }
+    }
+  },
+  "summary": {
+    "info": {
+      "Key-achievements": "Logros clave"
+    }
+  },
+  "company-page": {
+    "meta": {
+      "Title": "{companyName} | Experiencia de {name}",
+      "Description": "Mi experiencia trabajando en {companyName} como {role}."
+    },
+    "actions": {
+      "Back": "Volver al Portfolio"
+    },
+    "hero": {
+      "Current-position": "Posición Actual"
+    },
+    "sections": {
+      "Overview": "Resumen",
+      "Responsibilities": "Responsabilidades Clave",
+      "Experiences": "Experiencias en {companyName}",
+      "Skills": "Habilidades Técnicas"
+    }
+  }
+}
+

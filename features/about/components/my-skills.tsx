@@ -18,16 +18,16 @@ export const MySkills: React.FC = async () => {
 
         {/* Main skills */}
         <div className="grid md:grid-cols-2 gap-6">
-            {Object.entries(GROUPED_TECHNOLOGIES).map(([group, { icon: CategoryIcon, technologies, color }]) => (
-                <Card key={group} className="overflow-hidden hover:shadow-lg transition-all duration-300 group">
+            {Object.entries(GROUPED_TECHNOLOGIES).map(([group, { icon: CategoryIcon, technologies }]) => (
+                <Card key={group} hover>
                     <CardContent className="p-6">
                         {/* Title */}
                         <div className="flex items-center gap-3 mb-6">
                             <div
                                 className="p-3 rounded-lg group-hover:scale-110 transition-transform"
                                 style={{
-                                    backgroundColor: `var(--brand-${color})`,
-                                    color: `var(--brand-${color}-foreground)`
+                                    backgroundColor: `var(--brand-primary)`,
+                                    color: `var(--brand-primary-foreground)`
                                 }}
                             >
                                 <CategoryIcon className="h-6 w-6" />
@@ -46,7 +46,7 @@ export const MySkills: React.FC = async () => {
                                     >
                                         <SkillIcon
                                             className="h-4 w-4 flex-shrink-0"
-                                            style={{ color: `var(--brand-${color})` }}
+                                            style={{ color: `var(--brand-primary)` }}
                                         />
                                         <span className="text-sm">{technology.name}</span>
                                     </div>
@@ -93,7 +93,6 @@ type Technology = {
 
 const GROUPED_TECHNOLOGIES = {
     "frontend": {
-        color: 'primary',
         icon: Layout,
         technologies: [
             { name: "React", icon: Code2 },
@@ -105,7 +104,6 @@ const GROUPED_TECHNOLOGIES = {
         ]
     },
     "backend": {
-        color: 'secondary',
         icon: Server,
         technologies: [
             { name: "NestJS", icon: Server },
@@ -117,7 +115,6 @@ const GROUPED_TECHNOLOGIES = {
         ]
     },
     "cloud": {
-        color: 'accent',
         icon: Cloud,
         technologies: [
             { name: "Azure", icon: Cloud },
@@ -129,7 +126,6 @@ const GROUPED_TECHNOLOGIES = {
         ]
     },
     "tools-and-devops": {
-        color: 'primary',
         icon: Wrench,
         technologies: [
             { name: "Github", icon: GitBranch },
@@ -141,7 +137,6 @@ const GROUPED_TECHNOLOGIES = {
         ]
     },
 } satisfies Record<string, {
-    color: string;
     icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
     technologies: Technology[]
 }>;

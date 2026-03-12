@@ -1,1 +1,49 @@
-{}
+{
+    "components": {
+        "avatar": {
+            "Alt": "Imagen de avatar de {name}"
+        },
+        "theme-toggle": {
+            "Label": "Cambiar tema"
+        },
+        "navbar": {
+            "links": {
+                "about": {
+                    "Label": "Sobre mí"
+                },
+                "work-experience": {
+                    "Label": "Experiencia"
+                },
+                "skills": {
+                    "Label": "Habilidades"
+                },
+                "projects": {
+                    "Label": "Proyectos"
+                },
+                "courses": {
+                    "Label": "Cursos"
+                },
+                "ethics": {
+                    "Label": "Ética"
+                }
+            }
+        },
+        "footer": {
+            "Line": "Construyendo experiencias digitales que importan",
+            "links": {
+                "ethics": {
+                    "Label": "Lee mi ética"
+                }
+            }
+        }
+    },
+    "expressions": {
+        "Present": "Presente",
+        "Current": "Actual",
+        "Logo-of": "Logo de {name}",
+        "Banner-of": "Banner de {name}",
+        "Link-to": "Enlace a {name}",
+        "Back-home": "Volver al Portfolio",
+        "Honor-roll-simplified": "MH"
+    }
+}

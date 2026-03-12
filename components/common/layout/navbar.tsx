@@ -3,7 +3,7 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { getTranslations } from "next-intl/server";
 
 export const Navbar: React.FC = () => {
-    return <nav className="hidden md:flex items-center gap-4">
+    return <nav className="hidden md:flex items-center gap-2 lg:gap-4">
         {LINKS.map((item) => <RenderItem key={item.labelKey} item={item}/>)}
     </nav>
 };
@@ -16,7 +16,7 @@ const RenderItem: React.FC<RenderItemProps> = async ({ item }) => {
     const t = await getTranslations(TranslationNamespace.COMMON);
 
     return (
-        <ButtonLink href={item.type === 'anchor' ? `#${item.link}` : item.link} variant="ghost" size="sm">
+        <ButtonLink href={item.type === 'anchor' ? `/#${item.link}` : item.link} variant="ghost" size="sm">
             {t(`components.navbar.links.${item.labelKey}.Label`)}
         </ButtonLink>
     );
@@ -45,5 +45,20 @@ const LINKS = [
         type: 'anchor',
         link: 'skills',
         labelKey: "skills"
-    }
+    },
+    {
+        type: 'anchor',
+        link: 'projects',
+        labelKey: "projects"
+    },
+    {
+        type: 'anchor',
+        link: 'courses',
+        labelKey: "courses"
+    },
+    {
+        type: 'link',
+        link: '/ethics',
+        labelKey: "ethics"
+    },
 ] satisfies Item[];
