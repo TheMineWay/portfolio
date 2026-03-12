@@ -4,6 +4,8 @@ import { TranslationNamespace } from '@/i18n/namespaces';
 import type { Metadata } from "next";
 import { getTranslations } from 'next-intl/server';
 
+export const dynamic = 'force-static';
+
 export const generateMetadata = async (): Promise<Metadata> => {
     const t = await getTranslations(TranslationNamespace.ETHICS);
     return {

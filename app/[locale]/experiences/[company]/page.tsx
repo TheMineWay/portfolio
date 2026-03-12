@@ -14,6 +14,8 @@ import { getTranslations } from "next-intl/server";
 
 type PageProps = { params: Promise<{ company: Company, locale: Locale }>};
 
+export const dynamic = 'force-static';
+
 export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
     const { company } = await params;
