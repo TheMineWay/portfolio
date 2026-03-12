@@ -6,14 +6,23 @@ import { getMyJsonLd } from '@/features/about/lib/get-my-json-ld';
 import { Courses } from '@/features/courses/components/courses';
 import { Projects } from '@/features/projects/components/projects';
 import { WorkExperienceSummary } from '@/features/work-experience/components/work-experience-summary';
+import { Locale } from '@/i18n/locale';
 import clsx from 'clsx';
+import { setRequestLocale } from 'next-intl/server';
 
 export const dynamic = 'force-static';
 
 const SECTION_CLASSNAME = "flex items-center justify-center";
 
-export default async function Page() {
+type PageProps = {
+  params: Promise<{ locale: Locale }>;
+}
+
+export default async function Page({ params }: Readonly<PageProps>) {
+  const { locale } = await params;
   const myJsonLdData = await getMyJsonLd();
+
+  setRequestLocale(locale);
 
   return <>
     <JsonLd data={{
