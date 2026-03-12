@@ -5,6 +5,7 @@ import nestfluxBanner from "@/assets/projects/nestflux/banner.png";
 import balanciaBanner from "@/assets/projects/balancia/banner.png";
 import unityEssentialToolkitBanner from "@/assets/projects/unity-essential-toolkit/banner.jpg";
 import mangasApiBanner from "@/assets/projects/mangas-api/banner.png";
+import alvBeatsBanner from "@/assets/projects/alv-beats/banner.png";
 import covid19CertificateManagerBanner from "@/assets/projects/covid-19-certificate-manager/banner.jpg";
 
 export type UrlMode = 'live-demo' | 'docs';
@@ -61,6 +62,7 @@ export const PROJECTS: Project[] = [
         url: 'https://themineway.github.io/AlvBeats/',
         urlMode: 'live-demo',
         featured: false,
+        image: alvBeatsBanner,
     },
     {
         key: 'covid-19-certificate-manager',
