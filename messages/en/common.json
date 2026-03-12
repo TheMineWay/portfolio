@@ -41,6 +41,7 @@
         "Present": "Present",
         "Current": "Current",
         "Logo-of": "Logo of {name}",
+        "Banner-of": "Banner of {name}",
         "Link-to": "Link to {name}",
         "Back-home": "Back to Portfolio",
         "Honor-roll-simplified": "HR"

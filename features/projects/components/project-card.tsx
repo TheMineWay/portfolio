@@ -14,6 +14,7 @@ type Props = {
 
 export const ProjectCard: React.FC<Props> = async ({ project }) => {
     const t = await getTranslations(TranslationNamespace.PROJECTS);
+    const commonT = await getTranslations(TranslationNamespace.COMMON);
 
     const title = t(`projects.${project.key}.Title`);
     const description = t(`projects.${project.key}.Description`);
@@ -27,7 +28,7 @@ export const ProjectCard: React.FC<Props> = async ({ project }) => {
                 {project.image ? (
                     <Image
                         src={project.image}
-                        alt={title}
+                        alt={commonT(`expressions.Banner-of`, { name: title })}
                         fill
                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />

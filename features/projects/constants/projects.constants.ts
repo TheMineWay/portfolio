@@ -1,5 +1,12 @@
 import type { StaticImageData } from 'next/image';
 
+/* Images */
+import nestfluxBanner from "@/assets/projects/nestflux/banner.png";
+import balanciaBanner from "@/assets/projects/balancia/banner.png";
+import unityEssentialToolkitBanner from "@/assets/projects/unity-essential-toolkit/banner.jpg";
+import mangasApiBanner from "@/assets/projects/mangas-api/banner.png";
+import covid19CertificateManagerBanner from "@/assets/projects/covid-19-certificate-manager/banner.jpg";
+
 export type UrlMode = 'live-demo' | 'docs';
 
 export type Project = {
@@ -20,6 +27,7 @@ export const PROJECTS: Project[] = [
         url: 'https://themineway.github.io/NestFlux/',
         urlMode: 'docs',
         featured: true,
+        image: nestfluxBanner,
     },
     {
         key: 'balancia',
@@ -28,6 +36,7 @@ export const PROJECTS: Project[] = [
         url: 'https://themineway.github.io/balancia/',
         urlMode: 'docs',
         featured: true,
+        image: balanciaBanner,
     },
     {
         key: 'unity-essential-toolkit',
@@ -36,12 +45,14 @@ export const PROJECTS: Project[] = [
         url: 'https://themineway.github.io/Unity-Essential-Toolkit/',
         urlMode: 'docs',
         featured: false,
+        image: unityEssentialToolkitBanner,
     },
     {
         key: 'mangas-api',
         tags: ['TypeScript', 'Node.js', 'API', 'Open Source'],
         github: 'https://github.com/TheMineWay/mangas-api',
         featured: false,
+        image: mangasApiBanner,
     },
     {
         key: 'alvbeats',
@@ -56,5 +67,6 @@ export const PROJECTS: Project[] = [
         tags: ['Flutter', 'Dart', 'Mobile', 'Healthcare'],
         github: 'https://github.com/TheMineWay/Covid-19-certificate-manager',
         featured: false,
+        image: covid19CertificateManagerBanner,
     },
 ];
