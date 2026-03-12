@@ -8,8 +8,6 @@ import { Projects } from '@/features/projects/components/projects';
 import { WorkExperienceSummary } from '@/features/work-experience/components/work-experience-summary';
 import clsx from 'clsx';
 
-export const dynamic = 'force-static';
-
 const SECTION_CLASSNAME = "flex items-center justify-center";
 
 export default async function Page() {
