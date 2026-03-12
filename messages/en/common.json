@@ -16,6 +16,15 @@
                 },
                 "skills": {
                     "Label": "Skills"
+                },
+                "projects": {
+                    "Label": "Projects"
+                },
+                "courses": {
+                    "Label": "Courses"
+                },
+                "ethics": {
+                    "Label": "Ethics"
                 }
             }
         },

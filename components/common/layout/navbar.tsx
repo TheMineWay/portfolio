@@ -16,7 +16,7 @@ const RenderItem: React.FC<RenderItemProps> = async ({ item }) => {
     const t = await getTranslations(TranslationNamespace.COMMON);
 
     return (
-        <ButtonLink href={item.type === 'anchor' ? `#${item.link}` : item.link} variant="ghost" size="sm">
+        <ButtonLink href={item.type === 'anchor' ? `/#${item.link}` : item.link} variant="ghost" size="sm">
             {t(`components.navbar.links.${item.labelKey}.Label`)}
         </ButtonLink>
     );
@@ -45,5 +45,20 @@ const LINKS = [
         type: 'anchor',
         link: 'skills',
         labelKey: "skills"
-    }
+    },
+    {
+        type: 'anchor',
+        link: 'projects',
+        labelKey: "projects"
+    },
+    {
+        type: 'anchor',
+        link: 'courses',
+        labelKey: "courses"
+    },
+    {
+        type: 'link',
+        link: '/ethics',
+        labelKey: "ethics"
+    },
 ] satisfies Item[];
