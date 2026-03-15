@@ -13,6 +13,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import ogBanner from '@/assets/open-graph/banner.png';
 import { TranslationNamespace } from '@/i18n/namespaces';
+import { MY_DETAILS } from '@/constants/my-details';
 
 export const dynamic = 'force-static';
 
@@ -44,6 +45,7 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
         height: ogBanner.height,
         alt: t('about-me.About-me'),
       },
+      title: MY_DETAILS.fullName,
     }
   };
 }
