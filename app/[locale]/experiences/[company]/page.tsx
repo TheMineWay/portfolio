@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/common/json-ld/json-ld";
 import { Card, CardContent } from "@/components/ui/card/card";
 import { MY_DETAILS } from "@/constants/my-details";
+import { SITE_URL } from "@/constants/site-url";
 import { BackHomeLink } from "@/features/work-experience/components/company-page/back-home-link";
 import { CompanyExperienceEntry } from "@/features/work-experience/components/company-page/company-experience-entry";
 import { CompanyHero } from "@/features/work-experience/components/company-page/company-hero";
@@ -35,6 +36,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
         title: t(`company-page.meta.Title`, { companyName: name, name: MY_DETAILS.name }),
         description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
         keywords: [name, ...keywords],
+        metadataBase: SITE_URL,
         openGraph: {
             images: {
                 url: banner.src,
