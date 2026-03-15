@@ -34,6 +34,10 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
   }
 
   return {
+    description: t('about-me.About-me'),
+    authors: {
+      name: MY_DETAILS.fullName,
+    },
     metadataBase: SITE_URL,
     alternates: {
       canonical: '/',
