@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
   setRequestLocale(locale);
 
   const t = await getTranslations(TranslationNamespace.ABOUT);
+  const commonT = await getTranslations(TranslationNamespace.COMMON);
 
   const languages: Record<string, string> = {};
   for(const locale of Object.values(Locale)) {
@@ -43,9 +44,10 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
         url: ogBanner.src,
         width: ogBanner.width,
         height: ogBanner.height,
-        alt: t('about-me.About-me'),
+        alt: commonT('expressions.Banner-of', { name: MY_DETAILS.fullName }),
       },
       title: MY_DETAILS.fullName,
+      description: t('about-me.About-me'),
     }
   };
 }
