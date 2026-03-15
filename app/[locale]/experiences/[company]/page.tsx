@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/common/json-ld/json-ld";
 import { Card, CardContent } from "@/components/ui/card/card";
 import { MY_DETAILS } from "@/constants/my-details";
+import { SITE_URL } from "@/constants/site-url";
 import { BackHomeLink } from "@/features/work-experience/components/company-page/back-home-link";
 import { CompanyExperienceEntry } from "@/features/work-experience/components/company-page/company-experience-entry";
 import { CompanyHero } from "@/features/work-experience/components/company-page/company-hero";
@@ -12,19 +13,46 @@ import { Award, Briefcase, Target } from "lucide-react";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-type PageProps = { params: Promise<{ company: Company, locale: Locale }>};
-
 export const dynamic = 'force-static';
+
+type PageProps = { params: Promise<{ company: Company, locale: Locale }>};
 
 export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {
     const t = await getTranslations(TranslationNamespace.WORK_EXPERIENCE);
-    const { company } = await params;
-    const { name, mainRole, keywords } = COMPANIES[company];
+    const commonT = await getTranslations(TranslationNamespace.COMMON);
+
+    const languages: Record<string, string> = {};
+
+    const { company, locale } = await params;
+    const { name, mainRole, keywords, banner } = COMPANIES[company];
+
+    const PAGE_SLUG = `experiences/${company}`;
+
+    for(const locale of Object.values(Locale)) {
+        languages[locale] = `/${locale}/${PAGE_SLUG}`;
+    }
 
     return {
         title: t(`company-page.meta.Title`, { companyName: name, name: MY_DETAILS.name }),
         description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
         keywords: [name, ...keywords],
+        metadataBase: SITE_URL,
+        authors: {
+            name: MY_DETAILS.fullName,
+        },
+        openGraph: {
+            images: {
+                url: banner.src,
+                width: banner.width,
+                height: banner.height,
+                alt: commonT('expressions.Banner-of', { name })
+            },
+            description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
+        },
+        alternates: {
+            canonical: `/${locale}/${PAGE_SLUG}`,
+            languages,
+        }
     };
 };
 
