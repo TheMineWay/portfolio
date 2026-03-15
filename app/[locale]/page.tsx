@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
     },
     metadataBase: SITE_URL,
     alternates: {
-      canonical: '/',
+      canonical: `/${locale}`,
       languages,
     },
     openGraph: {
