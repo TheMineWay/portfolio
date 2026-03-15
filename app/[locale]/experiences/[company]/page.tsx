@@ -37,6 +37,9 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
         description: t(`company-page.meta.Description`, { companyName: name, role: mainRole }),
         keywords: [name, ...keywords],
         metadataBase: SITE_URL,
+        authors: {
+            name: MY_DETAILS.fullName,
+        },
         openGraph: {
             images: {
                 url: banner.src,
