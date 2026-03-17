@@ -10,11 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 }
 
 const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
-    const prefix = `${SITE_URL}/${locale}/`;
+    const prefix = `${SITE_URL}/${locale}`;
 
     return [
         `${prefix}`,
-        `${prefix}ethics`,
+        `${prefix}/ethics`,
         ...buildExperiences().map((url) => `${prefix}${url}`),
     ].map((url) => ({
         url,
@@ -23,5 +23,5 @@ const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
 }
 
 const buildExperiences = (): string[] => {
-    return Object.values(Company).map((company) => `experiences/${company}/`);
+    return Object.values(Company).map((company) => `experiences/${company}`);
 };
