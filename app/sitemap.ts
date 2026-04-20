@@ -15,7 +15,7 @@ const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
     return [
         `${prefix}`,
         `${prefix}/ethics`,
-        ...buildExperiences().map((url) => `${prefix}${url}`),
+        ...buildExperiences().map((url) => `${prefix}/${url}`),
     ].map((url) => ({
         url,
         lastModified: new Date(),
