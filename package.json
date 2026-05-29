@@ -21,7 +21,7 @@
     "e2e:dev": "playwright test --ui"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.8.8",
+    "@formatjs/intl-localematcher": "^0.8.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.3.0",
