@@ -23,7 +23,7 @@ export const CourseCard: React.FC<CourseCardProps> = async ({ course }) => {
         <Card topAccent hover>
             <CardContent className="flex flex-col h-full justify-between">
                 <div className="flex flex-col">
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex items-center gap-3 my-4">
                         <Image
                             src={course.logo}
                             alt={commonT(`expressions.Logo-of`, { name: course.platform })}

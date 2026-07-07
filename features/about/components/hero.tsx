@@ -16,10 +16,15 @@ export const Hero: React.FC = async () => {
             {/* Avatar */}
             <div className="mb-8 flex justify-center">
                 <div className="relative">
-                    <div className="absolute inset-0 rounded-full blur-2xl opacity-30 bg-primary"></div>
-                    <Avatar className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-2 border-background shadow-xl"/>
+                    <div className="absolute inset-0 blur-2xl opacity-30 bg-primary"></div>
+                    <Avatar className="relative w-40 h-40 sm:w-48 sm:h-48 object-cover"/>
                 </div>
             </div>
+
+            {/* Eyebrow */}
+            <span className="font-mono text-xs tracking-widest text-muted-foreground block mb-6">
+                {`— 00 / hello`}
+            </span>
 
             {/* Texts */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">{t('about-me-hero.Title')} <span className="text-primary">{MY_DETAILS.fullName}</span></h1>

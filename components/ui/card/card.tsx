@@ -8,14 +8,12 @@ export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
 
 export const Card: React.FC<CardProps> = ({ className, topAccent = false, hover = false, children, ...props }) => (
   <div
-    className={clsx("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border overflow-hidden", {
-      'hover:shadow-xl transition-all duration-300 group': hover,
+    className={clsx("bg-card text-card-foreground flex flex-col gap-6 border overflow-hidden", {
+      'border-t-2 border-t-brand-accent': topAccent,
+      'hover:border-border-strong transition-colors duration-200 group': hover,
     }, className)}
     {...props}
   >
-    {topAccent && (
-      <div className="h-2 flex-none" style={{ backgroundColor: 'var(--brand-primary)' }} />
-    )}
     {children}
   </div>
 );

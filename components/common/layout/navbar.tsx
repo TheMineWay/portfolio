@@ -16,7 +16,12 @@ const RenderItem: React.FC<RenderItemProps> = async ({ item }) => {
     const t = await getTranslations(TranslationNamespace.COMMON);
 
     return (
-        <ButtonLink href={item.type === 'anchor' ? `/#${item.link}` : item.link} variant="ghost" size="sm">
+        <ButtonLink
+            href={item.type === 'anchor' ? `/#${item.link}` : item.link}
+            variant="ghost"
+            size="sm"
+            className="font-mono text-xs uppercase tracking-widest hover:text-brand-accent"
+        >
             {t(`components.navbar.links.${item.labelKey}.Label`)}
         </ButtonLink>
     );

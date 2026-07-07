@@ -25,8 +25,8 @@
     "Extra": "Creo experiencias web hermosas y funcionales con tecnologías modernas. Especializado en React, Node.js y en la creación de interfaces de usuario fluidas."
   },
   "skills": {
-    "Title": "Mis habilidades",
-    "Subtitle": "Tecnologías y herramientas que uso para dar vida a las ideas",
+    "Title-primary": "Stack",
+    "Title-accent": "Técnico",
     "groups": {
       "frontend": {
         "Title": "Frontend"
@@ -34,11 +34,8 @@
       "backend": {
         "Title": "Backend"
       },
-      "tools-and-devops": {
-        "Title": "Herramientas y DevOps"
-      },
-      "cloud": {
-        "Title": "Nube"
+      "devops": {
+        "Title": "DevOps y Herramientas"
       }
     },
     "secondary-skills": {

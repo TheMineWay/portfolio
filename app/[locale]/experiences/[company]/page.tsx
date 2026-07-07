@@ -128,7 +128,7 @@ export default async function Page({ params }: Readonly<PageProps>) {
                             <ul className="space-y-3">
                                 {responsibilities.map((responsibility) => (
                                     <li key={responsibility} className="flex items-start gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-brand-accent" />
+                                        <div className="w-1.5 h-1.5 mt-2 flex-shrink-0 bg-brand-accent" />
                                         <span className="text-muted-foreground">{responsibility}</span>
                                     </li>
                                 ))}
@@ -165,7 +165,7 @@ export default async function Page({ params }: Readonly<PageProps>) {
                             <ul className="space-y-3">
                                 {skills.map(({ label, technologies }) => (
                                     <li key={label} className="flex items-start gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-primary" />
+                                        <div className="w-1.5 h-1.5 mt-2 flex-shrink-0 bg-primary" />
                                         <span className="text-muted-foreground">
                                             <span className="text-foreground font-medium">{label}:</span> {technologies.join(', ')}
                                         </span>

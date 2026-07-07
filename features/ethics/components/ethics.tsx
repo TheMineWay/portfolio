@@ -5,7 +5,7 @@ import { ArrowLeft, Users, Shield, Code, Heart, Leaf, Lock, Eye, Globe, Lightbul
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card/card";
 import { Callout, CalloutDescription } from "@/components/ui/callout/callout";
-import { SectionTitle } from "@/components/common/title/section-title";
+import { SectionHeader } from "@/components/common/title/section-header";
 import { buttonVariants } from "@/components/ui/button/button";
 import { TranslationNamespace } from "@/i18n/namespaces";
 
@@ -16,14 +16,15 @@ export const Ethics: React.FC = async () => {
     return (
         <div className="pt-24 pb-20">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-4xl mx-auto relative overflow-hidden">
                     {/* Header */}
-                    <div className="text-center mb-16">
-                        <SectionTitle level={1} title={t('hero.Title')} />
-                        <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                            {t('hero.Subtitle')}
-                        </p>
-                    </div>
+                    <SectionHeader
+                        index="06"
+                        slug="ethics"
+                        level={1}
+                        title={t('hero.Title')}
+                        subtitle={t('hero.Subtitle')}
+                    />
 
                     {/* Quote */}
                     <Card className="mb-16">
@@ -67,7 +68,7 @@ export const Ethics: React.FC = async () => {
                                         <ul className="space-y-2">
                                             {valueKeys.map(valueKey => (
                                                 <li key={valueKey} className="flex items-start gap-3">
-                                                    <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-primary" />
+                                                    <div className="w-1.5 h-1.5 mt-2 flex-shrink-0 bg-primary" />
                                                     <span className="text-sm text-muted-foreground">
                                                         {t(`principles.${key}.values.${valueKey}`)}
                                                     </span>

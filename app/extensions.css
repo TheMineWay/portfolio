@@ -5,3 +5,11 @@
 .bg-section {
     background-color: var(--section-background);
 }
+
+/* Subtle background grid — 3% opacity accent lines, unobtrusive in both themes. */
+.bg-grid {
+    background-image:
+        linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}

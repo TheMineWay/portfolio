@@ -12,7 +12,7 @@ export const Progress: React.FC<ProgressProps> = ({ className, value, max = 100,
   return (
     <div
       className={clsx(
-        "bg-primary/20 relative h-2 w-full overflow-hidden rounded-full",
+        "bg-primary/20 relative h-2 w-full overflow-hidden",
         className,
       )}
       {...props}

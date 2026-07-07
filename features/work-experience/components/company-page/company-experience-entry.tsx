@@ -49,7 +49,7 @@ export const CompanyExperienceEntry: React.FC<Props> = async ({ experience }) =>
                     <ul className="space-y-2">
                         {experience.achievements.map((achievement) => (
                             <li key={achievement} className="flex items-start gap-2.5 text-sm text-muted-foreground">
-                                <span className="inline-block w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-brand-accent" />
+                                <span className="inline-block w-1.5 h-1.5 mt-1.5 flex-shrink-0 bg-brand-accent" />
                                 {achievement}
                             </li>
                         ))}
