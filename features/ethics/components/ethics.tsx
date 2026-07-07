@@ -19,7 +19,6 @@ export const Ethics: React.FC = async () => {
                 <div className="max-w-4xl mx-auto relative overflow-hidden">
                     {/* Header */}
                     <SectionHeader
-                        index="06"
                         slug="ethics"
                         level={1}
                         title={t('hero.Title')}

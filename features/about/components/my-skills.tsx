@@ -13,10 +13,9 @@ export const MySkills: React.FC = async () => {
                 {/* Watermark */}
                 <span
                     aria-hidden
-                    className="hidden md:block absolute top-0 right-0 lg:right-6 text-[13rem] font-bold leading-none text-foreground/5 select-none pointer-events-none"
-                >
-                    {SECTION_INDEX}
-                </span>
+                    data-index={SECTION_INDEX}
+                    className="hidden md:block absolute top-0 right-0 lg:right-6 text-[13rem] font-bold leading-none text-foreground/5 select-none pointer-events-none before:content-[attr(data-index)]"
+                />
 
                 {/* Header */}
                 <div className="relative mb-16 md:mb-20">
@@ -54,8 +53,8 @@ export const MySkills: React.FC = async () => {
 
                 {/* Additional skills */}
                 <div className="relative mt-16 md:mt-20 pt-8 border-t border-border">
-                    <p className="font-mono text-xs tracking-wide text-muted-foreground/60 leading-relaxed">
-                        <span className="text-muted-foreground/40">{t('skills.secondary-skills.Title')}:{' '}</span>
+                    <p className="font-mono text-xs tracking-wide text-muted-foreground leading-relaxed">
+                        <span className="text-muted-foreground">{t('skills.secondary-skills.Title')}:{' '}</span>
                         {SECONDARY_SKILLS.join('  ·  ')}
                     </p>
                 </div>

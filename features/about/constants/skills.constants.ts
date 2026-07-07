@@ -38,11 +38,11 @@ export const GROUPED_TECHNOLOGIES = {
     "devops": {
         technologies: [
             { name: "Docker", primary: true },
-            { name: "AWS", primary: true },
+            { name: "Azure", primary: true },
             { name: "GitHub Actions", primary: true },
             { name: "Git", primary: true },
             { name: "Linux", primary: true },
-            { name: "Azure" },
+            { name: "AWS" },
             { name: "Jenkins" },
             { name: "CI/CD" },
             { name: "Kubernetes" },

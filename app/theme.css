@@ -26,7 +26,7 @@
   --popover-foreground: #0f0f0f;
 
   /* --- Brand / Portfolio-specific --- (declared first so --primary can alias it below) --- */
-  --brand-accent: #0f8a78;
+  --brand-accent: #0e8473;
   --brand-secondary: oklch(0.627 0.265 303.9);
 
   /* --- Primary Action (aliased to the brand accent — one green, everywhere) --- */
@@ -112,7 +112,7 @@
 
   /* --- Muted --- */
   --muted: #1a1a1a;
-  --muted-foreground: #666666;
+  --muted-foreground: #888888;
 
   /* --- Accent --- */
   --accent: #1a1a1a;
@@ -188,7 +188,7 @@
 
     /* --- Muted --- */
     --muted: #1a1a1a;
-    --muted-foreground: #666666;
+    --muted-foreground: #888888;
 
     /* --- Accent --- */
     --accent: #1a1a1a;
