@@ -25,8 +25,8 @@
     "Extra": "I craft beautiful, functional web experiences with modern technologies. Specializing in React, Node.js, and creating seamless user interfaces."
   },
   "skills": {
-    "Title": "My Skills",
-    "Subtitle": "Technologies and tools I use to bring ideas to life",
+    "Title-primary": "Tech",
+    "Title-accent": "Stack",
     "groups": {
       "frontend": {
         "Title": "Frontend"
@@ -34,11 +34,8 @@
       "backend": {
         "Title": "Backend"
       },
-      "tools-and-devops": {
-        "Title": "Tools & DevOps"
-      },
-      "cloud": {
-        "Title": "Cloud"
+      "devops": {
+        "Title": "DevOps & Tools"
       }
     },
     "secondary-skills": {

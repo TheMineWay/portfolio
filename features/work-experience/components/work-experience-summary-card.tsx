@@ -95,7 +95,7 @@ export const WorkExperienceSummaryCard: React.FC<Props> = async ({ experience: {
                                 {achievements.map((achievement, achievementKey) => (
                                     <li key={achievementKey} className="text-xs text-muted-foreground flex items-start">
                                         <span
-                                            className="inline-block w-1 h-1 rounded-full mt-1.5 mr-2 flex-shrink-0"
+                                            className="inline-block w-1 h-1 mt-1.5 mr-2 flex-shrink-0"
                                             style={{ backgroundColor: 'var(--brand-accent)' }}
                                         />
                                         {achievement}

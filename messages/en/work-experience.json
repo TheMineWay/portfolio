@@ -28,6 +28,19 @@
     }
   },
   "companies": {
+    "skill-labels": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "devops": "DevOps",
+      "testing": "Testing",
+      "apis": "APIs",
+      "frameworks": "Frameworks",
+      "uiLibrary": "UI Library",
+      "performance": "Performance",
+      "tooling": "Tooling",
+      "web": "Web"
+    },
     "primer-impacto": {
       "Banner-alt": "Grandland offices, where Primer Impacto is located",
       "Overview": "Primer Impacto is a retail marketing and digital solutions company based in Barcelona. They provide innovative retail experiences and data-driven marketing services for leading brands across Spain, helping companies optimize their digital presence and customer engagement.",
@@ -39,12 +52,7 @@
         "4": "Analyzed and reported security vulnerabilities, ensuring platform compliance"
       },
       "skills": {
-        "Category": "Full-Stack & DevOps",
-        "0": "Frontend: TypeScript, React",
-        "1": "Backend: Node.js, NestJS, PHP",
-        "2": "Databases: MySQL, Azure SQL, CosmosDB",
-        "3": "DevOps: Docker, GitHub Actions, Azure Pipelines",
-        "4": "Testing: Vitest, Jest"
+        "Category": "Full-Stack & DevOps"
       }
     },
     "decathlon": {
@@ -58,12 +66,7 @@
         "4": "Reviewed pull requests and mentored junior developers"
       },
       "skills": {
-        "Category": "Frontend Development",
-        "0": "Frameworks: React, Next.js, Svelte, Vue",
-        "1": "UI Library: Storybook, Design Tokens, CSS Modules",
-        "2": "Testing: Jest, Playwright, Testing Library",
-        "3": "Performance: Core Web Vitals, Lighthouse, Web Perf",
-        "4": "Tooling: Vite, ESLint, Git"
+        "Category": "Frontend Development"
       }
     }
   },

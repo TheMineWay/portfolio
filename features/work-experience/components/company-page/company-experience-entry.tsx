@@ -21,7 +21,7 @@ export const CompanyExperienceEntry: React.FC<Props> = async ({ experience }) =>
                         <Briefcase className="h-4 w-4" />
                     </div>
                     <div>
-                        <h3 className="text-xl mb-1 text-primary">
+                        <h3 className="text-xl font-bold mb-1 text-primary">
                             {experience.role}
                         </h3>
                         <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
@@ -49,7 +49,7 @@ export const CompanyExperienceEntry: React.FC<Props> = async ({ experience }) =>
                     <ul className="space-y-2">
                         {experience.achievements.map((achievement) => (
                             <li key={achievement} className="flex items-start gap-2.5 text-sm text-muted-foreground">
-                                <span className="inline-block w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 bg-brand-accent" />
+                                <span className="inline-block w-1.5 h-1.5 mt-1.5 flex-shrink-0 bg-brand-accent" />
                                 {achievement}
                             </li>
                         ))}

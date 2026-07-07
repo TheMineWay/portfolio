@@ -71,13 +71,15 @@ export default async function Page({ params }: Readonly<PageProps>) {
         myJsonLdData,
       ]
     }}/>
-    {SECTIONS.map(({ key, component, className, sectionBg = false }) => (
+    {SECTIONS.map(({ key, component, className, sectionBg = false, fullBleed = false }) => (
       <section id={key} key={key} className={clsx(SECTION_CLASSNAME, className, {
         'bg-section': sectionBg,
       })}>
-        <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-20'>
-          {component}
-        </div>
+        {fullBleed ? component : (
+          <div className='container mx-auto px-4 sm:px-6 lg:px-8 py-20'>
+            {component}
+          </div>
+        )}
       </section>
     ))}
   </>;
@@ -88,6 +90,8 @@ type Section = {
   component: React.ReactNode;
   className?: string;
   sectionBg?: boolean;
+  /** Renders the section without the padded container — the component owns its own full-width layout and spacing. */
+  fullBleed?: boolean;
 }
 
 const SECTIONS: Section[] = [
@@ -109,6 +113,7 @@ const SECTIONS: Section[] = [
   {
     key: 'skills',
     component: <MySkills/>,
+    fullBleed: true,
   },
   {
     key: 'projects',

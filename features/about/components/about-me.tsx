@@ -5,19 +5,19 @@ import { TranslationNamespace } from "@/i18n/namespaces";
 import { Card, CardContent } from "@/components/ui/card/card";
 import { Code2, Puzzle, Zap } from "lucide-react";
 import { TOP_TECHNOLOGIES } from "@/constants/technologies.constant";
-import { SectionTitle } from "@/components/common/title/section-title";
+import { SectionHeader } from "@/components/common/title/section-header";
 
 export const AboutMe: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
 
     return (
-        <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-                <SectionTitle level={2} title={t('about-me.Title')} />
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                    {t('about-me.Subtitle')}
-                </p>
-            </div>
+        <div className="max-w-6xl mx-auto relative overflow-hidden">
+            <SectionHeader
+                index="01"
+                slug="about"
+                title={t('about-me.Title')}
+                subtitle={t('about-me.Subtitle')}
+            />
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                 <div>

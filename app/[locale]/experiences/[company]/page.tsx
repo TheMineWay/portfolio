@@ -76,10 +76,10 @@ export default async function Page({ params }: Readonly<PageProps>) {
         (_, i) => t(`companies.${company}.responsibilities.${i}`)
     );
 
-    const skills = Array.from(
-        { length: companyData.skillsCount },
-        (_, i) => t(`companies.${company}.skills.${i}`)
-    );
+    const skills = companyData.skillGroups.map((group) => ({
+        label: t(`companies.skill-labels.${group.labelKey}`),
+        technologies: group.technologies,
+    }));
 
     const jsonLdData = {
         "@context": "https://schema.org",
@@ -128,7 +128,7 @@ export default async function Page({ params }: Readonly<PageProps>) {
                             <ul className="space-y-3">
                                 {responsibilities.map((responsibility) => (
                                     <li key={responsibility} className="flex items-start gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-brand-accent" />
+                                        <div className="w-1.5 h-1.5 mt-2 flex-shrink-0 bg-brand-accent" />
                                         <span className="text-muted-foreground">{responsibility}</span>
                                     </li>
                                 ))}
@@ -163,10 +163,12 @@ export default async function Page({ params }: Readonly<PageProps>) {
                                 <h2 className="text-2xl">{t(`companies.${company}.skills.Category`)}</h2>
                             </div>
                             <ul className="space-y-3">
-                                {skills.map((skill) => (
-                                    <li key={skill} className="flex items-start gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 bg-primary" />
-                                        <span className="text-muted-foreground">{skill}</span>
+                                {skills.map(({ label, technologies }) => (
+                                    <li key={label} className="flex items-start gap-3">
+                                        <div className="w-1.5 h-1.5 mt-2 flex-shrink-0 bg-primary" />
+                                        <span className="text-muted-foreground">
+                                            <span className="text-foreground font-medium">{label}:</span> {technologies.join(', ')}
+                                        </span>
                                     </li>
                                 ))}
                             </ul>

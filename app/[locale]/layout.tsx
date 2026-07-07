@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -11,13 +11,15 @@ import { Footer } from '@/components/common/layout/footer';
 import { Locale } from '@/i18n/locale';
 import { setRequestLocale } from 'next-intl/server';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const jetBrainsMono = JetBrains_Mono({
+  variable: '--font-jetbrains-mono',
+  weight: ['300', '400', '500', '700'],
   subsets: ['latin'],
 });
 
@@ -51,7 +53,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased bg-grid`}>
         <NextIntlClientProvider>
           <Header/>
           <main>{children}</main>

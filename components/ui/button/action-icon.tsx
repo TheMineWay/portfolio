@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { cva, type VariantProps } from "class-variance-authority";
 import { Link } from "@/i18n/navigation";
 
-const actionIconVariants = cva("rounded-full border hover:border-foreground transition-colors", {
+const actionIconVariants = cva("border border-border-strong hover:border-foreground hover:text-brand-accent transition-colors", {
     variants: {
         size: {
             default: "p-3 [&>svg]:w-5 [&>svg]:h-5",

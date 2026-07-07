@@ -1,7 +1,7 @@
 import type React from "react";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
-import { SectionTitle } from "@/components/common/title/section-title";
+import { SectionHeader } from "@/components/common/title/section-header";
 import { PROJECTS } from "../constants/projects.constants";
 import { FeaturedProjectCard } from "./featured-project-card";
 import { ProjectCard } from "./project-card";
@@ -13,13 +13,13 @@ export const Projects: React.FC = async () => {
     const regularProjects = PROJECTS.filter((p) => !p.featured);
 
     return (
-        <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-                <SectionTitle level={2} title={t('Title')} />
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                    {t('Subtitle')}
-                </p>
-            </div>
+        <div className="max-w-6xl mx-auto relative overflow-hidden">
+            <SectionHeader
+                index="04"
+                slug="projects"
+                title={t('Title')}
+                subtitle={t('Subtitle')}
+            />
 
             {/* Featured Projects */}
             <div className="space-y-12 mb-12">

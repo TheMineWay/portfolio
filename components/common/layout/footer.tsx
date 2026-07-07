@@ -41,7 +41,7 @@ export const Footer: React.FC = async () => {
                 </div>
 
                 {/* COPYRIGHT */}
-                <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+                <div className="mt-8 pt-8 border-t text-center font-mono text-xs tracking-wide text-muted-foreground">
                     <p>{CURRENT_YEAR} - {MY_DETAILS.fullName}</p>
                 </div>
             </div>
