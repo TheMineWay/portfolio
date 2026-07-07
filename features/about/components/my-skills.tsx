@@ -1,9 +1,9 @@
- import { Card, CardContent } from "@/components/ui/card/card";
+import { Card, CardContent } from "@/components/ui/card/card";
 import { getTranslations } from "next-intl/server";
 import { TranslationNamespace } from "@/i18n/namespaces";
 import { SectionTitle } from "@/components/common/title/section-title";
-import { Cloud, Code2, Container, Database, GitBranch, Globe, Layout, Palette, Server, Wrench, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge/badge";
+import { GROUPED_TECHNOLOGIES, SECONDARY_SKILLS } from "../constants/skills.constants";
 
 export const MySkills: React.FC = async () => {
     const t = await getTranslations(TranslationNamespace.ABOUT);
@@ -62,15 +62,7 @@ export const MySkills: React.FC = async () => {
           <div className="mt-12 text-center">
             <h3 className="text-xl mb-6 opacity-80">{t('skills.secondary-skills.Title')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {[
-                'Vitest',
-                'Jest',
-                'Flutter',
-                'Kotlin MP',
-                'Unity',
-                'Python',
-                'Playwright'
-              ].map((skill) => (
+              {SECONDARY_SKILLS.map((skill) => (
                 <Badge
                     variant="outline"
                     size="xxl"
@@ -83,60 +75,3 @@ export const MySkills: React.FC = async () => {
           </div>
     </div>;
 }
-
-/* Content */
-
-type Technology = {
-    name: string;
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-}
-
-const GROUPED_TECHNOLOGIES = {
-    "frontend": {
-        icon: Layout,
-        technologies: [
-            { name: "React", icon: Code2 },
-            { name: "NextJS", icon: Zap },
-            { name: "TailwindCSS", icon: Palette },
-            { name: "PostCSS", icon: Globe },
-            { name: "Vue", icon: Code2 },
-            { name: "Svelte", icon: Code2 },
-        ]
-    },
-    "backend": {
-        icon: Server,
-        technologies: [
-            { name: "NestJS", icon: Server },
-            { name: "Express", icon: Server },
-            { name: "PostgreSQL", icon: Database },
-            { name: "MySQL", icon: Database },
-            { name: "ASP.NET", icon: Code2 },
-            { name: "PHP", icon: Code2 },
-        ]
-    },
-    "cloud": {
-        icon: Cloud,
-        technologies: [
-            { name: "Azure", icon: Cloud },
-            { name: "Firebase", icon: Cloud },
-            { name: "Cloudflare", icon: Cloud },
-            { name: "Vercel", icon: Cloud },
-            { name: "AWS", icon: Cloud },
-            { name: "Supabase", icon: Cloud },
-        ]
-    },
-    "tools-and-devops": {
-        icon: Wrench,
-        technologies: [
-            { name: "Github", icon: GitBranch },
-            { name: "Jenkins", icon: Server },
-            { name: "Docker", icon: Container },
-            { name: "Kubernetes", icon: Container },
-            { name: "Git", icon: GitBranch },
-            { name: "Node", icon: Server },
-        ]
-    },
-} satisfies Record<string, {
-    icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-    technologies: Technology[]
-}>;

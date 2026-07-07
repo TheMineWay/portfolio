@@ -42,6 +42,13 @@ export type OrganizationJsonLd = {
     sameAs: string[];
 };
 
+export type SkillGroup = {
+    /** Key of a label under `companies.skill-labels` in the work-experience messages. */
+    labelKey: string;
+    /** Technology names - not translated, they read the same in every locale. */
+    technologies: string[];
+};
+
 export type CompanyMetadata = {
     name: string;
     logo: StaticImageData;
@@ -49,7 +56,7 @@ export type CompanyMetadata = {
     mainRole: string;
     keywords: string[];
     responsibilitiesCount: number;
-    skillsCount: number;
+    skillGroups: SkillGroup[];
     jsonLd: OrganizationJsonLd;
 };
 
@@ -61,7 +68,14 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         mainRole: 'Senior Full-Stack DevOps',
         keywords: ['primer-impacto', 'retail'],
         responsibilitiesCount: 5,
-        skillsCount: 5,
+        skillGroups: [
+            { labelKey: 'frontend', technologies: ['TypeScript', 'React'] },
+            { labelKey: 'backend', technologies: ['Node.js', 'NestJS', 'PHP'] },
+            { labelKey: 'databases', technologies: ['MySQL', 'Azure SQL', 'CosmosDB'] },
+            { labelKey: 'devops', technologies: ['Docker', 'GitHub Actions', 'Azure Pipelines'] },
+            { labelKey: 'testing', technologies: ['Vitest', 'Jest'] },
+            { labelKey: 'apis', technologies: ['REST', 'Swagger/OpenAPI'] },
+        ],
         jsonLd: {
             name: 'PRIMER IMPACTO, S.L.',
             alternateName: 'Primer Impacto',
@@ -101,7 +115,14 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         mainRole: 'Frontend Developer',
         keywords: ['decathlon', 'sports retail'],
         responsibilitiesCount: 5,
-        skillsCount: 5,
+        skillGroups: [
+            { labelKey: 'frameworks', technologies: ['React', 'Next.js', 'Svelte', 'Vue'] },
+            { labelKey: 'uiLibrary', technologies: ['Storybook', 'Design Tokens', 'CSS Modules'] },
+            { labelKey: 'testing', technologies: ['Jest', 'Playwright', 'Testing Library'] },
+            { labelKey: 'performance', technologies: ['Core Web Vitals', 'Lighthouse', 'Web Perf'] },
+            { labelKey: 'tooling', technologies: ['Vite', 'ESLint', 'Git'] },
+            { labelKey: 'web', technologies: ['HTML5', 'CSS3', 'IndexedDB', 'Web Storage'] },
+        ],
         jsonLd: {
             name: 'DECATHLON ESPAÑA, S.A.U.',
             alternateName: 'Decathlon',
