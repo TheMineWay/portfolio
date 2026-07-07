@@ -26,7 +26,8 @@
   --popover-foreground: #0f0f0f;
 
   /* --- Brand / Portfolio-specific --- (declared first so --primary can alias it below) --- */
-  --brand-accent: #0e8473;
+  /* Darkened slightly from #0e8473 — the original only hit 4.29:1 as text on light surfaces (needs 4.5:1 AA); this reaches ~5.1-5.5:1 everywhere it's used as text. */
+  --brand-accent: #0d7667;
   --brand-secondary: oklch(0.627 0.265 303.9);
 
   /* --- Primary Action (aliased to the brand accent — one green, everywhere) --- */

@@ -21,7 +21,7 @@ export const CompanyExperienceEntry: React.FC<Props> = async ({ experience }) =>
                         <Briefcase className="h-4 w-4" />
                     </div>
                     <div>
-                        <h3 className="text-xl mb-1 text-primary">
+                        <h3 className="text-xl font-bold mb-1 text-primary">
                             {experience.role}
                         </h3>
                         <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
