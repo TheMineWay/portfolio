@@ -36,13 +36,13 @@ export const MySkills: React.FC = async () => {
                             <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground mb-6">
                                 {t(`skills.groups.${group}.Title`)}
                             </h3>
-                            <ul className="space-y-3">
+                            <ul className="grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-3">
                                 {technologies.map((technology) => (
-                                    <li key={technology.name} className="flex items-center gap-3">
+                                    <li key={technology.name} className="flex items-center gap-2 min-w-0">
                                         <span
                                             className={`w-1 h-1 flex-shrink-0 ${technology.primary ? 'bg-brand-accent' : 'bg-muted-foreground'}`}
                                         />
-                                        <span className={technology.primary ? 'text-foreground font-medium' : 'text-muted-foreground'}>
+                                        <span className={`truncate ${technology.primary ? 'text-foreground font-medium' : 'text-muted-foreground'}`}>
                                             {technology.name}
                                         </span>
                                     </li>
