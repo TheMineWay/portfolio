@@ -23,7 +23,7 @@ export const WORK_EXPERIENCES = [
         key: 'primer-impacto-1',
         company: Company.PRIMER_IMPACTO,
         role: 'FullStack DevOps',
-        fromDate: new Date('2021-05-01'),
+        fromDate: new Date('2020-05-01'),
         toDate: new Date('2023-11-30'),
         location: 'Barcelona',
         achievementsCount: 3,
