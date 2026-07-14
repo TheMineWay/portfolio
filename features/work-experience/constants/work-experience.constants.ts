@@ -24,7 +24,7 @@ export const WORK_EXPERIENCES = [
         company: Company.PRIMER_IMPACTO,
         role: 'FullStack DevOps',
         fromDate: new Date('2020-05-01'),
-        toDate: new Date('2023-11-30'),
+        toDate: new Date('2023-07-30'),
         location: 'Barcelona',
         achievementsCount: 3,
         technologies: ['Azure', 'TypeScript', 'Node.js', 'PHP', 'MySQL', 'Docker']
@@ -33,8 +33,8 @@ export const WORK_EXPERIENCES = [
         key: 'decathlon',
         company: Company.DECATHLON,
         role: 'Frontend Developer',
-        fromDate: new Date('2023-12-01'),
-        toDate: new Date('2025-04-09'),
+        fromDate: new Date('2023-07-30'),
+        toDate: new Date('2025-11-09'),
         location: 'Barcelona',
         achievementsCount: 3,
         technologies: ['Vue', 'Next.js', 'Svelte', 'Playwright', 'Jest']
@@ -43,7 +43,7 @@ export const WORK_EXPERIENCES = [
         key: 'primer-impacto-2',
         company: Company.PRIMER_IMPACTO,
         role: 'Senior FullStack DevOps',
-        fromDate: new Date('2025-04-10'),
+        fromDate: new Date('2025-11-09'),
         toDate: null,
         location: 'Barcelona',
         achievementsCount: 3,
