@@ -13,16 +13,25 @@ const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
     const prefix = `${SITE_URL}/${locale}`;
 
     return [
-        `${prefix}`,
-        `${prefix}/ethics`,
-        ...buildExperiences().map((url) => `${prefix}/${url}`),
-    ].map((url) => ({
-        url,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-    } satisfies MetadataRoute.Sitemap[number]));
+        buildUrl('', { changeFrequency: 'weekly', priority: 1 }),
+        buildUrl('ethics', { changeFrequency: 'monthly', priority: 0.5 }),
+        ...buildExperiences().map((url) => `${url}`).map((url) => buildUrl(url, { changeFrequency: 'monthly' })),
+    ].map((meta) => ({
+        ...meta,
+        url: `${prefix}${meta.url}`,
+    }));
 }
 
 const buildExperiences = (): string[] => {
     return Object.values(Company).map((company) => `experiences/${company}`);
 };
+
+const buildUrl = (path: string, override: Omit<Partial<MetadataRoute.Sitemap[number]>, 'url' | 'lastModified'>): MetadataRoute.Sitemap[number] => {
+    return {
+        url: `/${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        ...override,
+    }
+}
