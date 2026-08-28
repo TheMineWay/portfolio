@@ -19,7 +19,8 @@ const buildLocale = (locale: Locale): MetadataRoute.Sitemap => {
     ].map((url) => ({
         url,
         lastModified: new Date(),
-    }));
+        changeFrequency: 'monthly',
+    } satisfies MetadataRoute.Sitemap[number]));
 }
 
 const buildExperiences = (): string[] => {

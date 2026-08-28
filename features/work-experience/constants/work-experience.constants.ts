@@ -23,7 +23,7 @@ export const WORK_EXPERIENCES = [
         key: 'primer-impacto-1',
         company: Company.PRIMER_IMPACTO,
         role: 'FullStack DevOps',
-        fromDate: new Date('2021-05-01'),
+        fromDate: new Date('2020-05-01'),
         toDate: new Date('2023-11-30'),
         location: 'Barcelona',
         achievementsCount: 3,
@@ -44,10 +44,20 @@ export const WORK_EXPERIENCES = [
         company: Company.PRIMER_IMPACTO,
         role: 'Senior FullStack DevOps',
         fromDate: new Date('2025-04-10'),
-        toDate: null,
+        toDate: new Date('2026-07-31'),
         location: 'Barcelona',
         achievementsCount: 3,
         technologies: ['React', 'TypeScript', 'Node.js', 'NestJS', 'Azure', 'Docker']
+    },
+    {
+        key: 'axa-partners',
+        company: Company.AXA_PARTNERS,
+        role: 'Senior Software Engineer',
+        fromDate: new Date('2026-08-01'),
+        toDate: null,
+        location: 'Barcelona',
+        achievementsCount: 3,
+        technologies: ['React', 'Azure', 'Jest', 'Vite', 'Prettier', 'Git', 'HTML5', 'CSS3']
     }
 ] satisfies WorkExperiencesDefinition[];
 

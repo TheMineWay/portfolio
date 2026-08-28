@@ -25,6 +25,14 @@
         "1": "Optimized the operational website to give the best user experience",
         "2": "Improved the daily workflow to improve developer experience"
       }
+    },
+    "axa-partners": {
+      "Description": "Developing and maintaining a business-critical digital solution, ensuring reliability, performance, maintainability, and accessibility. Also designing and maintaining automated tests to support quality and prevent regressions.",
+      "achievements": {
+        "0": "Developed and maintained a business-critical digital solution",
+        "1": "Optimized the solution for performance, maintainability, and operational efficiency",
+        "2": "Improved accessibility to make the solution usable by people with diverse needs and abilities"
+      }
     }
   },
   "companies": {
@@ -39,7 +47,8 @@
       "uiLibrary": "UI Library",
       "performance": "Performance",
       "tooling": "Tooling",
-      "web": "Web"
+      "web": "Web",
+      "cloud": "Cloud"
     },
     "primer-impacto": {
       "Banner-alt": "Grandland offices, where Primer Impacto is located",
@@ -67,6 +76,20 @@
       },
       "skills": {
         "Category": "Frontend Development"
+      }
+    },
+    "axa-partners": {
+      "Banner-alt": "AXA offices",
+      "Overview": "AXA Partners is a global insurance and assistance company, providing innovative solutions to protect and support individuals and businesses. They operate in multiple countries, offering a wide range of insurance products and services.",
+      "responsibilities": {
+        "0": "Developed and maintained a business-critical digital solution, ensuring reliability and a consistent user experience",
+        "1": "Optimized the solution for performance, maintainability, and operational efficiency",
+        "2": "Improved accessibility to make the solution usable by people with diverse needs and abilities",
+        "3": "Designed and maintained automated tests to support quality and prevent regressions",
+        "4": "Maintained and monitored the Azure cloud infrastructure supporting the solution"
+      },
+      "skills": {
+        "Category": "Software Engineering"
       }
     }
   },

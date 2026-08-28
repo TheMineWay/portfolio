@@ -9,9 +9,14 @@ import primerImpactoBanner from '@/assets/companies/primer-impacto/banner.jpg';
 import decathlonLogo from '@/assets/companies/decathlon/logo.png';
 import decathlonBanner from '@/assets/companies/decathlon/banner.png';
 
+/* Axa partners */
+import axaPartnersLogo from '@/assets/companies/axa-partners/logo.png';
+import axaPartnersBanner from '@/assets/companies/axa-partners/banner.png';
+
 export enum Company {
     PRIMER_IMPACTO = 'primer-impacto',
     DECATHLON = 'decathlon',
+    AXA_PARTNERS = 'axa-partners',
 }
 
 export type OrganizationJsonLd = {
@@ -65,7 +70,7 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         name: 'Primer Impacto',
         logo: primerImpactoLogo,
         banner: primerImpactoBanner,
-        mainRole: 'Senior Full-Stack DevOps',
+        mainRole: 'Senior Full-Stack Engineer',
         keywords: ['primer-impacto', 'retail'],
         responsibilitiesCount: 5,
         skillGroups: [
@@ -112,7 +117,7 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
         name: 'Decathlon',
         logo: decathlonLogo,
         banner: decathlonBanner,
-        mainRole: 'Frontend Developer',
+        mainRole: 'Senior Frontend Engineer',
         keywords: ['decathlon', 'sports retail'],
         responsibilitiesCount: 5,
         skillGroups: [
@@ -153,6 +158,50 @@ export const COMPANIES: Record<Company, CompanyMetadata> = {
                 'https://www.facebook.com/DecathlonEspana/',
                 'https://www.youtube.com/user/DecathlonEspana',
                 'https://www.linkedin.com/company/decathlon-espana/',
+            ],
+        },
+    },
+    [Company.AXA_PARTNERS]: {
+        name: 'AXA Partners',
+        logo: axaPartnersLogo,
+        banner: axaPartnersBanner,
+        mainRole: 'Senior Software Engineer',
+        keywords: ['axa partners', 'insurance'],
+        responsibilitiesCount: 5,
+        skillGroups: [
+            { labelKey: 'frameworks', technologies: ['React', 'Azure Functions'] },
+            { labelKey: 'testing', technologies: ['Jest'] },
+            { labelKey: 'tooling', technologies: ['Vite', 'Prettier', 'Git'] },
+            { labelKey: 'web', technologies: ['HTML5', 'CSS3'] },
+            { labelKey: 'cloud', technologies: ['Azure', 'Azure DevOps'] },
+        ],
+        jsonLd: {
+            name: 'AXA Partners',
+            alternateName: 'AXA Partners',
+            "@id": "https://www.axapartners.com/#organization",
+            url: 'https://www.axapartners.com',
+            logo: 'https://www.axapartners.com/_nuxt/icons/icon_64x64.0e6bec.png',
+            email: 'info@axapartners.com',
+            telephone: '918361853',
+            taxID: 'W0171985E',
+            address: {
+                "@type": "PostalAddress",
+                "streetAddress": "Calle Arequipa, 1, 3ª Planta, Escalera 3",
+                "addressLocality": "Madrid",
+                "addressRegion": "Madrid",
+                "postalCode": "28043",
+                "addressCountry": "ES"
+            },
+            contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'customer service',
+                telephone: '918361853',
+                email: 'info@axapartners.com',
+                areaServed: 'ES',
+                availableLanguage: ['es'],
+            },
+            sameAs: [
+                'https://www.linkedin.com/company/axa-partners/',
             ],
         },
     },

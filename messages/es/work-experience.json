@@ -25,6 +25,14 @@
         "1": "Optimicé el sitio web operativo para ofrecer la mejor experiencia de usuario",
         "2": "Mejoré el flujo de trabajo diario para mejorar la experiencia del desarrollador"
       }
+    },
+    "axa-partners": {
+      "Description": "Desarrollo y mantenimiento de una solución digital crítica para el negocio, garantizando fiabilidad, rendimiento, mantenibilidad y accesibilidad. También diseño y mantenimiento de pruebas automatizadas para respaldar la calidad y prevenir regresiones.",
+      "achievements": {
+        "0": "Desarrollé y mantuve una solución digital crítica para el negocio",
+        "1": "Optimicé la solución para rendimiento, mantenibilidad y eficiencia operativa",
+        "2": "Mejoré la accesibilidad para hacer la solución utilizable por personas con necesidades y capacidades diversas"
+      }
     }
   },
   "companies": {
@@ -39,7 +47,8 @@
       "uiLibrary": "Biblioteca UI",
       "performance": "Rendimiento",
       "tooling": "Herramientas",
-      "web": "Web"
+      "web": "Web",
+      "cloud": "Nube"
     },
     "primer-impacto": {
       "Banner-alt": "Oficinas de Grandland, donde está ubicado Primer Impacto",
@@ -67,6 +76,20 @@
       },
       "skills": {
         "Category": "Desarrollo Frontend"
+      }
+    },
+    "axa-partners": {
+      "Banner-alt": "Oficinas de AXA",
+      "Overview": "AXA Partners es una compañía global de seguros y asistencia que ofrece soluciones innovadoras para proteger y apoyar a personas y empresas. Opera en varios países y ofrece una amplia variedad de productos y servicios de seguros.",
+      "responsibilities": {
+        "0": "Desarrollé y mantuve una solución digital crítica para el negocio, garantizando su fiabilidad y una experiencia de usuario consistente",
+        "1": "Optimicé la solución para mejorar el rendimiento, la mantenibilidad y la eficiencia operativa",
+        "2": "Mejoré la accesibilidad para que la solución fuera utilizable por personas con distintas necesidades y capacidades",
+        "3": "Diseñé y mantuve pruebas automatizadas para asegurar la calidad y prevenir regresiones",
+        "4": "Mantuve y monitoricé la infraestructura cloud de Azure que soporta la solución"
+      },
+      "skills": {
+        "Category": "Ingeniería de Software"
       }
     }
   },
