@@ -1,10 +1,10 @@
 import test, { expect } from '@playwright/test';
-import { gotoLocale, forEachCase } from './helpers';
+import { forEachCase } from './helpers';
 import { LOCALES } from './constants';
 
-forEachCase('loads correctly', async ({ page, locale }) => {
-  await gotoLocale(page, '/', locale);
-  await expect(page).toHaveURL(new RegExp(`/${locale}`));
+forEachCase('loads correctly', async ({ page }) => {
+  await page.goto('/');
+  await expect(page).toHaveURL(new RegExp(`/`));
 });
 
 test('redirects to localized version', async ({ page }) => {

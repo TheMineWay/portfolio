@@ -22,8 +22,8 @@ This site is a personal developer portfolio showcasing projects, work experience
 
 ## Pages
 
-- [Home](${SITE_URL}/en): About me, tech stack, work experience summary, projects, and courses
-- [Ethics](${SITE_URL}/en/ethics): Principles guiding accessibility, privacy, open source, sustainability, and ethical AI
+- [Home](${SITE_URL}): About me, tech stack, work experience summary, projects, and courses
+- [Ethics](${SITE_URL}/ethics): Principles guiding accessibility, privacy, open source, sustainability, and ethical AI
 
 ## Work experience
 

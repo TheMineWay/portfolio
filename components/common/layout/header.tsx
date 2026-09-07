@@ -1,7 +1,7 @@
 import { ThemeToggle } from "@/features/common/theme/components/theme-toggle";
-import { Link } from "@/i18n/navigation";
 import { Navbar } from "./navbar";
 import { MY_DETAILS } from "@/constants/my-details";
+import Link from "next/link";
 
 export const Header: React.FC = () => {
     const { name, lastName } = MY_DETAILS;
