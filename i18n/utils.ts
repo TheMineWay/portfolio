@@ -1,3 +1,5 @@
+"use server"
+
 import { cookies } from "next/headers"
 import { LOCALE_COOKIE_KEY } from "./constants";
 import { Locale } from "./locale";
@@ -9,9 +11,15 @@ export const getLocale = async (): Promise<Locale> => {
     const locale = store.get(LOCALE_COOKIE_KEY)?.value as Locale ?? DEFAULT_LOCALE;
 
     if (!Object.values(Locale).includes(locale)) {
-        store.set(LOCALE_COOKIE_KEY, DEFAULT_LOCALE);
         return DEFAULT_LOCALE;
     }
 
     return locale;
+}
+
+export const setLocale = async (locale: Locale) => {
+    if (Object.values(Locale).includes(locale)) {
+        const store = await cookies();
+        store.set(LOCALE_COOKIE_KEY, locale);
+    }
 }

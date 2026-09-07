@@ -15,8 +15,6 @@ import { TranslationNamespace } from '@/i18n/namespaces';
 import { MY_DETAILS } from '@/constants/my-details';
 import { getLocale } from '@/i18n/utils';
 
-export const dynamic = 'force-static';
-
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
   setRequestLocale(locale);

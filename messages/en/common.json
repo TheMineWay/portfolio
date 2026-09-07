@@ -49,5 +49,13 @@
         "Link-to": "Link to {name}",
         "Back-home": "Back to Portfolio",
         "Honor-roll-simplified": "HR"
+    },
+    "languages": {
+        "en": {
+            "Label": "English"
+        },
+        "es": {
+            "Label": "Spanish"
+        }
     }
 }

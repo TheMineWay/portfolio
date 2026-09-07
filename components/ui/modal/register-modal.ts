@@ -5,13 +5,19 @@ export const registerModal = (id: string) => {
         id,
     };
 
-    const openerProps: ButtonProps = {
+    const openButonProps: ButtonProps = {
         popoverTarget: id,
         popoverTargetAction: 'show'
     };
 
+    const closeButtonProps: ButtonProps = {
+        popoverTarget: id,
+        popoverTargetAction: 'hide',
+    }
+
     return {
         control,
-        openerProps,
+        openButonProps,
+        closeButtonProps,
     }
 };
