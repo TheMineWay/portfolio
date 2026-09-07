@@ -11,7 +11,7 @@ export function GET() {
 
 const buildLlmsTxt = (): string => {
     const experiences = Object.entries(COMPANIES)
-        .map(([slug, company]) => `- [${company.name}](${SITE_URL}/en/experiences/${slug}): ${company.mainRole}`)
+        .map(([slug, company]) => `- [${company.name}](${SITE_URL}/experiences/${slug}): ${company.mainRole}`)
         .join("\n");
 
     return `# Joel Campos — Portfolio
