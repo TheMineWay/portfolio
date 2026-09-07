@@ -23,11 +23,11 @@ export const LanguageSelector: React.FC<Props> = ({ currentLocale }) => {
     };
 
     return <>
-        <Button data-testid="locale-switch-trigger" aria-label={t('components.locale-switch.Label')} variant="ghost" size="icon" {...openButonProps}>
+        <Button data-testid="language-selector-trigger" aria-label={t('components.locale-switch.Label')} variant="ghost" size="icon" {...openButonProps}>
             <LanguagesIcon/>
         </Button>
 
-        <Modal control={control} title={t('components.locale-switch.Title')}>
+        <Modal data-testid="language-selector-modal" control={control} title={t('components.locale-switch.Title')}>
             <div className="flex flex-col gap-1">
                 {Object.values(Locale).map((locale) => (
                     <Button data-testid={`locale-btn-${locale}`} variant={locale === currentLocale ? 'primary' : 'secondary'} disabled={locale === currentLocale} key={locale} {...closeButtonProps} onClick={() => changeLocale(locale)}>

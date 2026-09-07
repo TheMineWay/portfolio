@@ -21,8 +21,8 @@ export type ModalProps = {
     children?: React.ReactNode;
 } & CustomProps;
 
-export const Modal: React.FC<ModalProps> = ({ control, children, size = 'md', title }) => {
-    return <dialog id={control.id} popover="" className={styles.root}>
+export const Modal: React.FC<ModalProps> = ({ control, children, size = 'md', title, ...props }) => {
+    return <dialog {...props} id={control.id} popover="" className={styles.root}>
         <div className="flex justify-center items-center">
             {/* Dialog */}
             <div className={clsx("flex flex-col gap-1 py-2", SIZE_CLASSES[size])}>

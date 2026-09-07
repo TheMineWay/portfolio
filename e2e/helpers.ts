@@ -1,5 +1,7 @@
 import { test, Page } from '@playwright/test';
-import { COLOR_SCHEMES, PAGES, type ColorScheme } from './constants';
+import { BASE_URL, COLOR_SCHEMES, PAGES, type ColorScheme } from './constants';
+import { Locale } from '@/i18n/locale';
+import { LOCALE_COOKIE_KEY } from '@/i18n/constants';
 
 type CaseTestCallback = (args: {
   page: Page;
@@ -33,4 +35,15 @@ export function forEachPage(fn: PageTestCallback) {
   for (const path of PAGES) {
     fn({ path });
   }
+}
+
+export const mockLocale = async (locale: Locale, page: Page) => {
+  const context = page.context();
+  await context.addCookies([
+    {
+      name: LOCALE_COOKIE_KEY,
+      value: locale,
+      url: BASE_URL
+    }
+  ]);
 }
