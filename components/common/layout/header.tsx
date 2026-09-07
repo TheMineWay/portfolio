@@ -2,6 +2,7 @@ import { ThemeToggle } from "@/features/common/theme/components/theme-toggle";
 import { Navbar } from "./navbar";
 import { MY_DETAILS } from "@/constants/my-details";
 import Link from "next/link";
+import { LanguageSelector } from "@/features/common/theme/components/language-selector";
 
 export const Header: React.FC = () => {
     const { name, lastName } = MY_DETAILS;
@@ -14,7 +15,10 @@ export const Header: React.FC = () => {
                     <span>{lastName}</span>
                 </Link>
                 <Navbar/>
-                <ThemeToggle/>
+                <div className="flex">
+                    <LanguageSelector/>
+                    <ThemeToggle/>
+                </div>
             </div>
         </div>
     </header>;

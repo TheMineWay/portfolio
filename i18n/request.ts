@@ -1,10 +1,9 @@
 import { getRequestConfig } from 'next-intl/server';
 import { TranslationNamespace } from './namespaces';
-import { cookies } from 'next/headers';
+import { getLocale } from './utils';
 
 export default getRequestConfig(async () => {
-    const store = await cookies();
-    const locale = store.get('locale')?.value || 'en';
+    const locale = await getLocale();
 
     const namespaces = await Promise.all(
         Object.values(TranslationNamespace).map(async (ns) => {

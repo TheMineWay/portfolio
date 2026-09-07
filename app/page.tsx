@@ -7,31 +7,20 @@ import { getMyJsonLd } from '@/features/about/lib/get-my-json-ld';
 import { Courses } from '@/features/courses/components/courses';
 import { Projects } from '@/features/projects/components/projects';
 import { WorkExperienceSummary } from '@/features/work-experience/components/work-experience-summary';
-import { Locale } from '@/i18n/locale';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import ogBanner from '@/assets/open-graph/banner.png';
 import { TranslationNamespace } from '@/i18n/namespaces';
 import { MY_DETAILS } from '@/constants/my-details';
+import { getLocale } from '@/i18n/utils';
 
-export const dynamic = 'force-static';
-
-type PageProps = {
-  params: Promise<{ locale: Locale }>;
-}
-
-export async function generateMetadata({ params }: Readonly<PageProps>): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   setRequestLocale(locale);
 
   const t = await getTranslations(TranslationNamespace.ABOUT);
   const commonT = await getTranslations(TranslationNamespace.COMMON);
-
-  const languages: Record<string, string> = {};
-  for(const locale of Object.values(Locale)) {
-    languages[locale] = `/${locale}`;
-  }
 
   return {
     description: t('about-me.About-me'),
@@ -39,10 +28,6 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
       name: MY_DETAILS.fullName,
     },
     metadataBase: SITE_URL,
-    alternates: {
-      canonical: `/${locale}`,
-      languages,
-    },
     openGraph: {
       images: {
         url: ogBanner.src,
@@ -58,11 +43,8 @@ export async function generateMetadata({ params }: Readonly<PageProps>): Promise
 
 const SECTION_CLASSNAME = "flex items-center justify-center";
 
-export default async function Page({ params }: Readonly<PageProps>) {
-  const { locale } = await params;
+export default async function Page() {
   const myJsonLdData = await getMyJsonLd();
-
-  setRequestLocale(locale);
 
   return <>
     <JsonLd data={{

@@ -6,6 +6,9 @@
         "theme-toggle": {
             "Label": "Cambiar tema"
         },
+        "locale-switch": {
+            "Label": "Cambiar idioma"
+        },
         "navbar": {
             "links": {
                 "about": {

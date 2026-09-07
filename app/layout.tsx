@@ -6,6 +6,7 @@ import { MY_DETAILS } from '@/constants/my-details';
 import './globals.css';
 import { Header } from '@/components/common/layout/header';
 import { Footer } from '@/components/common/layout/footer';
+import { getLocale, setRequestLocale } from 'next-intl/server';
 
 const spaceGrotesk = Space_Grotesk({
   variable: '--font-space-grotesk',
@@ -31,9 +32,11 @@ type Props = Readonly<{
 export default async function LocaleLayout({
   children,
 }: Props) {
+  const locale = await getLocale();
+  setRequestLocale(locale);
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${spaceGrotesk.variable} ${jetBrainsMono.variable} antialiased bg-grid`}>
         <NextIntlClientProvider>
           <Header/>
