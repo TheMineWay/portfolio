@@ -7,7 +7,8 @@
             "Label": "Cambiar tema"
         },
         "locale-switch": {
-            "Label": "Cambiar idioma"
+            "Label": "Cambiar idioma",
+            "Title": "Idioma"
         },
         "navbar": {
             "links": {

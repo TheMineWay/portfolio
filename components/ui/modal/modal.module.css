@@ -1,0 +1,16 @@
+.root::backdrop {
+    background-color: var(--popover-foreground);
+    opacity: 50%;
+}
+
+.root[popover] {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+
+  width: fit-content;
+  height: fit-content;
+
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+}
