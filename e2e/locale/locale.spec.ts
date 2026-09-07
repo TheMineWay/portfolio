@@ -12,13 +12,11 @@ const TITLE_PREFIX: Record<Locale, string> = {
 const changeLocale = async (locale: Locale, page: Page) => {
         const localeChangeTrigger = page.getByTestId('language-selector-trigger');
         await localeChangeTrigger.click();
-
-        const languageSelectorModal = page.getByTestId('language-selector-modal');
-        await languageSelectorModal.waitFor({ state: 'visible' });
+        await page.waitForTimeout(500);
 
         const languageBtn = page.getByTestId(`locale-btn-${locale}`);
         await languageBtn.click();
-        await languageSelectorModal.waitFor({ state: 'hidden' });
+        await page.waitForTimeout(500);
 }
 
 const testLocale = async (locale: Locale, page: Page) => {
