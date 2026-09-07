@@ -57,5 +57,10 @@
         "es": {
             "Label": "Español"
         }
+    },
+    "manifest": {
+        "Name": "Portfolio de desarrollador",
+        "Short-name": "Portfolio",
+        "Description": "Portfolio web sobre Joel Campos. Incluye experiencia profesional y proyectos destacados."
     }
 }

@@ -8,7 +8,7 @@
     "type": "git"
   },
   "name": "portfolio",
-  "description": "My portfolio",
+  "description": "Joel Campos developer portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {

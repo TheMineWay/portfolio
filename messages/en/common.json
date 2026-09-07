@@ -57,5 +57,10 @@
         "es": {
             "Label": "Spanish"
         }
+    },
+    "manifest": {
+        "Name": "Developer portfolio",
+        "Short-name": "Portfolio",
+        "Description": "Web portfolio about Joel Campos. It includes work experience and highlighted projects."
     }
 }
