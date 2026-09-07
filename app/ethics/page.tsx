@@ -5,8 +5,6 @@ import { TranslationNamespace } from '@/i18n/namespaces';
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-export const dynamic = 'force-static';
-
 type PageProps = { params: Promise<{ locale: Locale }> };
 
 export const generateMetadata = async ({ params }: PageProps): Promise<Metadata> => {

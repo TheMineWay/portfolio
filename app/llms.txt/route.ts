@@ -1,8 +1,6 @@
 import { SITE_URL } from "@/constants/site-url";
 import { COMPANIES } from "@/features/work-experience/constants/companies.constants";
 
-export const dynamic = "force-static";
-
 export function GET() {
     return new Response(buildLlmsTxt(), {
         headers: { "Content-Type": "text/plain; charset=utf-8" },
