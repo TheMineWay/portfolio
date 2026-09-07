@@ -1,9 +1,11 @@
 import { ThemeToggle } from "@/features/common/theme/components/theme-toggle";
-import { Link } from "@/i18n/navigation";
 import { Navbar } from "./navbar";
 import { MY_DETAILS } from "@/constants/my-details";
+import Link from "next/link";
+import { LanguageSelector } from "@/features/common/theme/components/language-selector";
+import { getLocale } from "@/i18n/utils";
 
-export const Header: React.FC = () => {
+export const Header: React.FC = async () => {
     const { name, lastName } = MY_DETAILS;
 
     return <header className="sticky top-0 w-full p-2 bg-background/80 backdrop-blur-sm border-b border-border z-50">
@@ -14,7 +16,10 @@ export const Header: React.FC = () => {
                     <span>{lastName}</span>
                 </Link>
                 <Navbar/>
-                <ThemeToggle/>
+                <div className="flex">
+                    <LanguageSelector currentLocale={await getLocale()}/>
+                    <ThemeToggle/>
+                </div>
             </div>
         </div>
     </header>;

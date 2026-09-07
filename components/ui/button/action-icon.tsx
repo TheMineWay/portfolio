@@ -1,7 +1,7 @@
 import type React from "react";
 import clsx from "clsx";
 import { cva, type VariantProps } from "class-variance-authority";
-import { Link } from "@/i18n/navigation";
+import Link from "next/link";
 
 const actionIconVariants = cva("border border-border-strong hover:border-foreground hover:text-brand-accent transition-colors", {
     variants: {

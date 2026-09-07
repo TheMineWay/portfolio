@@ -8,7 +8,7 @@ export type TestLocale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: TestLocale = 'en';
 
 /** Existing companies */
-export const COMPANIES = ['primer-impacto', 'decathlon'] as const;
+export const COMPANIES = ['primer-impacto', 'decathlon', 'axa-partners'] as const;
 export type Company = (typeof COMPANIES)[number];
 
 /** Color scheme variants. Extend this when scheme-specific logic is needed. */

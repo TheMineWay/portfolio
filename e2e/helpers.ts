@@ -1,15 +1,10 @@
 import { test, Page } from '@playwright/test';
-import { url, LOCALES, COLOR_SCHEMES, PAGES, type TestLocale, type ColorScheme } from './constants';
-
-
-/** Navigate to a locale-prefixed path. */
-export async function gotoLocale(page: Page, path: string, locale?: TestLocale) {
-  await page.goto(url(path, locale));
-}
+import { BASE_URL, COLOR_SCHEMES, PAGES, type ColorScheme } from './constants';
+import { Locale } from '@/i18n/locale';
+import { LOCALE_COOKIE_KEY } from '@/i18n/constants';
 
 type CaseTestCallback = (args: {
   page: Page;
-  locale: TestLocale;
   colorScheme: ColorScheme;
 }) => Promise<void>;
 
@@ -25,13 +20,11 @@ type CaseTestCallback = (args: {
  */
 export function forEachCase(name: string, fn: CaseTestCallback) {
   test.describe(name, () => {
-    for (const locale of LOCALES) {
-      for (const colorScheme of COLOR_SCHEMES) {
-        test(`[${locale}/${colorScheme}]`, async ({ page }) => {
-          await page.emulateMedia({ colorScheme });
-          await fn({ page, locale, colorScheme });
-        });
-      }
+    for (const colorScheme of COLOR_SCHEMES) {
+      test(`[${colorScheme}]`, async ({ page }) => {
+        await page.emulateMedia({ colorScheme });
+        await fn({ page, colorScheme });
+      });
     }
   });
 }
@@ -42,4 +35,15 @@ export function forEachPage(fn: PageTestCallback) {
   for (const path of PAGES) {
     fn({ path });
   }
+}
+
+export const mockLocale = async (locale: Locale, page: Page) => {
+  const context = page.context();
+  await context.addCookies([
+    {
+      name: LOCALE_COOKIE_KEY,
+      value: locale,
+      url: BASE_URL
+    }
+  ]);
 }

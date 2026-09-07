@@ -6,6 +6,10 @@
         "theme-toggle": {
             "Label": "Cambiar tema"
         },
+        "locale-switch": {
+            "Label": "Cambiar idioma",
+            "Title": "Idioma"
+        },
         "navbar": {
             "links": {
                 "about": {
@@ -45,5 +49,18 @@
         "Link-to": "Enlace a {name}",
         "Back-home": "Volver al Portfolio",
         "Honor-roll-simplified": "MH"
+    },
+    "languages": {
+        "en": {
+            "Label": "Inglés"
+        },
+        "es": {
+            "Label": "Español"
+        }
+    },
+    "manifest": {
+        "Name": "Portfolio de desarrollador",
+        "Short-name": "Portfolio",
+        "Description": "Portfolio web sobre Joel Campos. Incluye experiencia profesional y proyectos destacados."
     }
 }
