@@ -20,7 +20,7 @@ const buildExperiences = (): string[] => {
 
 const buildUrl = (path: string, override: Omit<Partial<MetadataRoute.Sitemap[number]>, 'url' | 'lastModified'>): MetadataRoute.Sitemap[number] => {
     return {
-        url: `/${path}`,
+        url: path === '' ? '' :`/${path}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
